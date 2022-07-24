@@ -20,19 +20,6 @@ a{
     color: #ffffff;
 }
 
-.head-name {
-    padding: 5px;
-    text-align: center;
-    color: rgb(255,245,1);
-    letter-spacing: 6px;
-    margin-left: 37%;
-    margin-top: 10px;
-    width: 20%;
-    background-color: rgb(12, 21, 56);
-    border-color: #ffffff;
-    border-radius: 25px;
-}
-
 .img-logo {
     padding-top: 10px;
     padding-left: 37%;
@@ -41,8 +28,8 @@ a{
 .navbar{
     display: flex;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: center;
     align-items: center;
     background: black;
@@ -103,3 +90,44 @@ a{
     padding-top: 10px;
 }
 
+.icons ul li {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.github {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+}
+
+.facebook {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 136, 255, 0.93);
+    border: none;
+}
+
+.instagram {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(198, 70, 220), rgb(220, 70, 43));
+    border: none;
+}
+
+.linkedin {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #0077b5;
+    border: none;
+}

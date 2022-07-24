@@ -10,7 +10,7 @@
 }
 
 .body-style {
-    background-color:   rgb(6,33,39);
+    background-image: linear-gradient(rgb(6, 33, 39), rgb(40,40,67));
     alignment: center;
 }
 
@@ -28,9 +28,14 @@ a{
     margin-left: 37%;
     margin-top: 10px;
     width: 20%;
-    background-color: rgb(163, 71, 59);
+    background-color: rgb(12, 21, 56);
     border-color: #ffffff;
     border-radius: 25px;
+}
+
+.img-logo {
+    padding-top: 10px;
+    padding-left: 37%;
 }
 
 .navbar{
@@ -40,7 +45,11 @@ a{
     padding-bottom: 5px;
     justify-content: center;
     align-items: center;
-    background: #2F345E;
+    background: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-width: 10px;
+    border-bottom-color: white;
 }
 
 .nav-links{
@@ -64,6 +73,7 @@ a{
     bottom: 0;
     z-index: -1;
     border-radius: 15px;
+    padding-bottom: 10px;
 }
 
 .status {
@@ -86,6 +96,10 @@ a{
 }
 
 .p4 {
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.main-content {
+    padding-top: 10px;
 }
 

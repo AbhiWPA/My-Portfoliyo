@@ -98,6 +98,21 @@ a{
     display: inline-block;
     margin-right: 30px;
     margin-top: 20px;
+    transform: rotate(-15grad) skewY(5grad) translate(0,0);
+    box-shadow: -30px 5px 10px rgb(3, 3, 3);
+    transition: 0.5s;
+}
+
+.icons ul li a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 100%;
+    width: 20px;
+    background: #ffffff;
+    transform: rotate(-60turn) skewX(25turn) translate(0,0);
+
 }
 
 .github {

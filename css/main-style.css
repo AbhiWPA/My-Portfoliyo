@@ -29,7 +29,7 @@ a{
     display: flex;
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     justify-content: center;
     align-items: center;
     background: black;
@@ -51,6 +51,11 @@ a{
     padding: 1px 35px;
     position: relative;
     font-size: 20px;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover {
+    font-size: 25px;
 }
 
 .head-back {
@@ -98,21 +103,13 @@ a{
     display: inline-block;
     margin-right: 30px;
     margin-top: 20px;
-    transform: rotate(-15grad) skewY(5grad) translate(0,0);
-    box-shadow: -30px 5px 10px rgb(3, 3, 3);
+    transform: rotate(-1grad) translate(0,0);
     transition: 0.5s;
 }
 
-.icons ul li a:before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    height: 100%;
-    width: 20px;
-    background: #ffffff;
-    transform: rotate(-60turn) skewX(25turn) translate(0,0);
-
+.icons ul li:hover {
+    transform: rotate(1grad) skewY(1grad) translate(20px, -15px);
+    box-shadow: -30px 5px 10px rgba(0, 0, 0, 0.89);
 }
 
 .github {
@@ -145,4 +142,68 @@ a{
     border-radius: 50%;
     background-color: #0077b5;
     border: none;
+}
+
+.about {
+    align-items: center;
+}
+
+.bar-about {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.32), rgba(252, 252, 252, 0.34), rgba(255,255,255,0.5),rgba(255,255,255,0.1));
+    width: 100%;
+    height: 50px;
+}
+
+.line-small {
+    background: #872900;
+    width: 10px;
+    height: 50px;
+    margin-top: -54.5px;
+    margin-left: 20px;
+
+}
+
+.line-big {
+    background: #872900;
+    width: 20px;
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 40px;
+
+}
+
+.title {
+    margin-top: -55px;
+    font-size: 50px;
+    font-family: "Nunito Sans";
+    font-weight: 900;
+    margin-left: 150px;
+}
+
+.about-content {
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.75), rgba(0,0,0,0.5));
+    font-family: "Nunito Sans";
+    margin-left: 2.5%;
+    width: 95%;
+    border-radius: 25px;
+    height: 60vh;
+}
+
+.content-header {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+.about-desc {
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 100px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.07);
 }

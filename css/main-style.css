@@ -195,6 +195,7 @@ a{
     color: white;
     padding-top: 25px;
     padding-left: 50px;
+    color: #ff4500;
 }
 
 .about-desc {
@@ -204,6 +205,8 @@ a{
     color: #fff;
     margin-left: 100px;
     font-weight: 400;
+    line-height: 2;
     padding-bottom: 40px;
+    text-alignl: justify;
     background-color: rgba(255, 255, 255, 0.07);
 }

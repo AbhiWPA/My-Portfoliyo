@@ -9,6 +9,14 @@
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+header {
+    width: 100vw;
+}
+
 .body-style {
     background-image: linear-gradient(rgb(6, 33, 39), rgb(40,40,67));
     alignment: center;

@@ -45,6 +45,7 @@ a{
     border-bottom-right-radius: 10px;
     border-bottom-width: 10px;
     border-bottom-color: white;
+    position: fixed;
 }
 
 .nav-links{

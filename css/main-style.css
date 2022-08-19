@@ -45,7 +45,8 @@ a{
     border-bottom-right-radius: 10px;
     border-bottom-width: 10px;
     border-bottom-color: white;
-    position: fixed;
+    position: sticky;
+    top: 3px;
 }
 
 .nav-links{
@@ -68,7 +69,7 @@ a{
 }
 
 .head-back {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     right: 0;
     bottom: 0;

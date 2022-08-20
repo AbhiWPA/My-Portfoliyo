@@ -15,6 +15,10 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
         header {
             background: white;
             box-shadow: 0px -1px 8px 2px #1c1717e8;
@@ -42,6 +46,47 @@
             font-family: 'Poppins', sans-serif;
             color: rgba(46, 41, 41, 0.96);
         }
+
+        main {
+            width: 100vw;
+            height: 90vh;
+            background-color: orangered;
+            border-top: 2px solid black;
+        }
+
+        main>aside {
+            width: 300px;
+            height: 100vh;
+            left: 0;
+            background-color: blue;
+            position: absolute;
+        }
+
+        main>aside>ul {
+            margin: 0;
+        }
+
+        main>aside>ul>li {
+            list-style: none;
+            padding-top: 20px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        main>section {
+            left: 300px;
+            width: 944px;
+            height: 100%;
+            background-color: green;
+            position: absolute;
+        }
+
+        main>section>img {
+            display: inline-block;
+            width: 25vw;
+        }
+
     </style>
 </head>
 <body>
@@ -59,7 +104,20 @@
 </header>
 
 <main>
-
+    <aside>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </aside>
+    <section>
+        <img src="assets/gif.gif">
+        <img src="assets/gif.gif">
+        <img src="assets/gif.gif">
+        <div></div>
+    </section>
 </main>
 
 </body>

@@ -69,3 +69,55 @@ header>div>nav>ul>li>a:hover {
 header>div>nav>ul>li:nth-child(8) {
     border-right: 1px solid #bdbdbd;
 }
+
+main>section{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+}
+
+main>section>p:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 70px;
+    color: white;
+    font-weight: 600;
+}
+
+main>section>p:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    border: 0;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#ashinsa {
+    color: #ff253a;
+}
+
+main>section>p:nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 0;
+    margin-left: 70px;
+    color: white;
+    font-weight: 600;
+}
+
+main>section>p:nth-child(4) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    margin-top: 5px;
+    margin-left: 70px;
+    color: white;
+    font-weight: 600;
+}

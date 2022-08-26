@@ -10,15 +10,17 @@ header {
     background: black;
     top: 10px;
     box-shadow: 0px -1px 8px 2px rgba(28, 23, 23, 0.91);
-    position: relative;
+    position: fixed;
+    width: 100vw;
     height: 75px;
+    z-index: 1;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
 }
 
-video {
+main>section:nth-child(1)>video {
     width: 100vw;
     position: absolute;
     right: 0;
@@ -75,29 +77,31 @@ header>div>nav>ul>li:nth-child(8) {
 main>section:nth-child(1){
     position: absolute;
     width: 100vw;
-    height: 81vh;
+    height: 100vh;
 }
 
-main>section:nth-child(1)>section{
+main>section:first-of-type>section:first-of-type{
     position: absolute;
     width: fit-content;
     height: fit-content;
+    top: 50px;
+    z-index: 1;
 }
 
-main>section:nth-child(1)>section>p:nth-child(1) {
+main>section:first-of-type>section:first-of-type>p:nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     margin-top: 100px;
-    margin-left: 70px;
+    margin-left: 60px;
     color: white;
     font-weight: 600;
 }
 
-main>section:nth-child(1)>section>p:nth-child(2) {
+main>section:first-of-type>section:first-of-type>p:nth-child(2) {
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
     border: 0;
-    margin-left: 70px;
+    margin-left: 60px;
     margin-top: 10px;
     margin-bottom: 20px;
     color: white;
@@ -108,24 +112,24 @@ main>section:nth-child(1)>section>p:nth-child(2) {
     color: #ff253a;
 }
 
-main>section:nth-child(1)>section>p:nth-child(3) {
+main>section:first-of-type>section:first-of-type>p:nth-child(3) {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     margin-top: 5px;
     margin-bottom: 20px;
     border: 0;
-    margin-left: 70px;
+    margin-left: 60px;
     color: white;
     font-weight: 600;
 }
 
-main>section:nth-child(1)>section>p:nth-child(4) {
+main>section:first-of-type>section:first-of-type>p:nth-child(4) {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     margin-bottom: 20px;
     border: 0;
     margin-top: 5px;
-    margin-left: 70px;
+    margin-left: 60px;
     color: white;
     font-weight: 600;
 }
@@ -151,16 +155,78 @@ main>section:nth-child(1)>section>p:nth-child(4) {
     transition: 1s;
 }
 
-main>section:nth-child(1)>section:nth-child(2) {
+main>section:nth-child(1)>section:nth-child(3) {
     position: absolute;
-    width: 700px;
-    height: 150px;
-    bottom: 0;
-    right: 0;
+    width: 400px;
+    height: 100px;
+    bottom: 50px;
+    right: 200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
 }
 
-main>section:nth-child(1)>section:nth-child(2)>div {
-    border: 1px solid red;
+main>section:nth-child(1)>section:nth-child(3)>a>div {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.76);
+    transition: 0.5s;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>a>div:hover{
+    transform: rotate(1grad) skewY(1grad) translate(20px, -15px);
+    box-shadow: -30px 5px 10px rgba(0, 0, 0, 0.89);
+}
+
+main>section:nth-child(1)>section:nth-child(3)>a:nth-child(1)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-linkedin-circled-96.png");
+}
+
+main>section:nth-child(1)>section:nth-child(3)>a:nth-child(2)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-facebook-96.png");
+}
+
+main>section:nth-child(1)>section:nth-child(3)>a:nth-child(3)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-instagram-96.png");
+}
+
+main>section:nth-child(1)>section:nth-child(3)>a:nth-child(4)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-github-96.png");
+}
+
+main>a:nth-child(2)>div {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background-color: #015a11;
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.89);
+    cursor: pointer;
+}
+
+main>a:nth-child(2)>div>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
 }

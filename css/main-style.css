@@ -155,7 +155,12 @@ main>section:nth-child(1)>section:nth-child(2) {
     position: absolute;
     width: 700px;
     height: 150px;
-    border: 1px solid red;
     bottom: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main>section:nth-child(1)>section:nth-child(2)>div {
+    border: 1px solid red;
 }

@@ -18,27 +18,41 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #232323;
+    background: #e04f3b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(234, 32, 39, 0.85);
+    background: rgba(246, 24, 33, 0.85);
 }
 
-
 header {
-    background: black;
-    top: 10px;
+    top: 0;
+    height: 100vh;
+}
+
+header>div {
+    background: transparent;
+    top: 0;
+    left: 0;
     box-shadow: 0px -1px 8px 2px rgba(28, 23, 23, 0.91);
     position: fixed;
-    width: 99.1vw;
+    width: 100vw;
     height: 75px;
     z-index: 3;
 }
 
+header>section:nth-child(1) {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
 
+header>section:nth-child(1) {
+    height: 100vh;
+    width: 100vw;
+}
 
-main>section:nth-child(1)>video {
+header>section:nth-child(2)>video {
     width: 100vw;
     position: absolute;
     right: 0;
@@ -46,9 +60,10 @@ main>section:nth-child(1)>video {
     z-index: -1;
     border-radius: 15px;
     padding-bottom: 10px;
+    background-color: rgba(59, 59, 59, 0.22);
 }
 
-header>img {
+header>div>img {
     width: 200px;
     height: 50px;
     left: 8px;
@@ -92,13 +107,14 @@ header>div>nav>ul>li:nth-child(8) {
     border-right: 1px solid #bdbdbd;
 }
 
-main>section:nth-child(1){
+header>section:nth-child(3){
     position: absolute;
+    left: 0;
     width: 99.1vw;
     height: 100vh;
 }
 
-main>section:first-of-type>section:first-of-type{
+header>section:first-of-type>section:first-of-type{
     position: absolute;
     width: fit-content;
     height: fit-content;
@@ -106,7 +122,7 @@ main>section:first-of-type>section:first-of-type{
     z-index: 1;
 }
 
-main>section:first-of-type>section:first-of-type>p:nth-child(1) {
+header>section:first-of-type>section:first-of-type>p:nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     margin-top: 100px;
@@ -115,7 +131,7 @@ main>section:first-of-type>section:first-of-type>p:nth-child(1) {
     font-weight: 600;
 }
 
-main>section:first-of-type>section:first-of-type>p:nth-child(2) {
+header>section:first-of-type>section:first-of-type>p:nth-child(2) {
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
     border: 0;
@@ -130,7 +146,7 @@ main>section:first-of-type>section:first-of-type>p:nth-child(2) {
     color: #ff253a;
 }
 
-main>section:first-of-type>section:first-of-type>p:nth-child(3) {
+header>section:first-of-type>section:first-of-type>p:nth-child(3) {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     margin-top: 5px;
@@ -141,7 +157,7 @@ main>section:first-of-type>section:first-of-type>p:nth-child(3) {
     font-weight: 600;
 }
 
-main>section:first-of-type>section:first-of-type>p:nth-child(4) {
+header>section:first-of-type>section:first-of-type>p:nth-child(4) {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     margin-bottom: 20px;
@@ -173,7 +189,7 @@ main>section:first-of-type>section:first-of-type>p:nth-child(4) {
     transition: 1s;
 }
 
-main>section:nth-child(1)>section:nth-child(3) {
+header>section:first-of-type>section:nth-child(3) {
     position: absolute;
     width: 400px;
     height: 100px;
@@ -184,7 +200,7 @@ main>section:nth-child(1)>section:nth-child(3) {
     gap: 10px;
 }
 
-main>section:nth-child(1)>section:nth-child(3)>a>div {
+header>section:first-of-type>section:last-of-type>a>div {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -193,33 +209,33 @@ main>section:nth-child(1)>section:nth-child(3)>a>div {
     transition: 0.5s;
 }
 
-main>section:nth-child(1)>section:nth-child(3)>a>div:hover{
+header>section:first-of-type>section:last-of-type>a>div:hover{
     transform: rotate(1grad) skewY(1grad) translate(20px, -15px);
     box-shadow: -30px 5px 10px rgba(0, 0, 0, 0.89);
 }
 
-main>section:nth-child(1)>section:nth-child(3)>a:nth-child(1)>div {
+header>section:first-of-type>section:nth-child(3)>a:nth-child(1)>div {
     background-size: cover;
     justify-content: space-between;
     background-position: center;
     background-image: url("../assets/icons/icons8-linkedin-circled-96.png");
 }
 
-main>section:nth-child(1)>section:nth-child(3)>a:nth-child(2)>div {
+header>section:first-of-type>section:nth-child(3)>a:nth-child(2)>div {
     background-size: cover;
     justify-content: space-between;
     background-position: center;
     background-image: url("../assets/icons/icons8-facebook-96.png");
 }
 
-main>section:nth-child(1)>section:nth-child(3)>a:nth-child(3)>div {
+header>section:first-of-type>section:nth-child(3)>a:nth-child(3)>div {
     background-size: cover;
     justify-content: space-between;
     background-position: center;
     background-image: url("../assets/icons/icons8-instagram-96.png");
 }
 
-main>section:nth-child(1)>section:nth-child(3)>a:nth-child(4)>div {
+header>section:first-of-type>section:nth-child(3)>a:nth-child(4)>div {
     background-size: cover;
     justify-content: space-between;
     background-position: center;
@@ -259,12 +275,33 @@ main>section:nth-child(1)>section:nth-child(3)>a:nth-child(4)>div {
     transform: rotate(6.3rad);
 }
 
-main>section:nth-child(2) {
+main>section:nth-child(1) {
+    left: 0;
     position: absolute;
-    width: 99.1vw;
+    width: 99vw;
     height: 500px;
+    margin: 0;
+    /*border: 1px solid red;*/
 }
 
-main>section:nth-child(2)>div {
+main>section:nth-child(1)>div:nth-child(3) {
+    width: 99vw;
+    height: 60px;
+    background: linear-gradient(rgba(97, 97, 97, 0.68),#232323);
+}
 
+main>section:nth-child(1)>div:nth-child(3)>p{
+    top: 0;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-left: 25px;
+}
+
+.about-me {
+    color: #ff5f20;
+    font-size: 45px;
 }

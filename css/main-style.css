@@ -5,20 +5,38 @@
 * */
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(234, 32, 39, 0.85);
+}
+
 
 header {
     background: black;
     top: 10px;
     box-shadow: 0px -1px 8px 2px rgba(28, 23, 23, 0.91);
     position: fixed;
-    width: 100vw;
+    width: 99.1vw;
     height: 75px;
-    z-index: 1;
+    z-index: 3;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
+
 
 main>section:nth-child(1)>video {
     width: 100vw;
@@ -76,7 +94,7 @@ header>div>nav>ul>li:nth-child(8) {
 
 main>section:nth-child(1){
     position: absolute;
-    width: 100vw;
+    width: 99.1vw;
     height: 100vh;
 }
 
@@ -208,25 +226,45 @@ main>section:nth-child(1)>section:nth-child(3)>a:nth-child(4)>div {
     background-image: url("../assets/icons/icons8-github-96.png");
 }
 
-main>a:nth-child(2)>div {
+.chatbot {
     width: 80px;
     height: 80px;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 10px;
     background-color: #015a11;
     border-radius: 100%;
     z-index: 1;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.89);
     cursor: pointer;
+    transition: 0.5s;
 }
 
-main>a:nth-child(2)>div>img {
+.chatbot:hover {
+    width: 85px;
+    height: 85px;
+}
+
+.chatimg {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    transition: 0.5s;
+}
+
+.chatimg:hover {
+    transform: rotate(6.3rad);
+}
+
+main>section:nth-child(2) {
+    position: absolute;
+    width: 99.1vw;
+    height: 500px;
+}
+
+main>section:nth-child(2)>div {
 
 }

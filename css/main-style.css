@@ -332,3 +332,16 @@ main>section:nth-child(1)>section:first-of-type {
     margin: auto;
     border: 1px solid red;
 }
+
+main>section:nth-child(1)>section:first-of-type>p:nth-child(1) {
+    margin: 0;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    /*font-family: 'Kaushan Script', cursive;*/
+    font-family: 'Orbitron', sans-serif;
+    /*font-family: 'Edu TAS Beginner', cursive;*/
+    top: 10px;
+    left: 10px;
+}

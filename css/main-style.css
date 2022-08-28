@@ -14,11 +14,12 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #232323;
+    background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #e04f3b;
+    border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -330,10 +331,11 @@ main>section:nth-child(1)>section:first-of-type {
     bottom: 0;
     left: 0;
     margin: auto;
+    background-color: rgba(104, 104, 104, 0.42);
     border: 1px solid red;
 }
 
-main>section:nth-child(1)>section:first-of-type>p:nth-child(1) {
+main>section:nth-child(1)>section:first-of-type>p:first-of-type {
     margin: 0;
     position: absolute;
     font-size: 40px;
@@ -344,4 +346,15 @@ main>section:nth-child(1)>section:first-of-type>p:nth-child(1) {
     /*font-family: 'Edu TAS Beginner', cursive;*/
     top: 10px;
     left: 10px;
+}
+
+main>section:nth-child(1)>section:first-of-type>div:first-of-type {
+    font-family: 'Edu TAS Beginner', cursive;
+    width: 70%;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    line-height: 50px;
 }

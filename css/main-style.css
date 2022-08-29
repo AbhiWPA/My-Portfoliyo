@@ -325,7 +325,7 @@ main>section:nth-child(1)>div:nth-child(3)>p{
 main>section:nth-child(1)>section:first-of-type {
     position: absolute;
     height: 400px;
-    width: 80%;
+    width: 85%;
     top: 100px;
     right: 0;
     bottom: 0;

@@ -337,6 +337,7 @@ main>section:nth-child(1)>section:first-of-type {
     background-color: rgba(104, 104, 104, 0.42);
     border-radius: 15px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+    border: 1px solid #0029fa;
 }
 
 main>section:nth-child(1)>section:first-of-type>p:first-of-type {
@@ -473,4 +474,48 @@ main>section:nth-child(2)>div:nth-child(3)>p{
 .services {
     color: #ff5f20;
     font-size: 55px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid #0029fa;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(1) {
+    top: 125px;
+    left: 40px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(2) {
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(3) {
+    top: 125px;
+    right: 40px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(4) {
+    top: 475px;
+    left: 40px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(5) {
+    top: 475px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(6) {
+    top: 475px;
+    right: 40px;
 }

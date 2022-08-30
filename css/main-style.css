@@ -183,6 +183,7 @@ header>section:first-of-type>section:first-of-type>p:nth-child(4) {
     background: transparent;
     cursor: pointer;
     text-align: center;
+    transition: 1s;
 }
 .hire-btn:hover{
     border: 3px solid #f44336;
@@ -357,4 +358,28 @@ main>section:nth-child(1)>section:first-of-type>div:first-of-type {
     top: 30%;
     left: 5%;
     line-height: 50px;
+}
+
+.download-cv {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+main>section:nth-child(1)>section:first-of-type>div:nth-child(5)>a:first-of-type>div {
+    height: 50px;
+    width: 190px;
+    border-right: 1px solid white;
+    background-position: center;
+    background-size: inherit;
+}
+
+main>section:nth-child(1)>section:first-of-type>div:nth-child(5)>a:first-of-type>div>img {
+    height: 50px;
+    width: 190px;
+    position: absolute;
 }

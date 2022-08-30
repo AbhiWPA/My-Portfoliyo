@@ -491,6 +491,27 @@ main>section:nth-child(2)>section:first-of-type>div:nth-child(1) {
     left: 40px;
 }
 
+main>section:nth-child(2)>section:first-of-type>div>div:nth-child(1) {
+    position: absolute;
+    top: 25px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.18);
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+    transform: rotate(95rad);
+    background-position: center;
+}
+
+main>section:nth-child(2)>section:first-of-type>div>div:nth-child(1)>i:first-of-type{
+    position: absolute;
+    margin: auto;
+    color: white;
+    font-size: 100px;
+}
+
 main>section:nth-child(2)>section:first-of-type>div:nth-child(2) {
     top: 125px;
     left: 0;

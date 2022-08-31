@@ -485,6 +485,15 @@ main>section:nth-child(2)>section:first-of-type>div {
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
     background-color: rgba(26, 26, 26, 0.95);
+    transition: 1s;
+    transition-property: background-color,color,border,box-shadow;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:hover {
+    background-color: #892703;
+    border: 2px solid white;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.89);
+    transition-property: box-shadow,background-color,border;
 }
 
 main>section:nth-child(2)>section:first-of-type>div:nth-child(1) {
@@ -534,6 +543,7 @@ main>section:nth-child(2)>section:first-of-type>div>div:nth-child(2) {
     bottom: 30px;
     margin: auto;
 }
+
 
 main>section:nth-child(2)>section:first-of-type>div:nth-child(3)>div:first-of-type>div>i:first-of-type {
     position: absolute;

@@ -634,8 +634,8 @@ main>section:nth-child(3)>div:nth-child(3)>p{
 }
 
 main>section:nth-child(3)>section:first-of-type {
-    position: absolute;
-    height: 400px;
+    position: relative;
+    height: 400vh;
     width: 85%;
     top: 100px;
     right: 0;
@@ -644,27 +644,82 @@ main>section:nth-child(3)>section:first-of-type {
     margin: auto;
     background-color: rgba(104, 104, 104, 0.42);
     border-radius: 8px;
-    /*box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);*/
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
 }
 
-main>section:nth-child(3)>section:first-of-type>section:first-of-type {
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-main>section:nth-child(3)>section:first-of-type>section:first-of-type>div {
+main>section:nth-child(3)>section:first-of-type>div:nth-child(1) {
     top: 50px;
     width: fit-content;
     height: fit-content;
     left: 0;
     right: 0;
     margin: auto;
-    position: absolute;
-    font-size: 40px;
+}
+
+main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:first-of-type {
     color: white;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 50px;
+    margin: auto;
+    padding-top: 70px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(2) {
+    position: absolute;
+    width: 37%;
+    height: 4px;
+    background-color: #f44336;
+    top: 95px;
+    left: 0;
+    margin: auto;
+}
+
+main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(3) {
+    position: absolute;
+    width: 37%;
+    height: 4px;
+    background-color: #f44336;
+    top: 95px;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(4) {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #f44336;
+    top: 90px;
+    left: 37%;
+    margin: auto;
+}
+
+main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(5) {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #f44336;
+    top: 90px;
+    right: 37%;
+    margin: auto;
+}
+
+.lang>div:first-of-type {
+    font-size: 25px;
     font-weight: bold;
+    color: #fde479;
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    left: 10px;
+    width: fit-content;
+    height: fit-content;
+    line-height: 50px;
 }

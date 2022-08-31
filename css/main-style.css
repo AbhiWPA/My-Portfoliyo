@@ -898,6 +898,23 @@ main>section:nth-child(3)>section:first-of-type>div:nth-child(3)>div:nth-child(5
     cursor: pointer;
 }
 
+.tools>div:nth-child(2)>div>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+}
+
+.tools>div:nth-child(2)>div>img:nth-child(1) {
+    width: 70%;
+    height: 70%;
+}
+
+
 .tools>div:nth-child(2)>div:nth-child(1) {
     top: 115vh;
     right: 2vw;

@@ -1079,3 +1079,51 @@ main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(5
     top: 225vh;
     right: 30vw;
 }
+
+/*---------------Education-----------------*/
+
+main>section:nth-child(4) {
+    left: 0;
+    top: 600vh;
+    position: absolute;
+    width: 99vw;
+    height: 500px;
+    margin: 0;
+}
+
+main>section:nth-child(4)>div:nth-child(1) {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(4)>div:nth-child(2) {
+    position: absolute;
+    left: 40px;
+    width: 10px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(4)>div:nth-child(3) {
+    width: 99vw;
+    height: 60px;
+    background: linear-gradient(rgba(97, 97, 97, 0.68),#232323);
+}
+
+main>section:nth-child(4)>div:nth-child(3)>p{
+    top: 0;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-left: 80px;
+}
+
+.edu {
+    color: #ff5f20;
+    font-size: 55px;
+}

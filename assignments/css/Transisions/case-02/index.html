@@ -14,22 +14,18 @@
             width: 300px;
             height: 300px;
             border-radius: 100%;
-            border: 15px solid #ffffff;
-            background-color: gray;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
-           border-top: 15px solid crimson;
-           transition: 1s;
         }
 
-       div:hover {
-           transform: rotate(360deg);
-           transition: 1s;
-       }
+       /*div:hover {*/
+       /*    transform: rotate(360deg);*/
+       /*    transition: 1s;*/
+       /*}*/
 
         div>h1{
             width: fit-content;
@@ -44,9 +40,28 @@
             transition: 1s;
         }
 
-        div:hover>h1 {
-            transform: rotate(-360deg);
-            transition: 1s;
+        /*div:hover>h1 {*/
+        /*    transform: rotate(-360deg);*/
+        /*    transition: 1s;*/
+        /*}*/
+
+        div::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 100%;
+            border: 15px solid #ffffff;
+            border-top: 15px solid crimson;
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        div:hover::before {
+            transform: rotate(360deg);
+            transition: all 1s;
         }
 
     </style>

@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <title>Case - 01</title>
     <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        div{
+            width: 250px;
+            height: 125px;
+            position: relative;
+            background-color: #31c1bd;
+            border-radius: 15px;
+            animation-name: my-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes my-animation {
+            0% {
+                background: yellow;
+                margin: 0px 0px 0px 0px;
+                transform: rotate(0deg);
+            }
+            25% {
+                background: blue;
+                margin: 0px 0px 0px 1000px;
+                transform: rotate(270deg);
+            }
+            50% {
+                background: orangered;
+                margin: 400px 0px 0px 1000px;
+                transform: rotate(90deg);
+            }
+            75% {
+                background: red;
+                margin: 400px 1000px 0px 0px;
+                transform: rotate(270deg);
+            }
+            100% {
+                background: deeppink;
+                margin: 0px 0px 0px 0px;
+            }
+
+        }
+
+    </style>
 </head>
 <body>
+
+<div></div>
 
 </body>
 </html>

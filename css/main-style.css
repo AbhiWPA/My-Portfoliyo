@@ -1228,3 +1228,22 @@ main>section:nth-child(4)>div:nth-child(3)>p{
     color: white;
     line-height: 10px;
 }
+
+.education>div:nth-child(7){
+    width: 4px;
+    height: 90%;
+    background-color: #f44336;
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    transform: rotate(30deg);
+}
+
+.education>i:first-of-type {
+    font-size: 25px;
+    color: #f44336;
+    position: absolute;
+    right: 65px;
+    top: 150px;
+    transform: rotate(30deg);
+}

@@ -1130,7 +1130,7 @@ main>section:nth-child(4)>div:nth-child(3)>p{
 
 .education {
     position: relative;
-    height: 100vh;
+    height: 160vh;
     width: 85%;
     top: 50px;
     right: 0;
@@ -1150,7 +1150,47 @@ main>section:nth-child(4)>div:nth-child(3)>p{
     height: fit-content;
 }
 
-.education>div:nth-child(1)>div:first-of-type {
+.education>div:nth-child(2) {
+    position: absolute;
+    top: 250px;
+    right: 350px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(3) {
+    position: absolute;
+    top: 400px;
+    right: 450px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(4) {
+    position: absolute;
+    top: 550px;
+    right: 550px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(5) {
+    position: absolute;
+    top: 700px;
+    right: 650px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(6) {
+    position: absolute;
+    top: 850px;
+    right: 750px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div>div:first-of-type {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -1160,10 +1200,31 @@ main>section:nth-child(4)>div:nth-child(3)>p{
     z-index: 1;
 }
 
-.education>div:nth-child(1)>div:nth-child(2) {
+.education>div>div:nth-child(2) {
     position: absolute;
+    right: -40px;
     top: 4px;
-    width: 200px;
+    width: 400px;
     height: 95px;
     background-color: #ff253a;
+    border-radius: 12px;
+}
+
+.education>div>div:nth-child(2)>h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    top: 0;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.education>div>div:nth-child(2)>h4 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-left: 50px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    line-height: 10px;
 }

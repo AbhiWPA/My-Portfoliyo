@@ -27,22 +27,22 @@
             display: flex;
 
             animation-name: my-animation;
-            animation-duration: 10s;
+            animation-duration: 20s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
 
         @keyframes my-animation {
-            0% {
+            0%,20% {
                 transform: translateX(0);
             }
-            25% {
+            30%,50% {
                 transform: translateX(-25%);
             }
-            50% {
+            60%,80% {
                 transform: translateX(-50%);
             }
-            100% {
+            90%, 100% {
                 transform: translateX(-75%);
             }
 

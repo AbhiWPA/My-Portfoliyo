@@ -1550,3 +1550,61 @@ main>section:nth-child(5)>div:nth-child(3)>p{
     margin-left: 120px;
     color: #ffffff;
 }
+
+/*------------------interested------------------------*/
+
+main>section:nth-child(6) {
+    left: 0;
+    top: 910vh;
+    position: absolute;
+    width: 99vw;
+    height: 500px;
+    margin: 0;
+}
+
+/*main>section:nth-child(6)>div:nth-child(1) {*/
+/*    position: absolute;*/
+/*    width: 20px;*/
+/*    height: 60px;*/
+/*    background-color: #f44336;*/
+/*}*/
+
+/*main>section:nth-child(6)>div:nth-child(2) {*/
+/*    position: absolute;*/
+/*    left: 40px;*/
+/*    width: 10px;*/
+/*    height: 60px;*/
+/*    background-color: #f44336;*/
+/*}*/
+
+main>section:nth-child(6)>div:nth-child(3) {
+    width: 60vw;
+    height: 60px;
+    background: rgb(0, 2, 7);
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+main>section:nth-child(6)>div:nth-child(3)>p{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-left: 80px;
+    width: fit-content;
+    height: fit-content;
+}
+
+/*.works {*/
+/*    color: #ff5f20;*/
+/*    font-size: 55px;*/
+/*}*/

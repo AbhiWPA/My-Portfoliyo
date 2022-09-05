@@ -1613,9 +1613,37 @@ main>section:nth-child(6)>div:nth-child(3)>p{
     cursor: pointer;
 }
 
+.interested>div>i {
+    font-size: 80px;
+    position: center;
+    color: #fcfcfc;
+}
+
+.interested>div:nth-child(1)>i{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.interested>div:nth-child(2)>i{
+    margin-top: 50px;
+    margin-left: 65px;
+}
+.interested>div:nth-child(3)>i{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.interested>div:nth-child(4)>i{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.interested>div:nth-child(5)>i{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
 .interested>div:hover {
     width: calc(100% + 5px);
     height: calc(100% + 10px);;
     transition: 1s;
     transition-property: width, height;
+
 }

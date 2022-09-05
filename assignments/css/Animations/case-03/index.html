@@ -18,17 +18,45 @@
             background-size: cover;
             background-image: url("assets/1.jpg");
             background-position: center;
+            overflow-x: scroll;
+            overflow-y: hidden;
         }
 
         main>section {
             width: 400%;
             height: 100%;
-            border: 1px solid red;
+            display: flex;
         }
 
         main>section>div {
-
+            height: 100%;
+            width: 100%;
         }
+
+        main>section>div:nth-child(1) {
+            background: url("assets/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(2) {
+            background: url("assets/2.webp");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(3) {
+            background: url("assets/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(4) {
+            background: url("assets/7.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
 
 
     </style>

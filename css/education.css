@@ -1,0 +1,171 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 06/09/2022
+* @Project: My-Portfolio
+* */
+
+main>section:nth-child(4) {
+    left: 0;
+    top: 600vh;
+    position: absolute;
+    width: 99vw;
+    height: 500px;
+    margin: 0;
+}
+
+main>section:nth-child(4)>div:nth-child(1) {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(4)>div:nth-child(2) {
+    position: absolute;
+    left: 40px;
+    width: 10px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(4)>div:nth-child(3) {
+    width: 99vw;
+    height: 60px;
+    background: linear-gradient(rgba(97, 97, 97, 0.68),#232323);
+}
+
+main>section:nth-child(4)>div:nth-child(3)>p{
+    top: 0;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-left: 80px;
+}
+
+.edu {
+    color: #ff5f20;
+    font-size: 55px;
+}
+
+.education {
+    position: relative;
+    height: 160vh;
+    width: 85%;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(26, 26, 26, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+}
+
+.education>div:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(2) {
+    position: absolute;
+    top: 250px;
+    right: 350px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(3) {
+    position: absolute;
+    top: 400px;
+    right: 450px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(4) {
+    position: absolute;
+    top: 550px;
+    right: 550px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(5) {
+    position: absolute;
+    top: 700px;
+    right: 650px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(6) {
+    position: absolute;
+    top: 850px;
+    right: 750px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div>div:first-of-type {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    border: 4px solid #a3020f;
+    z-index: 1;
+}
+
+.education>div>div:nth-child(2) {
+    position: absolute;
+    right: -40px;
+    top: 4px;
+    width: 400px;
+    height: 95px;
+    background-color: #ff253a;
+    border-radius: 12px;
+}
+
+.education>div>div:nth-child(2)>h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    top: 0;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.education>div>div:nth-child(2)>h4 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-left: 50px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    line-height: 10px;
+}
+
+.education>div:nth-child(7){
+    width: 4px;
+    height: 90%;
+    background-color: #f44336;
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    transform: rotate(30deg);
+}
+
+.education>i:first-of-type {
+    font-size: 25px;
+    color: #f44336;
+    position: absolute;
+    right: 65px;
+    top: 150px;
+    transform: rotate(30deg);
+}

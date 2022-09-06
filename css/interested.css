@@ -16,17 +16,16 @@ main>section:nth-child(6) {
 main>section:nth-child(6)>div:nth-child(3) {
     width: 60vw;
     height: 60px;
-    background: rgb(0, 2, 7);
     border-radius: 50px;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     left: 0;
     margin: auto;
 }
 
 main>section:nth-child(6)>div:nth-child(3)>p{
-    top: 0;
+    top: 10px;
     bottom: 0;
     left: 0;
     right: 0;

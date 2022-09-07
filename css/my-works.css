@@ -60,12 +60,10 @@ main>section:nth-child(5)>div:nth-child(3)>p{
     left: 0;
     margin: auto;
     background-color: rgba(26, 26, 26, 0.95);
-    border-radius: 15px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
 }
 
 .my-works>div {
-    border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
     cursor: pointer;
 }
@@ -73,7 +71,6 @@ main>section:nth-child(5)>div:nth-child(3)>p{
 .my-works>div>img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
 }
 
 .my-works>div:nth-child(3) {

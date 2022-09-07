@@ -3,3 +3,37 @@
 * @Date: 06/09/2022
 * @Project: My-Portfolio
 * */
+
+.footer {
+    left: 0;
+    top: 980vh;
+    position: absolute;
+    width: 99vw;
+    height: 80vh;
+    margin: 0;
+}
+
+.footer>section:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid red;*/
+    background-color: #010a23;
+    top: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.footer>section:nth-child(1)>div {
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*border: 1px solid white;*/
+    background-color: #010a23;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.89);
+}

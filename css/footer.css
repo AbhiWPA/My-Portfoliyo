@@ -19,7 +19,7 @@
     height: 200px;
     /*border: 1px solid red;*/
     background-color: #010a23;
-    top: 0;
+    top: 120px;
     left: 0;
     margin: auto;
     display: flex;
@@ -71,4 +71,27 @@
     margin-left: 170px;
     font-family: 'Nunito', sans-serif;
     color: white;
+}
+
+.footer>div:nth-child(2) {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    padding-left: 38vw;
+    padding-right: 38vw;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 2px solid #1f1813;
+    background-image: linear-gradient(#6CD0FF,#1C2E4C);
+    background-blend-mode: exclusion;
+}
+
+.footer>div:nth-child(2)>h1 {
+    margin: 0;
 }

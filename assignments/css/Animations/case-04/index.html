@@ -104,14 +104,16 @@
             height: 100%;
 
             animation-name: rotate-wheel;
-            animation-duration: 2s;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
         }
 
         @keyframes rotate-wheel {
-
+            0%{
+                transform: rotate(0deg);
+            }
             100% {
-                transform: rotate(360deg);
+                transform: rotate(2000deg);
             }
         }
 

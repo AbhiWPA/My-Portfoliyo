@@ -99,12 +99,13 @@
 
     main>section:nth-child(1)>div:nth-child(3)>p {
         font-size: 34px;
-        margin-left: 64px;
+        margin-left: 0px;
     }
 
     main>section:nth-child(1)>section:first-of-type {
         top: 100px;
         height: 350px;
+        bottom: 28px;
     }
 
     main>section:nth-child(1)>section:first-of-type>p:first-of-type {
@@ -163,4 +164,42 @@
         width: 167px;
         height: 42px;
     }
+
+    .download-cv {
+        height: 42px;
+        width: 221px;
+        bottom: 23px;
+        right: 50px;
+    }
+
+    /*-------------services--------------*/
+
+    main>section:nth-child(2)>div:nth-child(3) {
+        height: 50px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(1) {
+        width: 16px;
+        height: 50px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(2){
+        left: 30px;
+        height: 50px;
+        width: 7px;
+    }
+
+    .services {
+        width: 220px;
+        height: 42px;
+        right: 50px;
+        bottom: 20px;
+        font-size: 50px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(3)>p {
+        font-size: 34px;
+        margin-left: 0px;
+    }
+
 }

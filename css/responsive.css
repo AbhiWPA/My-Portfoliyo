@@ -112,12 +112,55 @@
     }
 
     main>section:nth-child(1)>section:first-of-type>div:first-of-type {
-        font-size: 24px;
+        font-size: 19px;
         top: 24%;
         width: 55%;
     }
 
     main>section:nth-child(1)>section:first-of-type>div:nth-child(5) {
-        font-size: 20px;
+        font-size: 19px;
+        right: 78px;
+    }
+
+    main>section:nth-child(1)>div:last-of-type {
+        height: 330px;
+        top: 110px;
+        left: 589px;
+    }
+
+    main>section:nth-child(1)>div:nth-child(5) {
+        top: 114px;
+        left: 619px;
+        font-size: 17px;
+        line-height: 42px;
+        width: 314px;
+        height: 155px;
+    }
+
+    .about-me {
+        width: 220px;
+        height: 42px;
+        right: 50px;
+        bottom: 20px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:first-of-type>div>img {
+        width: 165px;
+        height: 42px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:nth-child(2)>div {
+        width: 50px;
+        height: 42px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:nth-child(2)>div>img {
+        width: 50px;
+        height: 40px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:first-of-type>div {
+        width: 167px;
+        height: 42px;
     }
 }

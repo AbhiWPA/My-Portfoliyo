@@ -94,7 +94,7 @@
     }
 
     .about-me {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     main>section:nth-child(1)>div:nth-child(3)>p {
@@ -143,6 +143,7 @@
         height: 42px;
         right: 50px;
         bottom: 20px;
+        font-size: 45px;
     }
 
     main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:first-of-type>div>img {
@@ -194,7 +195,7 @@
         height: 42px;
         right: 50px;
         bottom: 20px;
-        font-size: 50px;
+        font-size: 45px;
     }
 
     main>section:nth-child(2)>div:nth-child(3)>p {
@@ -246,8 +247,141 @@
         right: 35px;
     }
 
-    main>section:nth-child(3) {
-        top: 371vh;
+    main>section:nth-child(2)>section:first-of-type>div:nth-child(3)>div:first-of-type>div>i:first-of-type {
+        font-size: 65px;
+        padding-top: 3vh;
+        padding-left: 15px;
     }
 
+    /*-------------skills-----------------*/
+
+    main>section:nth-child(3) {
+        top: 318vh;
+    }
+
+    main>section:nth-child(3)>section:first-of-type {
+        top: 50px;
+    }
+
+    main>section:nth-child(3)>div:nth-child(3) {
+        height: 50px;
+    }
+
+    main>section:nth-child(3)>div:nth-child(1) {
+        width: 16px;
+        height: 50px;
+    }
+
+    main>section:nth-child(3)>div:nth-child(2) {
+        width: 7px;
+        left: 30px;
+        height: 50px;
+    }
+
+    main>section:nth-child(3)>div:nth-child(3)>p {
+        font-size: 34px;
+        margin-left: 0px;
+        padding-left: 75px;
+    }
+
+    .skills {
+        width: 220px;
+        height: 42px;
+        right: 50px;
+        bottom: 20px;
+        font-size: 45px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:first-of-type {
+        font-size: 35px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(2) {
+        top: 90px;
+        height: 2px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(3) {
+        top: 90px;
+        height: 2px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(4) {
+        top: 85px;
+        width: 12px;
+        height: 12px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(5) {
+        top: 85px;
+        height: 12px;
+        width: 12px;
+    }
+
+    .lang>div:first-of-type {
+        top: 120px;
+        font-size: 28px;
+        left: 30px;
+        line-height: 60px;
+    }
+
+    .lang>div:nth-child(2) {
+        right: -100px;
+        top: 122px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3) {
+        top: 102vh;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3)>div:first-of-type {
+        padding-top: 75px;
+        font-size: 35px;
+    }
+
+    .lang>div:nth-child(2)>div {
+        width: 100px;
+        height: 100px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3)>div:nth-child(2) {
+        top: 97px;
+        height: 2px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3)>div:nth-child(3) {
+        top: 97px;
+        height: 2px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3)>div:nth-child(4) {
+        width: 12px;
+        height: 12px;
+        top: 92px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3)>div:nth-child(5) {
+        width: 12px;
+        height: 12px;
+        top: 92px;
+    }
+
+    .tools>div:first-of-type {
+        top: 126px;
+        font-size: 28px;
+        left: 30px;
+        line-height: 55px;
+    }
+
+    .tools>div:nth-child(2) {
+        right: 0;
+        top: 120px;
+    }
+
+
+
+    .tools>div:nth-child(2)>div {
+        width: 100px;
+        height: 100px;
+    }
 }

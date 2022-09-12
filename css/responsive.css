@@ -435,7 +435,7 @@
     }
 
     .techno>div:nth-child(2)>div:nth-child(1) {
-        top: 230px;
+        top: 230vh;
         right: 6vw;
     }
 
@@ -448,4 +448,128 @@
         top: 230vh;
         right: 34vw;
     }
+
+    /*------------education---------------*/
+
+    main>section:nth-child(4) {
+        top: 603vh;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3) {
+        height: 50px;
+    }
+
+    main>section:nth-child(4)>div:nth-child(1) {
+        width: 16px;
+        height: 50px;
+    }
+
+    main>section:nth-child(4)>div:nth-child(2) {
+        width: 7px;
+        left: 30px;
+        height: 50px;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3)>p {
+        font-size: 34px;
+        margin-left: 0px;
+        padding-left: 75px;
+    }
+
+    .edu {
+        width: 220px;
+        height: 42px;
+        right: 50px;
+        bottom: 20px;
+        font-size: 45px;
+    }
+
+    .education {
+        top: 45px;
+        height: 158vh;
+    }
+
+    .education>div:nth-child(1) {
+        top: 50px;
+        right: 175px;
+    }
+
+    .education>div>div:first-of-type {
+        width: 85px;
+        height: 85px;
+        border: 3px solid #a3020f;
+    }
+
+    .education>div:nth-child(1)>div:first-of-type>img {
+        width: 83px;
+        height: 25px;
+    }
+
+    .education>div>div:nth-child(2) {
+        top: 7px;
+        height: 75px;
+        width: 365px;
+    }
+
+    .education>div>div:nth-child(2)>h3 {
+        font-size: 17px;
+        top: 3px;
+    }
+
+    .education>div>div:nth-child(2)>h4 {
+        margin-top: 37px;
+        font-size: 15px;
+    }
+
+    .education>div:nth-child(2) {
+        top: 175px;
+        right: 225px;
+    }
+
+    .education>div:nth-child(3) {
+        top: 300px;
+        right: 275px;
+    }
+
+    .education>div:nth-child(4) {
+        top: 425px;
+        right: 325px;
+    }
+
+    .education>div:nth-child(5) {
+        top: 550px;
+        right: 375px;
+    }
+
+    .education>div:nth-child(6) {
+        top: 675px;
+        right: 425px;
+    }
+
+    .education>div:nth-child(7) {
+        width: 2px;
+        top: 65px;
+        right: 40px;
+    }
+
+    .education>i:first-of-type {
+        top: 55px;
+        font-size: 22px;
+        right: 33px;
+    }
+
+    .education>div:nth-child(9) {
+        top: 100px;
+        height: 2px;
+        width: 30px;
+        left: 790px;
+    }
+
+    .education>div:nth-child(10) {
+        height: 2px;
+        width: 75px;
+        top: 220px;
+        left: 745px;
+    }
+
 }

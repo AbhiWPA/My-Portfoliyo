@@ -125,7 +125,7 @@
 
     main>section:nth-child(1)>div:last-of-type {
         height: 330px;
-        top: 110px;
+        top: 97px;
         left: 589px;
     }
 
@@ -200,6 +200,54 @@
     main>section:nth-child(2)>div:nth-child(3)>p {
         font-size: 34px;
         margin-left: 0px;
+    }
+
+    main>section:nth-child(2)>section:first-of-type>div {
+        width: 299px;
+        height: 250px;
+    }
+
+    main>section:nth-child(2)>section:first-of-type>div:nth-child(1),main>section:nth-child(2)>section:first-of-type>div:nth-child(2),main>section:nth-child(2)>section:first-of-type>div:nth-child(3) {
+        top: 108px;
+    }
+
+    main>section:nth-child(2)>section:first-of-type>div:nth-child(1) {
+        left: 35px;
+    }
+    main>section:nth-child(2)>section:first-of-type>div:nth-child(3) {
+        right: 35px;
+    }
+
+    main>section:nth-child(2)>section:first-of-type>div>div:nth-child(1) {
+        width: 84px;
+        height: 84px;
+        top: 32px;
+    }
+
+    main>section:nth-child(2)>section:first-of-type>div>div:first-of-type>div>i:first-of-type {
+        font-size: 67px;
+        padding-top: 10px;
+    }
+
+    main>section:nth-child(2)>section:first-of-type>div>div:nth-child(2) {
+        font-size: 23px;
+        bottom: 45px;
+    }
+
+    main>section:nth-child(2)>section:first-of-type>div:nth-child(4) {
+        top: 400px;
+        left: 35px;
+    }
+    main>section:nth-child(2)>section:first-of-type>div:nth-child(5) {
+        top: 400px;
+    }
+    main>section:nth-child(2)>section:first-of-type>div:nth-child(6) {
+        top: 400px;
+        right: 35px;
+    }
+
+    main>section:nth-child(3) {
+        top: 371vh;
     }
 
 }

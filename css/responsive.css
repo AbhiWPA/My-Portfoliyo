@@ -488,7 +488,7 @@
     .education {
         position: absolute;
         top: 510px;
-        height: 158vh;
+        height: 155vh;
     }
 
     .education>div:nth-child(1) {
@@ -649,26 +649,63 @@
     }
 
     .education>div:nth-child(21) {
-        top: 62px;
+        top: 96px;
     }
 
     .education>div:nth-child(22) {
-        top: 175px;
+        top: 216px;
     }
 
     .education>div:nth-child(23) {
-        top: 292px;
+        top: 342px;
     }
 
     .education>div:nth-child(24) {
-        top: 403px;
+        top: 462px;
     }
 
     .education>div:nth-child(25) {
-        top: 520px;
+        top: 586px;
     }
 
     .education>div:nth-child(26) {
-        top: 642px;
+        top: 716px;
+    }
+
+    /*------------projects--------------*/
+
+    main>section:nth-child(5) {
+        top: 784vh;
+    }
+
+    main>section:nth-child(5)>div:nth-child(1) {
+        width: 16px;
+        height: 50px;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2) {
+        left: 30px;
+        width: 7px;
+        height: 50px;
+    }
+
+    main>section:nth-child(5)>div:nth-child(3) {
+        height: 50px;
+    }
+
+    main>section:nth-child(5)>div:nth-child(3)>p {
+        font-size: 34px;
+    }
+
+    .works {
+        width: 220px;
+        height: 42px;
+        right: 50px;
+        bottom: 20px;
+        font-size: 45px;
+    }
+
+    .my-works {
+        top: 45px;
     }
 }

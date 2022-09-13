@@ -9,6 +9,7 @@
     /*----------------header-------------*/
     header>div:first-of-type {
         height: 60px;
+        width: 99vw;
     }
 
     header>div:first-of-type>img:first-of-type {
@@ -17,7 +18,7 @@
     }
 
     header>div:first-of-type>nav:nth-child(4) {
-        right: 20px;
+        right: 12px;
     }
 
     header>div:first-of-type>nav:nth-child(4)>ul>li {
@@ -485,7 +486,8 @@
     }
 
     .education {
-        top: 45px;
+        position: absolute;
+        top: 510px;
         height: 158vh;
     }
 
@@ -558,6 +560,10 @@
         right: 33px;
     }
 
+    .education>div:nth-child(9),.education>div:nth-child(10),.education>div:nth-child(11),.education>div:nth-child(12),.education>div:nth-child(13),.education>div:nth-child(14) {
+        position: absolute;
+    }
+
     .education>div:nth-child(9) {
         top: 100px;
         height: 2px;
@@ -601,37 +607,37 @@
     }
     .education>i:nth-child(15) {
         font-size: 20px;
-        top: 80px;
+        top: 91px;
         left: 787px;
     }
 
     .education>i:nth-child(16) {
         font-size: 20px;
-        top: 201px;
+        top: 211px;
         left: 725px;
     }
 
     .education>i:nth-child(17) {
         font-size: 20px;
-        top: 328px;
+        top: 336px;
         left: 665px;
     }
 
     .education>i:nth-child(18) {
         font-size: 20px;
-        top: 450px;
+        top: 456px;
         left: 602px;
     }
 
     .education>i:nth-child(19) {
         font-size: 20px;
-        top: 577px;
+        top: 581px;
         left: 540px;
     }
 
     .education>i:nth-child(20) {
         font-size: 20px;
-        top: 710px;
+        top: 711px;
         left: 480px;
     }
 
@@ -639,6 +645,7 @@
         width: 10px;
         height: 10px;
         left: 816px;
+        position: absolute;
     }
 
     .education>div:nth-child(21) {

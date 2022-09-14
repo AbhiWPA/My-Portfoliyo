@@ -1003,4 +1003,84 @@
         z-index: -1;
         letter-spacing: 50px;
     }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(1) {
+        font-size: 28px;
+        margin-left: 28px;
+        margin-top: 65px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(2) {
+        font-size: 36px;
+        border: 0;
+        margin-left: 28px;
+        margin-bottom: 22px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(3) {
+        font-size: 28px;
+        margin-left: 28px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(4) {
+        margin-left: 28px;
+        font-size: 16px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>a:nth-child(6) {
+        font-size: 16px;
+        margin-left: 65px;
+        width: 100px;
+    }
+
+    header>section:first-of-type>section:nth-child(3) {
+        right: 80px;
+        gap: 10px;
+    }
+
+    header>section:first-of-type>section:nth-child(3) {
+        bottom: 40px;
+        right: 35px;
+    }
+
+    header>section:first-of-type>section:last-of-type>a>div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .chatbot {
+        width: 60px;
+        height: 60px;
+    }
+
+    .chatimg {
+        width: 45px;
+    }
+
+    main>section:nth-child(1) {
+        background-color: #0e0e22;
+        top: 530px;
+    }
+
+    main>section:nth-child(1)>div:nth-child(3) {
+        background: transparent;
+    }
+
+    main>section:nth-child(1)>div:nth-child(1) {
+        display: none;
+    }
+
+    main>section:nth-child(1)>div:nth-child(2) {
+        display: none;
+    }
+
+    main>section:nth-child(1)>div:nth-child(3)>p {
+        font-size: 34px;
+        margin-left: 200px;
+        margin-top: 0px;
+    }
+
+    .about-me {
+        color: #fd3131;
+    }
 }

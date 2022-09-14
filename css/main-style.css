@@ -277,6 +277,14 @@ header>section:first-of-type>section:nth-child(3)>a:nth-child(4)>div {
     transform: rotate(6.3rad);
 }
 
+header>div>div {
+    display: none;
+}
+
+.developer {
+    display: none;
+}
+
 /*--------------------About Me---------------------------*/
 
 

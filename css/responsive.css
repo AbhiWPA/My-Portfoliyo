@@ -951,4 +951,56 @@
     .footer>section:nth-child(4)>p:nth-child(4) {
         font-size: 14px;
     }
+
+    .developer {
+        display: none;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+
+    /*------------------header--------------------*/
+    header>div>nav>ul {
+        display: none;
+    }
+
+    header>div>div {
+        top: 45px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: black;
+        box-shadow: 0px -1px 8px 2px rgba(28, 23, 23, 0.91);
+        cursor: pointer;
+    }
+
+    header>div>div>i {
+        color: white;
+        font-size: 22px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+
+    header>div:first-of-type>img:first-of-type {
+        width: 135px;
+        height: 32px;
+        left: 315px;
+    }
+
+    .developer {
+        display: block;
+        color: #78636338;
+        position: absolute;
+        top: 10px;
+        left: 90px;
+        right: 0;
+        margin: auto;
+        z-index: -1;
+        letter-spacing: 50px;
+    }
 }

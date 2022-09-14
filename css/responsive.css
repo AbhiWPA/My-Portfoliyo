@@ -1060,6 +1060,7 @@
     main>section:nth-child(1) {
         background-color: #0e0e22;
         top: 530px;
+        height: 390px;
     }
 
     main>section:nth-child(1)>div:nth-child(3) {
@@ -1081,6 +1082,65 @@
     }
 
     .about-me {
-        color: #fd3131;
+        color: #000016;
+    }
+
+    main>section:nth-child(1)>section:first-of-type {
+        top: 100px;
+        height: 380px;
+        bottom: 65px;
+        width: 92%;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>p:first-of-type {
+        font-size: 28px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:first-of-type {
+        font-size: 16px;
+        top: 25%;
+        width: 55%;
+        left: 4%;
+        line-height: 31px;
+    }
+
+    main>section:nth-child(1)>div:last-of-type {
+        height: 273px;
+        top: 75px;
+        left: 447px;
+    }
+
+    main>section:nth-child(1)>div:nth-child(5) {
+        top: 101px;
+        left: 465px;
+        font-size: 14px;
+        line-height: 35px;
+        width: 254px;
+        height: 128px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(5) {
+        font-size: 17px;
+        right: 80px;
+    }
+
+    .download-cv {
+        height: 30px;
+        width: 168px;
+        bottom: 35px;
+        right: 80px;
+        border-radius: 0;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:first-of-type>div {
+        width: 130px;
+        height: 29px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:nth-child(2)>div {
+        width: 42px;
+        height: 30px;
+        background-color: transparent;
+        border-radius: 0;
     }
 }

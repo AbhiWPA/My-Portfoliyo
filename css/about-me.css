@@ -171,3 +171,7 @@ main>section:nth-child(1)>div:nth-child(5) {
     color: white;
     font-size: 20px;
 }
+
+main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:first-of-type>div>h3 {
+    display: none;
+}

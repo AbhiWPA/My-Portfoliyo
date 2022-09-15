@@ -1109,7 +1109,7 @@
     }
 
     main>section:nth-child(1)>section:first-of-type>div:first-of-type {
-        font-size: 16px;
+        font-size: 13px;
         top: 25%;
         width: 55%;
         left: 4%;
@@ -1228,13 +1228,13 @@
         /*background-image: url(assets/1.jpg);*/
         background-position: center;
         overflow: hidden;
-        border: 1px solid red;
     }
 
     .services02>section {
         width: 500%;
         height: 100%;
         display: flex;
+        gap: 5px;
 
         animation-name: services-animation;
         animation-duration: 20s;
@@ -1247,6 +1247,7 @@
         height: 100%;
         background-color: #212529;
         transition: 0.5s;
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.89);
         transition-property: background-color,color,border,box-shadow;
     }
 
@@ -1256,6 +1257,65 @@
         box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.89);
         transition-property: box-shadow,background-color,border;
         color: #f44336;
+    }
+
+    .services02>section>div>div:nth-child(1) {
+        /*position: absolute;*/
+        top: 25px;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.18);
+        left: 0;
+        right: 0;
+        /*margin: auto;*/
+        margin-left: 200px;
+        margin-top: 30px;
+        border-radius: 20px;
+        transform: rotate(95rad);
+        background-position: center;
+    }
+
+    .services02>section>div>div:first-of-type>div>i:first-of-type{
+        /*position: absolute;*/
+        margin: auto;
+        color: white;
+        font-size: 90px;
+        transform: rotate(-95rad);
+        padding-top: 7px;
+        padding-left: 5px;
+    }
+
+    .services02>section>div>div:nth-child(2) {
+        font-family: 'Nunito', sans-serif;
+        width: fit-content;
+        height: fit-content;
+        color: white;
+        font-size: 28px;
+        /*position: absolute;*/
+       margin-left: 140px;
+        margin-top: 50px;
+    }
+
+    @keyframes services-animation {
+        0%,20% {
+            transform: translateX(0);
+        }
+        30%,50% {
+            transform: translateX(-20%);
+        }
+        60%,80% {
+            transform: translateX(-40%);
+        }
+        90%, 100% {
+            transform: translateX(-60%);
+        }
+
+    }
+
+    .services02>section>div:nth-child(3)>div:nth-child(1)>div>i {
+        font-size: 75px;
+        padding-top: 22px;
+        padding-left: 18px;
     }
 
 }

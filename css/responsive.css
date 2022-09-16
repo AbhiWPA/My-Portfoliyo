@@ -1407,14 +1407,9 @@
     }
 
     .lang02 {
-        display: block;
-    }
-
-    .lang02 {
-
-        width: 1400px;
-        height: 150px;
-        top: 170px;
+        width: 98%;
+        height: 99px;
+        top: 106px;
         left: 0;
         right: 0;
         margin: auto;
@@ -1430,5 +1425,49 @@
         background-color: #212529;
         background-position: center;
         background-size: cover;
+
+        cursor: pointer;
+        animation-name: rotate;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transition: 0.5s;
+    }
+
+    .lang>div:hover {
+        animation-play-state: paused;
+        transform: rotate3d(0,0,0,0deg);
+        border: 2px solid #f44336;
+    }
+
+    @keyframes rotate {
+        0%,50% {
+            transform: rotate3d(0, 10, 0, 0deg);
+        }
+        50%,100% {
+            transform: rotate3d(0, 10, 0, 360deg);
+        }
+    }
+
+    .lang02>div>img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .lang02>div>p {
+        color: white;
+        margin-top: -6px;
+        margin-left: 27px;
+    }
+
+    .lang02>div:nth-child(2)>p {
+        margin-left: 5px;
+    }
+
+    .lang02>div:nth-child(3)>p {
+        margin-left: 20px;
+    }
+
+    .lang02>div:nth-child(5)>p {
+        margin-left: 20px;
     }
 }

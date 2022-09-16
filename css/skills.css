@@ -542,3 +542,7 @@ main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(5
     right: 38vw;
 
 }
+
+.lang02 {
+    display: none;
+}

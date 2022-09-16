@@ -1690,4 +1690,112 @@
         }
     }
 
+    /*----------------------------Education---------------------------------*/
+
+    main>section:nth-child(4) {
+        top: 448vh;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3) {
+        background: transparent;
+    }
+
+    main>section:nth-child(4)>div:nth-child(1) {
+        display: none;
+    }
+
+    main>section:nth-child(4)>div:nth-child(2) {
+        display: none;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3)>p {
+        margin-left: 235px;
+    }
+
+    .edu {
+        color: #ff1d1d;
+    }
+
+    .education {
+        top: 280px;
+        border-radius: 0%;
+        background-color: #0e0e22;
+        width: 90%;
+        height: 115vh;
+    }
+
+    .education>div:nth-child(7) {
+        display: none;
+    }
+
+    .education>i:first-of-type {
+        display: none;
+    }
+
+    .education>div:nth-child(9), .education>div:nth-child(10), .education>div:nth-child(11), .education>div:nth-child(12), .education>div:nth-child(13), .education>div:nth-child(14) {
+        display: none;
+    }
+
+    .education>i:nth-child(15), .education>i:nth-child(16), .education>i:nth-child(17), .education>i:nth-child(18), .education>i:nth-child(19), .education>i:nth-child(20) {
+        display: none;
+    }
+
+    .education>div:nth-child(21), .education>div:nth-child(22), .education>div:nth-child(23), .education>div:nth-child(24), .education>div:nth-child(25), .education>div:nth-child(26) {
+        display: none;
+    }
+
+    .education>div:nth-child(1) {
+        left: -96px;
+        right: 0px;
+        margin: auto;
+        top: 10px;
+    }
+
+    .education>div:nth-child(2) {
+        top: 200px;
+        left: -96px;
+        right: 0px;
+        margin: auto;
+    }
+
+    .education>div:nth-child(3) {
+        top: 390px;
+        left: -96px;
+        right: 0px;
+        margin: auto;
+    }
+
+    .education>div:nth-child(4) {
+        top: 10px;
+        right: 50px;
+    }
+
+    .education>div:nth-child(5) {
+        top: 200px;
+        right: 50px;
+    }
+
+    .education>div:nth-child(6) {
+        top: 390px;
+        right: 50px;
+    }
+
+    .education>div>div:first-of-type {
+        right: 75px;
+        margin: auto;
+    }
+
+    .education>div>div:nth-child(2) {
+        top: 63px;
+        height: 110px;
+        width: 324px;
+    }
+
+    .education>div>div:nth-child(2)>h3 {
+        top: 26px;
+    }
+
+    .education>div>div:nth-child(2)>h4 {
+        margin-top: 60px;
+    }
 }

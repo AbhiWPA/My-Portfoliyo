@@ -1825,6 +1825,10 @@
         margin-left: 214px;
     }
 
+    .my-works {
+        height: 85vh;
+    }
+
     .my-works>div:nth-child(1), .my-works>div:nth-child(2), .my-works>div:nth-child(4), .my-works>div:nth-child(5) {
         display: none;
     }
@@ -1847,4 +1851,107 @@
         border-radius: 0%;
     }
 
+    .my-works>div:nth-child(9) {
+        width: 175px;
+        height: 22px;
+        bottom: 13px;
+    }
+
+    .my-works>div:nth-child(9)>div:first-of-type {
+        width: 25px;
+        height: 20px;
+        left: 3px;
+    }
+
+    .my-works>div:nth-child(9)>i {
+        font-size: 15px;
+    }
+
+    .my-works>div:nth-child(9)>i {
+        margin-left: 25px;
+    }
+
+    .my-works>div:nth-child(9)>div:first-of-type>h2 {
+        font-size: 15px;
+    }
+
+    .my-works>h1 {
+        font-size: 28px;
+        top: 30px;
+    }
+
+    .my-works>a:nth-child(7)>div {
+        width: 139px;
+        height: 35px;
+    }
+
+    .my-works>a:nth-child(7)>div>h3 {
+        font-size: 16px;
+    }
+
+    .my-works>a:nth-child(7)>div>i {
+        font-size: 21px;
+        right: -20px;
+    }
+
+    .my-works>div:nth-child(9)>i:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .my-works>div:nth-child(9)>i:nth-child(3) {
+        margin-left: 50px;
+    }
+
+    .my-works>div:nth-child(9)>i:nth-child(4) {
+        margin-left: 75px;
+    }
+
+    .my-works>div:nth-child(9)>i:nth-child(5) {
+        margin-left: 100px;
+    }
+
+    .my-works>div:nth-child(9)>i {
+        margin-left: 25px;
+    }
+
+    /*---------------interested--------------*/
+
+    main>section:nth-child(6) {
+        top: 700vh;
+    }
+
+    main>section:nth-child(6)>div:nth-child(3)>p {
+        font-size: 34px;
+    }
+
+    .interested {
+        height: 19vh;
+        width: 90%;
+        top: 70px;
+    }
+
+    .interested>div:nth-child(1)>i {
+        font-size: 58px;
+        margin-top: 20px;
+    }
+
+    .interested>div:nth-child(2)>i {
+        font-size: 58px;
+        margin-top: 20px;
+    }
+
+    .interested>div:nth-child(3)>i {
+        font-size: 58px;
+        margin-top: 20px;
+    }
+
+    .interested>div:nth-child(4)>i {
+        font-size: 58px;
+        margin-top: 20px;
+    }
+
+    .interested>div:nth-child(5)>i {
+        font-size: 58px;
+        margin-top: 20px;
+    }
 }

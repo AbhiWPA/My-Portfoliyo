@@ -1470,10 +1470,11 @@
         color: white;
         margin-top: -6px;
         margin-left: 27px;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     .lang02>div:nth-child(2)>p {
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .lang02>div:nth-child(3)>p {
@@ -1568,6 +1569,7 @@
         color: white;
         margin-top: -6px;
         margin-left: 27px;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     .tools03 {
@@ -1606,6 +1608,7 @@
         color: white;
         margin-top: -6px;
         margin-left: 27px;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     /*-------technologies-------*/
@@ -1678,6 +1681,7 @@
         color: white;
         margin-top: -6px;
         margin-left: 27px;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     @keyframes techno-animation {
@@ -1798,4 +1802,49 @@
     .education>div>div:nth-child(2)>h4 {
         margin-top: 60px;
     }
+
+    /*--------------My Works----------------*/
+
+    main>section:nth-child(5) {
+        top: 590vh;
+    }
+
+    main>section:nth-child(5)>div:nth-child(1) {
+        display: none;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2) {
+        display: none;
+    }
+
+    main>section:nth-child(5)>div:nth-child(3) {
+        background: transparent;
+    }
+
+    main>section:nth-child(5)>div:nth-child(3)>p {
+        margin-left: 214px;
+    }
+
+    .my-works>div:nth-child(1), .my-works>div:nth-child(2), .my-works>div:nth-child(4), .my-works>div:nth-child(5) {
+        display: none;
+    }
+
+    .my-works>div:nth-child(6)>i:first-of-type {
+        right: 322px;
+        top: -215px;
+        font-size: 50px;
+    }
+
+    .my-works>div:nth-child(6)>i:last-of-type {
+        left: 322px;
+        top: -215px;
+        font-size: 50px;
+    }
+
+    .my-works>div:nth-child(6)>div {
+        width: 25px;
+        height: 3px;
+        border-radius: 0%;
+    }
+
 }

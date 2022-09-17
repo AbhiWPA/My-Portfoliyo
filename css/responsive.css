@@ -2208,7 +2208,6 @@
         position: relative;
         height: 50px;
         width: 100%;
-        background-color: transparent;
         box-shadow: 3px 2px 5px 1px #0000009e;;
         cursor: pointer;
         transition-property: all;
@@ -2216,7 +2215,11 @@
     }
 
     .social-media>div:nth-child(1) {
-        background-color: #003a89;
+        background-color: #2d3e91;
+    }
+
+    social-media>div:nth-child(2) {
+        background-color: #2182d5;
     }
 
     .social-media>div>a>img {
@@ -2240,5 +2243,180 @@
         left: 20px;
         transition-property: all;
         transition-duration: 1s;
+    }
+
+    /*------------about me---------------*/
+
+    main>section:nth-child(1) {
+        top: 315px;
+    }
+
+    main>section:nth-child(1)>div:nth-child(3)>p {
+        font-size: 28px;
+        margin-left: 45px;
+        margin-top: 10px;
+    }
+
+    .about-me {
+        font-size: 45px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:first-of-type {
+        font-size: 14px;
+        top: 19%;
+        width: 100%;
+        left: 8%;
+        line-height: 25px;
+    }
+
+    main>section:nth-child(1)>div:nth-child(5) {
+        display: none;
+    }
+
+    main>section:nth-child(1)>div:last-of-type {
+        height: 2px;
+        top: 314px;
+        left: 22px;
+        width: 378px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(5) {
+        font-size: 15px;
+        right: 110px;
+        bottom: 45px;
+    }
+
+    .download-cv {
+        height: 21px;
+        width: 168px;
+        bottom: 17px;
+        right: 100px;
+        border-radius: 0;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:nth-child(2)>div {
+        height: 20px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:nth-child(2)>div>img {
+        width: 50px;
+        height: 24px;
+        margin-top: -2px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(6)>a:first-of-type>div {
+        width: 125px;
+        height: 21px;
+    }
+
+    /*----------services---------------*/
+
+    main>section:nth-child(2) {
+        height: 340px;
+        top: 160vh;
+    }
+
+    main>section:nth-child(2)>div:nth-child(3)>p {
+        font-size: 28px;
+        margin-left: 34px;
+    }
+
+    .services {
+        font-size: 45px;
+    }
+
+    .services02 {
+        width: 350px;
+        height: 183px;
+    }
+
+    .services02>section>div>div:nth-child(1) {
+        width: 68px;
+        height: 68px;
+        margin-left: 143px;
+    }
+
+    .services02>section>div>div:first-of-type>div>i:first-of-type {
+        font-size: 55px;
+    }
+
+    .services02>section>div:nth-child(3)>div:nth-child(1)>div>i {
+        font-size: 45px;
+        padding-top: 19px;
+        padding-left: 13px;
+    }
+
+    .services02>section>div>div:nth-child(2) {
+        font-size: 22px;
+        margin-left: 58px;
+        margin-top: 36px;
+    }
+
+    .services02>section>div:nth-child(1)>div:nth-child(2) {
+        margin-left: 62px;
+
+    }
+
+    .services02>section>div:nth-child(1)>div:nth-child(3) {
+        margin-left: 47px;
+    }
+
+    .services02>section>div:nth-child(4)>div:nth-child(2) {
+        margin-left: 76px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(6) {
+        bottom: 30px;
+        left: 140px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(6)>div {
+        width: 20px;
+    }
+
+    /*-------------skills---------------*/
+
+    main>section:nth-child(3) {
+        top: 232vh;
+    }
+
+    main>section:nth-child(3)>div:nth-child(3)>p {
+        font-size: 28px;
+        margin-left: 63px;
+    }
+
+    .skills {
+        font-size: 45px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:first-of-type {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(2) {
+        width: 34%;
+        height: 2px;
+        top: 50px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(3) {
+        height: 2px;
+        width: 34%;
+        top: 50px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(4) {
+        width: 8px;
+        height: 8px;
+        top: 47px;
+        left: 34%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(5) {
+        width: 8px;
+        height: 8px;
+        top: 47px;
+        right: 34%;
     }
 }

@@ -20,6 +20,10 @@
         width: 99vw;
     }
 
+    .social-media {
+        display: none;
+    }
+
     header>div:first-of-type>img:first-of-type {
         width: 139px;
         height: 36px;
@@ -1017,6 +1021,10 @@
         background-color: black;
         box-shadow: 0px -1px 8px 2px rgba(28, 23, 23, 0.91);
         cursor: pointer;
+    }
+
+    .social-media {
+        display: none;
     }
 
     header>div>div>i {
@@ -2134,9 +2142,9 @@
     }
 
     header>section:nth-child(2)>video {
-        bottom: 226px;
+        bottom: 172px;
         left: 0;
-        right: -12px;
+        right: 0px;
         margin: auto;
         border-radius: 0px;
         padding-bottom: 3px;
@@ -2150,7 +2158,7 @@
     }
 
     header>section:first-of-type>section:first-of-type {
-        top: 146px;
+        top: 150px;
     }
 
     header>section:nth-child(2)>section:nth-child(2)>p:nth-child(3) {
@@ -2178,5 +2186,59 @@
         border: 0;
         margin-left: 70px;
         margin-bottom: -6px;
+    }
+
+    header>section:first-of-type>section:nth-child(3) {
+        display: none;
+    }
+
+    .social-media {
+        width: 100px;
+        height: 220px;
+        position: relative;
+        top: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        right: 60px;
+    }
+
+    .social-media>div {
+        left: 0;
+        position: relative;
+        height: 50px;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: 3px 2px 5px 1px #0000009e;;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    .social-media>div:nth-child(1) {
+        background-color: #003a89;
+    }
+
+    .social-media>div>a>img {
+        position: absolute;
+        left: 50px;
+        top: 0;
+        bottom: 0;
+        height: max-content;
+        margin: auto;
+        font-size: 35px;
+        color: white;
+    }
+
+    .social-media>div:nth-child(4)>a>img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .social-media>div:hover{
+        /*background-color: #722df0;*/
+        left: 20px;
+        transition-property: all;
+        transition-duration: 1s;
     }
 }

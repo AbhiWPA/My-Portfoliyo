@@ -558,3 +558,11 @@ main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(5
 .tools02 {
     display: none;
 }
+
+.lang03, .lang04 {
+    display: none;
+}
+
+.tools04, .tools05 {
+    display: none;
+}

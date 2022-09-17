@@ -989,6 +989,16 @@
 
 @media all and (min-width: 425px) and (max-width: 768px) {
 
+
+    *{
+        padding: 0;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+
     /*------------------header--------------------*/
     header>div>nav>ul {
         display: none;
@@ -1154,6 +1164,10 @@
         width: 254px;
         height: 128px;
     }
+
+    /*body {*/
+    /*    overflow-x: hidden;*/
+    /*}*/
 
     main>section:nth-child(1)>section:first-of-type>div:nth-child(5) {
         font-size: 17px;
@@ -1729,7 +1743,7 @@
         top: 280px;
         border-radius: 0%;
         background-color: #0e0e22;
-        width: 90%;
+        width: 95%;
         height: 115vh;
     }
 
@@ -1754,7 +1768,7 @@
     }
 
     .education>div:nth-child(1) {
-        left: -96px;
+        left: -115px;
         right: 0px;
         margin: auto;
         top: 10px;
@@ -1762,31 +1776,31 @@
 
     .education>div:nth-child(2) {
         top: 200px;
-        left: -96px;
+        left: -115px;
         right: 0px;
         margin: auto;
     }
 
     .education>div:nth-child(3) {
         top: 390px;
-        left: -96px;
+        left: -115px;
         right: 0px;
         margin: auto;
     }
 
     .education>div:nth-child(4) {
         top: 10px;
-        right: 50px;
+        right: 60px;
     }
 
     .education>div:nth-child(5) {
         top: 200px;
-        right: 50px;
+        right: 60px;
     }
 
     .education>div:nth-child(6) {
         top: 390px;
-        right: 50px;
+        right: 60px;
     }
 
     .education>div>div:first-of-type {
@@ -1828,6 +1842,10 @@
 
     main>section:nth-child(5)>div:nth-child(3)>p {
         margin-left: 214px;
+    }
+
+    .works {
+        color: #ff1d1d;
     }
 
     .my-works {
@@ -2006,6 +2024,7 @@
     .footer>section:nth-child(3) {
         top: 200px;
         height: 460px;
+        width: 99.5%;
     }
 
     .footer>section:nth-child(3)>div {
@@ -2065,5 +2084,99 @@
 
     .footer>section:nth-child(4)>p:nth-child(4) {
         font-size: 12px;
+    }
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+
+    .chatbot {
+        width: 50px;
+        height: 50px;
+        right: 5px;
+    }
+
+    .chatimg {
+        width: 35px;
+    }
+
+    header>div {
+        height: 55px;
+    }
+
+    header>div:first-of-type>img:first-of-type {
+        width: 120px;
+        height: 28px;
+        left: 160px;
+    }
+
+
+    .developer {
+        left: 15px;
+        letter-spacing: 26px;
+        font-size: 28px;
+    }
+
+    header>div>div {
+        top: 42px;
+        width: 25px;
+        height: 25px;
+    }
+
+    header>div>div>i {
+        font-size: 18px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    header>section:nth-child(2)>video {
+        bottom: 226px;
+        left: 0;
+        right: -12px;
+        margin: auto;
+        border-radius: 0px;
+        padding-bottom: 3px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(1) {
+        font-size: 20px;
+        margin-left: 145px;
+        margin-top: 0px;
+        margin-bottom: -5px;
+    }
+
+    header>section:first-of-type>section:first-of-type {
+        top: 146px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(3) {
+        font-size: 22px;
+        margin-left: 85px;
+        margin-bottom: 0px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(4) {
+        margin-left: 92px;
+        font-size: 12px;
+        margin-bottom: -6px;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>a:nth-child(6) {
+        font-size: 13px;
+        margin-left: 144px;
+        width: 50px;
+        padding: 5px 34px;
+        border: 2px solid #fff;
+    }
+
+    header>section:nth-child(2)>section:nth-child(2)>p:nth-child(2) {
+        font-size: 26px;
+        border: 0;
+        margin-left: 70px;
+        margin-bottom: -6px;
     }
 }

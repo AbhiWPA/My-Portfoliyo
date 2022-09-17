@@ -2953,4 +2953,62 @@
         right: 374px;
         top: 20px;
     }
+
+    /*----------works--------------*/
+
+    main>section:nth-child(5) {
+        top: 527vh;
+    }
+
+    main>section:nth-child(5)>div:nth-child(3)>p {
+        margin-left: 50px;
+        font-size: 28px;
+    }
+
+    .works {
+        font-size: 45px;
+    }
+
+    .my-works {
+        height: 70vh;
+        width: 93%;
+    }
+
+    .my-works>div:nth-child(3) {
+        width: 261px;
+        height: 186px;
+        top: 40px;
+    }
+
+    .my-works>h1 {
+        font-size: 25px;
+        top: 58px;
+    }
+
+    .my-works>div:nth-child(9) {
+        display: none;
+    }
+
+    .my-works>a:nth-child(7)>div {
+        width: 135px;
+        height: 26px;
+        border-radius: 0px;
+    }
+
+    .my-works>a:nth-child(7)>div>h3 {
+        font-size: 15px;
+        top: 5px;
+    }
+
+    .my-works>div:nth-child(6)>i:last-of-type {
+        left: 240px;
+        top: -154px;
+        font-size: 32px;
+    }
+
+    .my-works>div:nth-child(6)>i:first-of-type {
+        right: 241px;
+        top: -154px;
+        font-size: 32px;
+    }
 }

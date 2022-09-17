@@ -2796,4 +2796,161 @@
         font-size: 12px;
     }
 
+    /*---------Education------------*/
+
+    main>section:nth-child(4) {
+        top: 398vh;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3)>p {
+        margin-left: 58px;
+        font-size: 28px;
+    }
+
+    .edu {
+        font-size: 45px;
+    }
+
+    .education {
+        top: 15px;
+        height: 110vh;
+    }
+
+    .education>div>div:first-of-type {
+        width: 70px;
+        height: 70px;
+    }
+
+    .education>div:nth-child(1)>div:first-of-type>img {
+        width: 74px;
+        height: 22px;
+        margin-top: 24px;
+    }
+
+    .education>div>div:first-of-type {
+        right: 184px;
+        margin: auto;
+        top: 58px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .education>div:nth-child(1)>div:first-of-type>img {
+        width: 74px;
+        height: 22px;
+        margin-top: 24px;
+    }
+
+    .education>div>div:nth-child(2) {
+        top: 63px;
+        height: 72px;
+        width: 224px;
+    }
+
+    .education>div>div:nth-child(2)>h3 {
+        top: 12px;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+
+    .education>div>div:nth-child(2)>h4 {
+        margin-top: 36px;
+        font-size: 10px;
+    }
+
+    .education>div:nth-child(1) {
+        left: 235px;
+        right: 0px;
+        margin: auto;
+        top: -40px;
+    }
+
+    .education>div:nth-child(2) {
+        top: 54px;
+        left: 235px;
+        right: 0px;
+        margin: auto;
+    }
+
+    .education>div:nth-child(3) {
+        top: 148px;
+        left: 235px;
+        right: 0px;
+        margin: auto;
+    }
+
+    .education>div:nth-child(4) {
+        top: 240px;
+        right: 87px;
+    }
+
+    .education>div:nth-child(5) {
+        top: 329px;
+        right: 87px;
+    }
+
+    .education>div:nth-child(6) {
+        top: 423px;
+        right: 87px;
+    }
+
+    .education>div:nth-child(7) {
+        display: block;
+    }
+
+    .education>div:nth-child(21) {
+        display: block;
+        height: 10px;
+        width: 10px;
+        top: 51px;
+        left: 19px;
+    }
+
+    .education>div:nth-child(22) {
+        display: block;
+        height: 10px;
+        width: 10px;
+        top: 138px;
+        left: 19px;
+    }
+
+    .education>div:nth-child(23) {
+        display: block;
+        height: 10px;
+        width: 10px;
+        top: 220px;
+        left: 19px;
+    }
+
+    .education>div:nth-child(24) {
+        display: block;
+        height: 10px;
+        width: 10px;
+        top: 302px;
+        left: 19px;
+    }
+
+    .education>div:nth-child(25) {
+        display: block;
+        height: 10px;
+        width: 10px;
+        top: 380px;
+        left: 19px;
+    }
+
+    .education>div:nth-child(26) {
+        display: block;
+        height: 10px;
+        width: 10px;
+        top: 460px;
+        left: 19px;
+    }
+
+    .education>div:nth-child(7) {
+        display: block;
+        width: 2px;
+        height: 89%;
+        right: 374px;
+        top: 20px;
+    }
 }

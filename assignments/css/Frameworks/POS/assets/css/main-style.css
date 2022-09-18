@@ -4,28 +4,8 @@
 * @Project: My-Portfolio
 * */
 
-main>section:nth-child(1) {
-    width: 100vw;
-    height: 85vh;
-    position: relative;
-    top: 90px;
-}
 
-main>section:nth-child(1)>div:nth-child(1) {
-    display: inline-block;
-}
 
-main>section:nth-child(1)>div:nth-child(1)>h2 {
-    position: relative;
-    margin-left: 20px;
-    color: white;
-    display: inline-block;
-}
-
-main>section:nth-child(1)>div:nth-child(1)>i {
-    color: white;
-    font-size: 30px;
-    top: 20px;
-    margin-left: 100px;
-    margin-top: 10px;
+div:nth-child(2){
+    box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.76);
 }

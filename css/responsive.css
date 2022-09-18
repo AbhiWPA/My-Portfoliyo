@@ -2159,11 +2159,11 @@
     }
 
     ::-webkit-scrollbar {
-        width: 4px;
+        width: 0px;
     }
 
     header>section:nth-child(2)>video {
-        bottom: 231px;
+        bottom: 248px;
         left: 0;
         right: 0px;
         margin: auto;
@@ -2285,7 +2285,7 @@
     main>section:nth-child(1)>section:first-of-type>div:first-of-type {
         font-size: 14px;
         top: 19%;
-        width: 100%;
+        width: 89%;
         left: 8%;
         line-height: 25px;
     }
@@ -3183,5 +3183,9 @@
 
     .footer>section:nth-child(4)>p:nth-child(4) {
         left: -58px;
+    }
+
+    header>div>nav>ul {
+        display: none;
     }
 }

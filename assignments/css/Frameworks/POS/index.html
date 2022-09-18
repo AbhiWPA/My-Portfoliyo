@@ -7,10 +7,54 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <meta content="width=device-width initial-scale=1" name="viewport">
 </head>
-<body>
+<body style="background-color: #1C2E4C">
+
+<nav class="navbar navbar-expand-lg bg-black" style="box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.89);">
+    <div class="container-fluid">
+        <img src="assets/img/my-logo.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top">
+        <a class="navbar-brand text-ligh" href="#" style="font-size: 30px; margin-top: 10px; color: red">&nbsp;POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="--bs-navbar-nav-link-padding-x: 3.5rem;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#" style="font-size: 1.5rem">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active text-light" href="#" style="font-size: 1.5rem; width: fit-content; padding-left: 0;">Items</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active text-light" href="#" style="font-size: 1.5rem; width: fit-content; padding-left: 0; padding-right: 0">Orders</a>
+                </li>
+
+                <li class="nav-item dropdown text-light" style="font-size: 1.5rem; width: fit-content; padding-left: 0; padding-right: 0">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu text-light">
+                        <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                        <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider text-light"></li>
+                        <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit">Sign Up</button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-outline-primary" type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+</nav>
 
 
 
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
 </body>
 </html>

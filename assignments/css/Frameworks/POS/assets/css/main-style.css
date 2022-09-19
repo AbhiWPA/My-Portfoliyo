@@ -32,3 +32,11 @@ main>section:nth-child(2)>div>h2:first-of-type {
     display: inline-block;
     margin-left: 15px;
 }
+
+main>section>div:last-of-type {
+    max-height: 250px;
+}
+
+.table-responsive {
+    max-height: 5rem;
+}

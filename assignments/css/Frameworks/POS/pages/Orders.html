@@ -109,111 +109,113 @@
 
         <div class="col-5" style="max-height: fit-content;">
 
-            <div class="card text-bg-success mb-0 shadow-none" style="max-width: 40rem;">
+            <div class="card text-bg-secondary shadow-lg">
                 <div class="card-body shadow-none">
                     <h5 class="card-title fw-bold text-center">Invoice Details</h5>
                     <hr class="table-group-divider bg-black">
+                    <div class="row g-2">
+                        <!--                        id-->
+                        <div class="col-md-5 px-3 shadow-none">
+                            <label for="orderID" class="form-label">Order ID : </label>
+                            <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">
+                        </div>
+
+
+                        <div class="col-md-6 shadow-none" style="padding-right: 0;">
+                            <label for="orDate" class="form-label">Date :</label>
+                            <input type="date" class="form-control" id="orDate">
+                        </div>
+
+                        <div class="col-md-5 shadow-none px-3">
+                            <label for="inputState" class="form-label">Customer ID :</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6"  style="padding-right: 0;">
+                            <label for="inputName" class="form-label">Name :</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Mr. Fernando">
+                        </div>
+
+                        <div class="col-md-5 px-3">
+                            <label for="inputContact" class="form-label">Contact Number :</label>
+                            <input type="text" class="form-control" id="inputContact" placeholder="+94-xxx xxx xx">
+                        </div>
+
+                        <div class="col-md-6"  style="padding-right: 0;">
+                            <label for="inputAddress2" class="form-label">Address :</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+
+                        <div class="d-flex ms-5 gap-xl-5">
+
+                            <!--                            update button-->
+                            <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                Clear All
+                            </button>
+                            <!-- Modal -->
+                            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+                                <div class="modal-dialog bg-danger">
+                                    <div class="modal-content bg-danger">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Update Customer Details</h5>
+                                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <section>
+                                                <div>
+                                                    <p>Are You Sure..?<br> This Changes Added to the database....</p>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+                                            <button class="btn btn-primary" type="button">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                            update button-->
+
+                            <!--                            delete button-->
+                            <button class="btn btn-success ms-3" data-bs-target="#exampleModal2" data-bs-toggle="modal" type="button">
+                                <i class="bi bi-person-plus-fill"></i> Add New Customer
+                            </button>
+                            <!-- Modal -->
+                            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal2" tabindex="-1">
+                                <div class="modal-dialog bg-danger">
+                                    <div class="modal-content bg-danger">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="example">Delete Customer Details</h5>
+                                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <section>
+                                                <div>
+                                                    <p>Are You Sure..?<br> This Changes Added to the database....</p>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+                                            <button class="btn btn-primary" type="button">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                            delete button-->
+                        </div>
+                    </div>
                 </div>
 
                 <!--                text section-->
 
-                <form class="row g-2" style="margin-top: -30px;">
-                    <!--                        id-->
-                    <div class="col-md-3 shadow-none">
-                        <label for="orderID" class="form-label">Order ID : </label>
-                        <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">
-                    </div>
-<!--                    <div class="col-md-4 shadow-none px-3">-->
-<!--                        <label for="inputState" class="form-label">ID</label>-->
-<!--                        <select id=git add . "inputState" class="form-select">-->
-<!--                            <option selected>Choose...</option>-->
-<!--                            <option>...</option>-->
-<!--                        </select>-->
-<!--                    </div>-->
-                    <!--                        id-->
-
-                    <!--                        name-->
-                    <div class="col-md-7 shadow-none">
-                        <label for="inputName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Mr.Fernando">
-                    </div>
-                    <!--                        name-->
-
-                    <!--                        address-->
-                    <div class="col-7 px-3">
-                        <label for="inputAddress2" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <!--                        adders-->
-
-                    <!--                        contact-->
-                    <div class="col-md-4">
-                        <label for="inputContact" class="form-label">Contact Number</label>
-                        <input type="text" class="form-control" id="inputContact" placeholder="+94-xxx xxx xx">
-                    </div>
-                    <!--                        contact-->
+<!--                <form class="row g-2 bg-black" style="margin-top: -30px;">-->
 
                     <!--                        button section-->
-                    <div class="d-flex col-4 gap-2 ms-auto">
-
-                        <!--                            update button-->
-                        <button class="btn btn-primary bg-warning" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
-                            <i class="bi bi-arrow-clockwise"></i> Update
-                        </button>
-                        <!-- Modal -->
-                        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
-                            <div class="modal-dialog bg-danger">
-                                <div class="modal-content bg-danger">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Update Customer Details</h5>
-                                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <section>
-                                            <div>
-                                                <p>Are You Sure..?<br> This Changes Added to the database....</p>
-                                            </div>
-                                        </section>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
-                                        <button class="btn btn-primary" type="button">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                            update button-->
-
-                        <!--                            delete button-->
-                        <button class="btn btn-primary bg-danger" data-bs-target="#exampleModal2" data-bs-toggle="modal" type="button">
-                            <i class="bi bi-trash3-fill"></i> Delete
-                        </button>
-                        <!-- Modal -->
-                        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal2" tabindex="-1">
-                            <div class="modal-dialog bg-danger">
-                                <div class="modal-content bg-danger">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="example">Delete Customer Details</h5>
-                                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <section>
-                                            <div>
-                                                <p>Are You Sure..?<br> This Changes Added to the database....</p>
-                                            </div>
-                                        </section>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
-                                        <button class="btn btn-primary" type="button">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                            delete button-->
-                    </div>
-                    <!--                        button section-->
-                </form>
+<!--                </form>-->
                 <!--                    text section-->
             </div>
         </div>

@@ -106,6 +106,46 @@
         <div style="display: inline-block; color: white;" class="border-5">
             <i class="bi bi-box-fill" style="font-size: 28px;"></i>
             <h2 style="margin-left: 15px; display: inline-block;">Items</h2>
+
+            <button class="btn btn-lg btn-success position-absolute end-0 shadow-lg" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">
+                <i class="bi bi-file-plus-fill"></i> Add New Item
+            </button>
+
+            <!-- Modal -->
+            <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="saveCustomerLabel" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                            <h5 class="modal-title" id="">Add New Item Here</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body bg-dark">
+                            <section>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="itemCode" placeholder="I00-XX">
+                                    <label class="text-black" for="itemCode">Item Code</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="Description" placeholder="item name">
+                                    <label class="text-black" for="Description">Description</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="price" placeholder="Rs. 0.00">
+                                    <label class="text-black" for="price">Unit Price</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="qty" placeholder="Quantity of Item">
+                                    <label class="text-black" for="qty">Qty</label>
+                                </div>
+
+                            </section>
+                        </div>
+                        <div class="modal-footer bg-dark">
+                            <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
+                            <button class="btn btn-success" type="button">Save changes</button>
+                        </div>
+                    </div>
+                </div>
         </div>
 <!--        header-->
 
@@ -149,6 +189,7 @@
                 </div>
             </div>
 
+        </div>
         </div>
 
     </section>

@@ -408,188 +408,188 @@
         </section>
 <!--        customer content-->
 
-<!--&lt;!&ndash;        items content&ndash;&gt;-->
-<!--        <section>-->
-<!--            <div style="display: inline-block; color: white;" class="border-5">-->
-<!--                <i class="bi bi-box-fill" style="font-size: 28px;"></i>-->
-<!--                <h2 style="margin-left: 15px; display: inline-block;">Items</h2>-->
+<!--        items content-->
+        <section>
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="bi bi-box-fill" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Items</h2>
 
-<!--                <button class="btn btn-lg btn-success position-absolute end-0 shadow-lg" data-bs-target="#saveItemLabel" data-bs-toggle="modal" type="button">-->
-<!--                    <i class="bi bi-file-plus-fill"></i> Add New Item-->
-<!--                </button>-->
+                <button class="btn btn-lg btn-success position-absolute end-0 shadow-lg" data-bs-target="#saveItemLabel" data-bs-toggle="modal" type="button">
+                    <i class="bi bi-file-plus-fill"></i> Add New Item
+                </button>
 
-<!--                &lt;!&ndash; Modal &ndash;&gt;-->
-<!--                <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="saveItemLabel" tabindex="-1">-->
-<!--                    <div class="modal-dialog">-->
-<!--                        <div class="modal-content">-->
-<!--                            <div class="modal-header bg-dark">-->
-<!--                                <h5 class="modal-title" id="">Add New Item Here</h5>-->
-<!--                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>-->
-<!--                            </div>-->
-<!--                            <div class="modal-body bg-dark">-->
-<!--                                <section>-->
-<!--                                    <div class="form-floating mb-3">-->
-<!--                                        <input type="text" class="form-control" id="itemCode" placeholder="I00-XX">-->
-<!--                                        <label class="text-black" for="itemCode">Item Code</label>-->
-<!--                                    </div>-->
-<!--                                    <div class="form-floating mb-3">-->
-<!--                                        <input type="text" class="form-control" id="Description" placeholder="item name">-->
-<!--                                        <label class="text-black" for="Description">Description</label>-->
-<!--                                    </div>-->
-<!--                                    <div class="form-floating mb-3">-->
-<!--                                        <input type="text" class="form-control" id="price" placeholder="Rs. 0.00">-->
-<!--                                        <label class="text-black" for="price">Unit Price</label>-->
-<!--                                    </div>-->
-<!--                                    <div class="form-floating mb-3">-->
-<!--                                        <input type="number" class="form-control" id="qty" placeholder="Quantity of Item">-->
-<!--                                        <label class="text-black" for="qty">Qty</label>-->
-<!--                                    </div>-->
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="saveItemLabel" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark">
+                                <h5 class="modal-title" id="">Add New Item Here</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                            </div>
+                            <div class="modal-body bg-dark">
+                                <section>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemCode" placeholder="I00-XX">
+                                        <label class="text-black" for="itemCode">Item Code</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="Description" placeholder="item name">
+                                        <label class="text-black" for="Description">Description</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="price" placeholder="Rs. 0.00">
+                                        <label class="text-black" for="price">Unit Price</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="qty" placeholder="Quantity of Item">
+                                        <label class="text-black" for="qty">Qty</label>
+                                    </div>
 
-<!--                                </section>-->
-<!--                            </div>-->
-<!--                            <div class="modal-footer bg-dark">-->
-<!--                                <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>-->
-<!--                                <button class="btn btn-success" type="button">Save changes</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash;        header&ndash;&gt;-->
-
-
-<!--                <div class="d-flex col-12">-->
-<!--                    <div class="card text-bg-primary mb-3 col-4">-->
-<!--                        <div class="card-body">-->
-<!--                            <form class="row g-2">-->
-<!--                                <h5 class="card-title text-warning">Item Details Update and Delete</h5>-->
-<!--                                <hr class="table-group-divider">-->
-<!--                                <div class="col-md-12 shadow-none d-flex" style="padding: 0; margin-top: 0;">-->
-<!--                                    <div class="col-md-8 shadow-none">-->
-<!--                                        <input class="form-control col-md-12" type="search" placeholder="Search" aria-label="Search">-->
-<!--                                    </div>-->
-<!--                                    <div class="shadow-none col-md-3 ms-auto">-->
-<!--                                        <button class="btn btn-success col-md-12" type="submit">Search</button>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="col-md-12 shadow-none">-->
-<!--                                    <label for="inputState" class="form-label">Item Code</label>-->
-<!--                                    <select id="inputState" class="form-select">-->
-<!--                                        <option selected>Choose...</option>-->
-<!--                                        <option>...</option>-->
-<!--                                    </select>-->
-<!--                                </div>-->
-
-<!--                                <div class="col-md-12 shadow-none">-->
-<!--                                    <label for="inputDescription" class="form-label">Description</label>-->
-<!--                                    <input type="text" class="form-control" id="inputDescription">-->
-<!--                                </div>-->
-
-<!--                                <div class="col-md-12 shadow-none">-->
-<!--                                    <label for="inputPrice" class="form-label">Description</label>-->
-<!--                                    <input type="number" class="form-control" id="inputPrice" placeholder="Rs. 0.00">-->
-<!--                                </div>-->
-
-<!--                                <div class="col-md-12 shadow-none">-->
-<!--                                    <label for="inputPrice" class="form-label">Description</label>-->
-<!--                                    <input type="number" class="form-control" id="inputQty" placeholder="00">-->
-<!--                                </div>-->
-
-<!--                                <div class="col-md-12" style="padding: 0">-->
-<!--                                    <button class="btn btn-primary bg-warning col-5" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">-->
-<!--                                        <i class="bi bi-arrow-clockwise"></i> Update-->
-<!--                                    </button>-->
-<!--                                    <button class="btn btn-primary bg-danger col-5 ms-auto" data-bs-target="#exampleModal2" data-bs-toggle="modal" type="button">-->
-<!--                                        <i class="bi bi-trash3-fill"></i> Delete-->
-<!--                                    </button>-->
-<!--                                </div>-->
-<!--                            </form>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                                </section>
+                            </div>
+                            <div class="modal-footer bg-dark">
+                                <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
+                                <button class="btn btn-success" type="button">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--        header-->
 
 
-<!--                    <div class="col-8 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">-->
-<!--                        <div class="col-11 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">-->
-<!--                            <table class="table table-bordered bg-dark table-responsive col-7">-->
-<!--                                <thead class="bg-warning text-black text-center">-->
-<!--                                <tr>-->
-<!--                                    <th>Item Codes</th>-->
-<!--                                    <th>Description</th>-->
-<!--                                    <th>Unit Price</th>-->
-<!--                                    <th>Quantity</th>-->
-<!--                                </tr>-->
-<!--                                </thead>-->
-<!--                                <tbdoy class="bg-dark">-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-001</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-002</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-003</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-004</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-005</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-006</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-007</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-008</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-009</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
-<!--                                    <tr class="text-light bg-dark">-->
-<!--                                        <td>I00-010</td>-->
-<!--                                        <td>xxxxxxxxxxxxxxx</td>-->
-<!--                                        <td>xxxxxxx</td>-->
-<!--                                        <td>xxx</td>-->
-<!--                                    </tr>-->
+                <div class="d-flex col-12">
+                    <div class="card text-bg-primary mb-3 col-4">
+                        <div class="card-body">
+                            <form class="row g-2">
+                                <h5 class="card-title text-warning">Item Details Update and Delete</h5>
+                                <hr class="table-group-divider">
+                                <div class="col-md-12 shadow-none d-flex" style="padding: 0; margin-top: 0;">
+                                    <div class="col-md-8 shadow-none">
+                                        <input class="form-control col-md-12" type="search" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="shadow-none col-md-3 ms-auto">
+                                        <button class="btn btn-success col-md-12" type="submit">Search</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputState" class="form-label">Item Code</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputDescription" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="inputDescription">
+                                </div>
+
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputPrice" class="form-label">Description</label>
+                                    <input type="number" class="form-control" id="inputPrice" placeholder="Rs. 0.00">
+                                </div>
+
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputPrice" class="form-label">Description</label>
+                                    <input type="number" class="form-control" id="inputQty" placeholder="00">
+                                </div>
+
+                                <div class="col-md-12" style="padding: 0">
+                                    <button class="btn btn-primary bg-warning col-5" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                        <i class="bi bi-arrow-clockwise"></i> Update
+                                    </button>
+                                    <button class="btn btn-primary bg-danger col-5 ms-auto" data-bs-target="#exampleModal2" data-bs-toggle="modal" type="button">
+                                        <i class="bi bi-trash3-fill"></i> Delete
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
 
-<!--                                </tbdoy>-->
-<!--                            </table>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                    <div class="col-8 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
+                        <div class="col-11 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
+                            <table class="table table-bordered bg-dark table-responsive col-7">
+                                <thead class="bg-warning text-black text-center">
+                                <tr>
+                                    <th>Item Codes</th>
+                                    <th>Description</th>
+                                    <th>Unit Price</th>
+                                    <th>Quantity</th>
+                                </tr>
+                                </thead>
+                                <tbdoy class="bg-dark">
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-001</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-002</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-003</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-004</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-005</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-006</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-007</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-008</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-009</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
+                                    <tr class="text-light bg-dark">
+                                        <td>I00-010</td>
+                                        <td>xxxxxxxxxxxxxxx</td>
+                                        <td>xxxxxxx</td>
+                                        <td>xxx</td>
+                                    </tr>
 
-<!--            </div>-->
-<!--        </section>-->
-<!--&lt;!&ndash;        item content&ndash;&gt;-->
+
+                                </tbdoy>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<!--        item content-->
 
 <!--&lt;!&ndash;        order content&ndash;&gt;-->
 <!--        <section>-->

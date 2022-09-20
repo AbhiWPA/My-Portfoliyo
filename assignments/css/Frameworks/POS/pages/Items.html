@@ -156,6 +156,14 @@
                     <form class="row g-2">
                         <h5 class="card-title text-warning">Item Details Update and Delete</h5>
                         <hr class="table-group-divider">
+                        <div class="col-md-12 shadow-none d-flex" style="padding: 0; margin-top: 0;">
+                            <div class="col-md-8 shadow-none">
+                                <input class="form-control col-md-12" type="search" placeholder="Search" aria-label="Search">
+                            </div>
+                            <div class="shadow-none col-md-3 ms-auto">
+                                <button class="btn btn-success col-md-12" type="submit">Search</button>
+                            </div>
+                        </div>
                         <div class="col-md-12 shadow-none">
                             <label for="inputState" class="form-label">Item Code</label>
                             <select id="inputState" class="form-select">
@@ -179,7 +187,7 @@
                             <input type="number" class="form-control" id="inputQty" placeholder="00">
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="padding: 0">
                             <button class="btn btn-primary bg-warning col-5" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
                                 <i class="bi bi-arrow-clockwise"></i> Update
                             </button>

@@ -155,52 +155,43 @@
                             <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
                                 Clear All
                             </button>
-                            <!-- Modal -->
-                            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
-                                <div class="modal-dialog bg-danger">
-                                    <div class="modal-content bg-danger">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Update Customer Details</h5>
-                                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <section>
-                                                <div>
-                                                    <p>Are You Sure..?<br> This Changes Added to the database....</p>
-                                                </div>
-                                            </section>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
-                                            <button class="btn btn-primary" type="button">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--                            update button-->
 
-                            <!--                            delete button-->
-                            <button class="btn btn-success ms-3" data-bs-target="#exampleModal2" data-bs-toggle="modal" type="button">
+                            <button class="btn btn-success ms-3" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">
                                 <i class="bi bi-person-plus-fill"></i> Add New Customer
                             </button>
                             <!-- Modal -->
-                            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal2" tabindex="-1">
-                                <div class="modal-dialog bg-danger">
-                                    <div class="modal-content bg-danger">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="example">Delete Customer Details</h5>
+                            <!-- Modal -->
+                            <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="saveCustomerLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark">
+                                            <h5 class="modal-title" id="">Save New Customer Details</h5>
                                             <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body bg-dark">
                                             <section>
-                                                <div>
-                                                    <p>Are You Sure..?<br> This Changes Added to the database....</p>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="formFile">Customer ID</label>
+                                                    <input class="form-control" id="formFile" type="text">
                                                 </div>
+                                                <div class="mb-3 shadow-none">
+                                                    <label class="form-label" for="formFileMultiple">Customer Name</label>
+                                                    <input class="form-control" id="formFileMultiple" multiple type="text">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="formFileDisabled">Customer Address</label>
+                                                    <input class="form-control" id="formFileDisabled" type="text">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="formFileSm">Customer Salary</label>
+                                                    <input class="form-control form-control-sm" id="formFileSm" type="number">
+                                                </div>
+
                                             </section>
                                         </div>
-                                        <div class="modal-footer">
-                                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
-                                            <button class="btn btn-primary" type="button">Save changes</button>
+                                        <div class="modal-footer bg-dark">
+                                            <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
+                                            <button class="btn btn-success" type="button">Save changes</button>
                                         </div>
                                     </div>
                                 </div>

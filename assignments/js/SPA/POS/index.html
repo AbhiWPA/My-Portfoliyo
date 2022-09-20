@@ -16,8 +16,6 @@
 
 </head>
 <body style="background-color: #1C2E4C">
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/bootstrap.bundle.js"></script>
 
 <!--------------navbar------------->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.76);">
@@ -47,7 +45,7 @@
                     <hr class="table-group-divider">
                 </li>
                 <li>
-                    <a href="#" class="nav-link px-2">
+                    <a href="#" class="nav-link px-2" id="dashboardBtn">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-speedometer2"></i></span>
                         <span style="font-size: 1.5rem;">Dash Board</span>
                     </a>
@@ -57,7 +55,7 @@
                 </li>
 
                 <li>
-                    <a href="pages/Customer.html" class="nav-link px-2">
+                    <a href="#" class="nav-link px-2" id="customerBtn">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-people-fill"></i></span>
                         <span style="font-size: 1.5rem;">Customers</span>
                     </a>
@@ -67,7 +65,7 @@
                 </li>
 
                 <li>
-                    <a href="pages/Items.html" class="nav-link px-2">
+                    <a href="#l" class="nav-link px-2" id="itemBtn">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-stack"></i></span>
                         <span style="font-size: 1.5rem;">Items</span>
                     </a>
@@ -77,7 +75,7 @@
                 </li>
 
                 <li>
-                    <a href="pages/Orders.html" class="nav-link px-2">
+                    <a href="#" class="nav-link px-2" id="ordersBtn">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-cart4"></i></span>
                         <span style="font-size: 1.5rem;">Orders</span>
                     </a>
@@ -87,7 +85,7 @@
                 </li>
 
                 <li>
-                    <a href="pages/Others.html" class="nav-link px-2">
+                    <a href="#" class="nav-link px-2" id="othersBtn">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-book-fill"></i></span>
                         <span style="font-size: 1.5rem;">Others</span>
                     </a>
@@ -103,7 +101,7 @@
     <section>
 
 <!--        Dash board content-->
-        <section>
+        <section id="DashboardContent">
             <div style="display: inline-block; color: white;" class="border-5">
                 <i class="bi bi-pie-chart-fill" style="font-size: 28px;"></i>
                 <h2 style="margin-left: 15px; display: inline-block;">Dash Board</h2>
@@ -179,7 +177,7 @@
 <!--        Dash board content-->
 
 <!--        customer content-->
-        <section>
+        <section id="customerContent">
             <div style="display: inline-block; color: white;" class="border-5">
                 <i class="fa-solid fa-users-between-lines" style="font-size: 28px;"></i>
                 <h2 style="margin-left: 15px; display: inline-block;">Customers</h2>
@@ -409,7 +407,7 @@
 <!--        customer content-->
 
 <!--        items content-->
-        <section>
+        <section id="ItemsContent">
             <div style="display: inline-block; color: white;" class="border-5">
                 <i class="bi bi-box-fill" style="font-size: 28px;"></i>
                 <h2 style="margin-left: 15px; display: inline-block;">Items</h2>
@@ -591,252 +589,300 @@
         </section>
 <!--        item content-->
 
-<!--&lt;!&ndash;        order content&ndash;&gt;-->
-<!--        <section>-->
-<!--            <div style="display: inline-block; color: white;" class="border-5">-->
-<!--                <i class="bi bi-cash-coin" style="font-size: 28px;"></i>-->
-<!--                <h2 style="margin-left: 15px; display: inline-block;">Place an Order</h2>-->
-<!--            </div><br>-->
+<!--        order content-->
+        <section id="OrderContent">
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="bi bi-cash-coin" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Place an Order</h2>
+            </div><br>
 
-<!--            <div class="d-flex gap-4">-->
-<!--                <div class="" style="max-height: fit-content; width: 450px">-->
+            <div class="d-flex gap-4">
+                <div class="" style="max-height: fit-content; width: 450px">
 
-<!--                    <div class="card text-bg-secondary shadow-lg" style="padding: 0; margin: 0;">-->
-<!--                        <div class="card-body shadow-none" style="padding: 0; margin: 0;">-->
-<!--                            <h5 class="card-title fw-bold text-center">Invoice Details</h5>-->
-<!--                            <hr class="table-group-divider bg-black">-->
-<!--                            <div class="row g-2">-->
-<!--                                &lt;!&ndash;                        id&ndash;&gt;-->
-<!--                                <div class="col-md-5 px-3 shadow-none">-->
-<!--                                    <label for="orderID" class="form-label">Order ID : </label>-->
-<!--                                    <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">-->
-<!--                                </div>-->
+                    <div class="card text-bg-secondary shadow-lg" style="padding: 0; margin: 0;">
+                        <div class="card-body shadow-none" style="padding: 0; margin: 0;">
+                            <h5 class="card-title fw-bold text-center">Invoice Details</h5>
+                            <hr class="table-group-divider bg-black">
+                            <div class="row g-2">
+                                <!--                        id-->
+                                <div class="col-md-5 px-3 shadow-none">
+                                    <label for="orderID" class="form-label">Order ID : </label>
+                                    <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">
+                                </div>
 
 
-<!--                                <div class="col-md-6 shadow-none" style="padding-right: 0;">-->
-<!--                                    <label for="orDate" class="form-label">Date :</label>-->
-<!--                                    <input type="date" class="form-control" id="orDate">-->
-<!--                                </div>-->
+                                <div class="col-md-6 shadow-none" style="padding-right: 0;">
+                                    <label for="orDate" class="form-label">Date :</label>
+                                    <input type="date" class="form-control" id="orDate">
+                                </div>
 
-<!--                                <div class="col-md-5 shadow-none px-3">-->
-<!--                                    <label for="customerIDInput" class="form-label">Customer ID :</label>-->
-<!--                                    <select id="customerIDInput" class="form-select">-->
-<!--                                        <option selected>Choose...</option>-->
-<!--                                        <option>...</option>-->
-<!--                                    </select>-->
-<!--                                </div>-->
+                                <div class="col-md-5 shadow-none px-3">
+                                    <label for="customerIDInput" class="form-label">Customer ID :</label>
+                                    <select id="customerIDInput" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
 
-<!--                                <div class="col-md-6"  style="padding-right: 0;">-->
-<!--                                    <label for="orderInputName" class="form-label">Name :</label>-->
-<!--                                    <input type="text" class="form-control" id="orderInputName" placeholder="Mr. Fernando">-->
-<!--                                </div>-->
+                                <div class="col-md-6"  style="padding-right: 0;">
+                                    <label for="orderInputName" class="form-label">Name :</label>
+                                    <input type="text" class="form-control" id="orderInputName" placeholder="Mr. Fernando">
+                                </div>
 
-<!--                                <div class="col-md-5 px-3">-->
-<!--                                    <label for="orderInputContact" class="form-label">Contact Number :</label>-->
-<!--                                    <input type="text" class="form-control" id="orderInputContact" placeholder="+94-xxx xxx xx">-->
-<!--                                </div>-->
+                                <div class="col-md-5 px-3">
+                                    <label for="orderInputContact" class="form-label">Contact Number :</label>
+                                    <input type="text" class="form-control" id="orderInputContact" placeholder="+94-xxx xxx xx">
+                                </div>
 
-<!--                                <div class="col-md-6"  style="padding-right: 0;">-->
-<!--                                    <label for="orderInputAddress2" class="form-label">Address :</label>-->
-<!--                                    <input type="text" class="form-control" id="orderInputAddress2" placeholder="Apartment, studio, or floor">-->
-<!--                                </div>-->
+                                <div class="col-md-6"  style="padding-right: 0;">
+                                    <label for="orderInputAddress2" class="form-label">Address :</label>
+                                    <input type="text" class="form-control" id="orderInputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
 
-<!--                                <div class="d-flex ms-5 gap-xl-5">-->
+                                <div class="d-flex ms-5 gap-xl-5">
 
-<!--                                    &lt;!&ndash;                            update button&ndash;&gt;-->
-<!--                                    <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">-->
-<!--                                        Clear All-->
-<!--                                    </button>-->
+                                    <!--                            update button-->
+                                    <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                        Clear All
+                                    </button>
 
-<!--                                    <button class="btn btn-success ms-3" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">-->
-<!--                                        <i class="bi bi-person-plus-fill"></i> Add New Customer-->
-<!--                                    </button>-->
-<!--                                    &lt;!&ndash; Modal &ndash;&gt;-->
-<!--                                    &lt;!&ndash; Modal &ndash;&gt;-->
-<!--                                    <div aria-hidden="true" aria-labelledby="saveCustomerLabelOrder" class="modal fade" id="saveCustomerLabelOrder" tabindex="-1">-->
-<!--                                        <div class="modal-dialog">-->
-<!--                                            <div class="modal-content">-->
-<!--                                                <div class="modal-header bg-dark">-->
-<!--                                                    <h5 class="modal-title" id="newCustomer">Save New Customer Details</h5>-->
-<!--                                                    <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button"></button>-->
-<!--                                                </div>-->
-<!--                                                <div class="modal-body bg-dark">-->
-<!--                                                    <section>-->
-<!--                                                        <div class="mb-3">-->
-<!--                                                            <label class="form-label" for="customerIDOrder">Customer ID</label>-->
-<!--                                                            <input class="form-control" id="customerIDOrder" type="text">-->
-<!--                                                        </div>-->
-<!--                                                        <div class="mb-3 shadow-none">-->
-<!--                                                            <label class="form-label" for="customerNameOrder">Customer Name</label>-->
-<!--                                                            <input class="form-control" id="customerNameOrder" multiple type="text">-->
-<!--                                                        </div>-->
-<!--                                                        <div class="mb-3">-->
-<!--                                                            <label class="form-label" for="customerAddress">Customer Address</label>-->
-<!--                                                            <input class="form-control" id="customerAddress" type="text">-->
-<!--                                                        </div>-->
-<!--                                                        <div class="mb-3">-->
-<!--                                                            <label class="form-label" for="customerContact">Customer Contact</label>-->
-<!--                                                            <input class="form-control form-control-sm" id="customerContact" type="number">-->
-<!--                                                        </div>-->
+                                    <button class="btn btn-success ms-3" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">
+                                        <i class="bi bi-person-plus-fill"></i> Add New Customer
+                                    </button>
+                                    <!-- Modal -->
+                                    <!-- Modal -->
+                                    <div aria-hidden="true" aria-labelledby="saveCustomerLabelOrder" class="modal fade" id="saveCustomerLabelOrder" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-dark">
+                                                    <h5 class="modal-title" id="newCustomer">Save New Customer Details</h5>
+                                                    <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button"></button>
+                                                </div>
+                                                <div class="modal-body bg-dark">
+                                                    <section>
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="customerIDOrder">Customer ID</label>
+                                                            <input class="form-control" id="customerIDOrder" type="text">
+                                                        </div>
+                                                        <div class="mb-3 shadow-none">
+                                                            <label class="form-label" for="customerNameOrder">Customer Name</label>
+                                                            <input class="form-control" id="customerNameOrder" multiple type="text">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="customerAddress">Customer Address</label>
+                                                            <input class="form-control" id="customerAddress" type="text">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="customerContact">Customer Contact</label>
+                                                            <input class="form-control form-control-sm" id="customerContact" type="number">
+                                                        </div>
 
-<!--                                                    </section>-->
-<!--                                                </div>-->
-<!--                                                <div class="modal-footer bg-dark">-->
-<!--                                                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>-->
-<!--                                                    <button class="btn btn-success" type="button">Save changes</button>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    &lt;!&ndash;                            delete button&ndash;&gt;-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                                                    </section>
+                                                </div>
+                                                <div class="modal-footer bg-dark">
+                                                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
+                                                    <button class="btn btn-success" type="button">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--                            delete button-->
+                                </div>
+                            </div>
+                        </div>
 
-<!--                        &lt;!&ndash;                text section&ndash;&gt;-->
+                        <!--                text section-->
 
-<!--                        &lt;!&ndash;                <form class="row g-2 bg-black" style="margin-top: -30px;">&ndash;&gt;-->
+                        <!--                <form class="row g-2 bg-black" style="margin-top: -30px;">-->
 
-<!--                        &lt;!&ndash;                        button section&ndash;&gt;-->
-<!--                        &lt;!&ndash;                </form>&ndash;&gt;-->
-<!--                        &lt;!&ndash;                    text section&ndash;&gt;-->
-<!--                    </div>-->
-<!--                </div>-->
+                        <!--                        button section-->
+                        <!--                </form>-->
+                        <!--                    text section-->
+                    </div>
+                </div>
 
-<!--                <div class="" style="max-height: fit-content; padding: 0; margin: 0; width: 450px">-->
+                <div class="" style="max-height: fit-content; padding: 0; margin: 0; width: 450px">
 
-<!--                    <div class="card text-bg-warning shadow-lg" style="padding: 0; margin: 0;">-->
-<!--                        <div class="card-body shadow-none" style="padding: 0; margin: 0;">-->
-<!--                            <h5 class="card-title fw-bold text-center">Select Item</h5>-->
-<!--                            <hr class="table-group-divider bg-black">-->
-<!--                            <div class="row g-2">-->
+                    <div class="card text-bg-warning shadow-lg" style="padding: 0; margin: 0;">
+                        <div class="card-body shadow-none" style="padding: 0; margin: 0;">
+                            <h5 class="card-title fw-bold text-center">Select Item</h5>
+                            <hr class="table-group-divider bg-black">
+                            <div class="row g-2">
 
-<!--                                <div class="col-md-5 shadow-none px-3">-->
-<!--                                    <label for="itemCodeOrder" class="form-label">Item Code :</label>-->
-<!--                                    <select id="itemCodeOrder" class="form-select">-->
-<!--                                        <option selected>Choose...</option>-->
-<!--                                        <option>...</option>-->
-<!--                                    </select>-->
-<!--                                </div>-->
+                                <div class="col-md-5 shadow-none px-3">
+                                    <label for="itemCodeOrder" class="form-label">Item Code :</label>
+                                    <select id="itemCodeOrder" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
 
-<!--                                <div class="col-md-6 shadow-none"  style="padding-right: 0;">-->
-<!--                                    <label for="descriptionOrder" class="form-label">Description :</label>-->
-<!--                                    <input type="text" class="form-control" id="descriptionOrder" placeholder="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;">-->
-<!--                                </div>-->
+                                <div class="col-md-6 shadow-none"  style="padding-right: 0;">
+                                    <label for="descriptionOrder" class="form-label">Description :</label>
+                                    <input type="text" class="form-control" id="descriptionOrder" placeholder="----------------">
+                                </div>
 
-<!--                                <div class="col-md-5 px-3">-->
-<!--                                    <label for="unitPrice" class="form-label">Unit Price :</label>-->
-<!--                                    <input type="text" class="form-control" id="unitPrice" placeholder="Rs. 0.00">-->
-<!--                                </div>-->
+                                <div class="col-md-5 px-3">
+                                    <label for="unitPrice" class="form-label">Unit Price :</label>
+                                    <input type="text" class="form-control" id="unitPrice" placeholder="Rs. 0.00">
+                                </div>
 
-<!--                                <div class="col-md-6"  style="padding-right: 0;">-->
-<!--                                    <label for="qtyOnH" class="form-label">Qty On Hand :</label>-->
-<!--                                    <input type="text" class="form-control" id="qtyOnH" placeholder="XXX">-->
-<!--                                </div>-->
+                                <div class="col-md-6"  style="padding-right: 0;">
+                                    <label for="qtyOnH" class="form-label">Qty On Hand :</label>
+                                    <input type="text" class="form-control" id="qtyOnH" placeholder="XXX">
+                                </div>
 
-<!--                                <div class="col-md-10 px-3"  style="padding-right: 0;">-->
-<!--                                    <label for="qtyOrder" class="form-label">Order Quantity :</label>-->
-<!--                                    <input type="number" class="form-control" id="qtyOrder" placeholder="XXX">-->
-<!--                                </div>-->
+                                <div class="col-md-10 px-3"  style="padding-right: 0;">
+                                    <label for="qtyOrder" class="form-label">Order Quantity :</label>
+                                    <input type="number" class="form-control" id="qtyOrder" placeholder="XXX">
+                                </div>
 
-<!--                                <div class="d-flex ms-5 gap-xl-5">-->
+                                <div class="d-flex ms-5 gap-xl-5">
 
-<!--                                    &lt;!&ndash;                            update button&ndash;&gt;-->
-<!--                                    <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">-->
-<!--                                        Clear All-->
-<!--                                    </button>-->
+                                    <!--                            update button-->
+                                    <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                        Clear All
+                                    </button>
 
-<!--                                    <button class="btn btn-success ms-3" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">-->
-<!--                                        <i class="bi bi-cart-plus-fill"></i> Add to Cart-->
-<!--                                    </button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                                    <button class="btn btn-success ms-3" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">
+                                        <i class="bi bi-cart-plus-fill"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-<!--                        &lt;!&ndash;                text section&ndash;&gt;-->
+                        <!--                text section-->
 
-<!--                        &lt;!&ndash;                <form class="row g-2 bg-black" style="margin-top: -30px;">&ndash;&gt;-->
+                        <!--                <form class="row g-2 bg-black" style="margin-top: -30px;">-->
 
-<!--                        &lt;!&ndash;                        button section&ndash;&gt;-->
-<!--                        &lt;!&ndash;                </form>&ndash;&gt;-->
-<!--                        &lt;!&ndash;                    text section&ndash;&gt;-->
-<!--                    </div>-->
-<!--                </div>-->
+                        <!--                        button section-->
+                        <!--                </form>-->
+                        <!--                    text section-->
+                    </div>
+                </div>
 
-<!--                <div class="col-lg-2 ms-auto">-->
-<!--                    <div class="card text-bg-light mb-3" style="max-width: 19rem;">-->
-<!--                        <div class="card-body" style="padding: 0; margin: 0;">-->
-<!--                            <h5 class="card-title fw-bolder text-center text-black">Bill</h5>-->
-<!--                            <hr class="table-group-divider bg-black">-->
-<!--                            <h4 class="card-title text-danger">Total :</h4>-->
-<!--                            <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>-->
+                <div class="col-lg-2 ms-auto">
+                    <div class="card text-bg-light mb-3" style="max-width: 19rem;">
+                        <div class="card-body" style="padding: 0; margin: 0;">
+                            <h5 class="card-title fw-bolder text-center text-black">Bill</h5>
+                            <hr class="table-group-divider bg-black">
+                            <h4 class="card-title text-danger">Total :</h4>
+                            <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>
 
-<!--                            <div class="col-md-10 px-3"  style="padding-right: 0;">-->
-<!--                                <label for="discount" class="form-label fw-bolder">Discount :</label>-->
-<!--                                <input type="number" class="form-control form-control-sm" id="discount" placeholder="%">-->
-<!--                            </div>-->
+                            <div class="col-md-10 px-3"  style="padding-right: 0;">
+                                <label for="discount" class="form-label fw-bolder">Discount :</label>
+                                <input type="number" class="form-control form-control-sm" id="discount" placeholder="%">
+                            </div>
 
-<!--                            <h4 class="card-title text-danger">SubTotal :</h4>-->
-<!--                            <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>-->
+                            <h4 class="card-title text-danger">SubTotal :</h4>
+                            <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>
 
-<!--                            &lt;!&ndash;                        <div class="shadow-none col-11 px-2">&ndash;&gt;-->
-<!--                            &lt;!&ndash;                            <label for="paymentMethod" class="form-label">Payment Method :</label>&ndash;&gt;-->
-<!--                            &lt;!&ndash;                            <select id="paymentMethod" class="form-select bg-success text-light">&ndash;&gt;-->
-<!--                            &lt;!&ndash;                                <option selected class="bg-light text-black">Cash</option>&ndash;&gt;-->
-<!--                            &lt;!&ndash;                                <option selected class="bg-light text-black">Credit Card</option>&ndash;&gt;-->
-<!--                            &lt;!&ndash;                                <option selected class="bg-light text-black">Debit Card</option>&ndash;&gt;-->
-<!--                            &lt;!&ndash;                            </select>&ndash;&gt;-->
-<!--                            &lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--                            <div class="col-md-12 px-3 shadow-none">-->
-<!--                                <label for="cash" class="form-label fw-bolder">Balance : </label>-->
-<!--                                <input type="text" class="form-control form-control-sm" id="cash" placeholder="Rs. 0.00">-->
-<!--                            </div>-->
+                            <!--                        <div class="shadow-none col-11 px-2">-->
+                            <!--                            <label for="paymentMethod" class="form-label">Payment Method :</label>-->
+                            <!--                            <select id="paymentMethod" class="form-select bg-success text-light">-->
+                            <!--                                <option selected class="bg-light text-black">Cash</option>-->
+                            <!--                                <option selected class="bg-light text-black">Credit Card</option>-->
+                            <!--                                <option selected class="bg-light text-black">Debit Card</option>-->
+                            <!--                            </select>-->
+                            <!--                        </div>-->
+                            <div class="col-md-12 px-3 shadow-none">
+                                <label for="cash" class="form-label fw-bolder">Balance : </label>
+                                <input type="text" class="form-control form-control-sm" id="cash" placeholder="Rs. 0.00">
+                            </div>
 
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <br>-->
-<!--            <br>-->
-<!--            <br>-->
-<!--            <br>-->
-<!--            <br>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
 
-<!--            <table class="table table-bordered bg-dark table-responsive">-->
-<!--                <thead class="bg-success text-white text-center">-->
-<!--                <tr>-->
-<!--                    <th>Item Code</th>-->
-<!--                    <th>Description</th>-->
-<!--                    <th>Unit Price</th>-->
-<!--                    <th>Qty</th>-->
-<!--                    <th>Total</th>-->
-<!--                    <th>&#45;&#45;&#45;&#45;</th>-->
-<!--                </tr>-->
-<!--                </thead>-->
-<!--                <tbdoy class="bg-dark">-->
-<!--                    <tr class="text-light bg-dark">-->
-<!--                        <td>I00-001</td>-->
-<!--                        <td>Keerisamba 10kg</td>-->
-<!--                        <td>2255.00</td>-->
-<!--                        <td>1</td>-->
-<!--                        <td>2255.00</td>-->
-<!--                        <td class="text-center"><button class="btn btn-sm btn-danger">Delete</button></td>-->
-<!--                    </tr>-->
-<!--                    &lt;!&ndash;                <tr class="text-light bg-dark">&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <td>I00-010</td>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <td>Chocolate Cream Biscuit large</td>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <td>600.00</td>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <td>1</td>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <td>600.00</td>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <td><button class="btn btn-sm btn-danger">Delete</button></td>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                </tr>&ndash;&gt;-->
-<!--                </tbdoy>-->
-<!--            </table>-->
-<!--        </section>-->
-<!--&lt;!&ndash;        order content&ndash;&gt;-->
+            <table class="table table-bordered bg-dark table-responsive">
+                <thead class="bg-success text-white text-center">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Description</th>
+                    <th>Unit Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                    <th>----</th>
+                </tr>
+                </thead>
+                <tbdoy class="bg-dark">
+                    <tr class="text-light bg-dark">
+                        <td>I00-001</td>
+                        <td>Keerisamba 10kg</td>
+                        <td>2255.00</td>
+                        <td>1</td>
+                        <td>2255.00</td>
+                        <td class="text-center"><button class="btn btn-sm btn-danger">Delete</button></td>
+                    </tr>
+                    <!--                <tr class="text-light bg-dark">-->
+                    <!--                    <td>I00-010</td>-->
+                    <!--                    <td>Chocolate Cream Biscuit large</td>-->
+                    <!--                    <td>600.00</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>600.00</td>-->
+                    <!--                    <td><button class="btn btn-sm btn-danger">Delete</button></td>-->
+                    <!--                </tr>-->
+                </tbdoy>
+            </table>
+        </section>
+<!--        order content-->
 
     </section>
 </main>
+
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+
+<script>
+
+    document.getElementById("customerContent").style.display='none';
+    document.getElementById("ItemsContent").style.display='none';
+    document.getElementById("OrderContent").style.display='none';
+
+    document.getElementById("dashboardBtn").addEventListener("click" ,function () {
+        document.getElementById("DashboardContent").style.display='block';
+        document.getElementById("customerContent").style.display='none';
+        document.getElementById("ItemsContent").style.display='none';
+        document.getElementById("OrderContent").style.display='none';
+    });
+
+    document.getElementById("customerBtn").addEventListener("click" ,function () {
+        document.getElementById("DashboardContent").style.display='none';
+        document.getElementById("customerContent").style.display='block';
+        document.getElementById("ItemsContent").style.display='none';
+        document.getElementById("OrderContent").style.display='none';
+    });
+
+    document.getElementById("itemBtn").addEventListener("click" ,function () {
+        document.getElementById("DashboardContent").style.display='none';
+        document.getElementById("customerContent").style.display='none';
+        document.getElementById("ItemsContent").style.display='block';
+        document.getElementById("OrderContent").style.display='none';
+    });
+
+    document.getElementById("ordersBtn").addEventListener("click" ,function () {
+        document.getElementById("DashboardContent").style.display='none';
+        document.getElementById("customerContent").style.display='none';
+        document.getElementById("ItemsContent").style.display='none';
+        document.getElementById("OrderContent").style.display='block';
+    });
+
+    // document.getElementById("btnTwo").addEventListener("click",function(){
+    //     document.getElementById("imgOne").style.visibility='visible';
+    //     document.getElementById("imgTwo").style.visibility='hidden';
+    //     document.getElementById("imgThree").style.visibility='visible';
+    // });
+    //
+    // document.getElementById("btnThree").addEventListener("click",function(){
+    //     document.getElementById("imgOne").style.visibility='visible';
+    //     document.getElementById("imgTwo").style.visibility='visible';
+    //     document.getElementById("imgThree").style.visibility='hidden';
+    // });
+
+</script>
 
 </body>
 </html>

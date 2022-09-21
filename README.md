@@ -19,4 +19,4 @@ Wire frame - https://wireframe.cc/oHgd47
 
 Site map - https://www.gloomaps.com/wlgExoPVkb
 
-figma - 
+Mokup - https://www.figma.com/file/n89BvQA4EoWzFgswMKI2Zp/POS-System?node-id=0%3A1

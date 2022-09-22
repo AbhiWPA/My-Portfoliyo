@@ -2216,9 +2216,9 @@
 
     .social-media {
         width: 90px;
-        height: 230px;
+        height: 188px;
         position: relative;
-        top: 69px;
+        top: 63px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -2228,7 +2228,7 @@
     .social-media>div {
         left: 0;
         position: relative;
-        height: 50px;
+        height: 41px;
         width: 100%;
         box-shadow: 3px 2px 5px 1px #0000009e;;
         cursor: pointer;
@@ -2246,6 +2246,7 @@
 
     .social-media>div>a>img {
         position: absolute;
+        height: 41px;
         left: 50px;
         top: 0;
         bottom: 0;
@@ -2339,7 +2340,7 @@
 
     main>section:nth-child(2) {
         height: 340px;
-        top: 145vh;
+        top: 157vh;
     }
 
     main>section:nth-child(2)>div:nth-child(3)>p {
@@ -2403,7 +2404,7 @@
     /*-------------skills---------------*/
 
     main>section:nth-child(3) {
-        top: 210vh;
+        top: 225vh;
     }
 
     main>section:nth-child(3)>section:first-of-type {
@@ -2763,7 +2764,7 @@
     .techno02 {
         width: 65%;
         height: 79px;
-        top: 658px;
+        top: 610px;
         left: 0;
         right: 0;
         margin: auto;
@@ -2806,10 +2807,36 @@
         font-size: 12px;
     }
 
+    .tools04 {
+        width: 97%;
+        height: 79px;
+        top: 359px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    }
+
+    .tools05 {
+        width: 78%;
+        height: 79px;
+        top: 465px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    }
+
     /*---------Education------------*/
 
     main>section:nth-child(4) {
-        top: 398vh;
+        top: 413vh;
     }
 
     main>section:nth-child(4)>div:nth-child(3) {
@@ -2828,7 +2855,7 @@
 
     .education {
         top: 15px;
-        height: 110vh;
+        height: 116vh;
     }
 
     .education>div>div:first-of-type {
@@ -2972,7 +2999,7 @@
     /*----------works--------------*/
 
     main>section:nth-child(5) {
-        top: 510vh;
+        top: 526vh;
     }
 
     main>section:nth-child(5)>div:nth-child(3)>p {
@@ -3030,7 +3057,7 @@
     /*------interested------*/
 
     main>section:nth-child(6) {
-        top: 605vh;
+        top: 622vh;
         height: 165px;
     }
 
@@ -3079,8 +3106,10 @@
         margin-top: 5px;
     }
 
+    /*-------------footer-------------*/
+
     .footer {
-        top: 655vh;
+        top: 676vh;
     }
 
     .footer>div:nth-child(2) {

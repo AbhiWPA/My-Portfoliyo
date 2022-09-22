@@ -3188,4 +3188,34 @@
     header>div>nav>ul {
         display: none;
     }
+    @media all and (max-width: 320px){
+
+        header>div:first-of-type>img:first-of-type {
+            width: 104px;
+            height: 26px;
+            left: 103px;
+        }
+        header>section:nth-child(2)>video {
+            bottom: 309px;
+        }
+        header>section:first-of-type>section:first-of-type {
+            top: 68px;
+        }
+        header>section:nth-child(2)>section:nth-child(2)>p:nth-child(1) {
+            font-size: 14px
+        }
+        header>section:nth-child(2)>section:nth-child(2)>p:nth-child(2) {
+            font-size: 22px
+        }
+        header>section:nth-child(2)>section:nth-child(2)>p:nth-child(4) {
+            margin-left: 86px;
+            font-size: 11px
+        }
+        .social-media {
+            width: 94px;
+            height: 175px;
+        }
+
+    }
+
 }

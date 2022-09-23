@@ -117,7 +117,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header bg-dark">
-                            <h5 class="modal-title" id="">Save New Customer Details</h5>
+                            <h5 class="modal-title">Save New Customer Details</h5>
                             <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button"></button>
                         </div>
                         <div class="modal-body bg-dark">
@@ -140,10 +140,13 @@
                                 </div>
 
                             </section>
+
+
+
                         </div>
                         <div class="modal-footer bg-dark">
                             <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
-                            <button class="btn btn-success" id="" type="button">Save changes</button>
+                            <button class="btn btn-success" id="btnSaveCustomer" type="button">Save changes</button>
                         </div>
                     </div>
                 </div>
@@ -331,8 +334,14 @@
     </section>
 </main>
 
-<script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
 
+<script>
+    $("#btnSaveCustomer").click(function () {
+        var name = "Hello JS";
+        alert(name);
+    });
 </script>
 
 </body>

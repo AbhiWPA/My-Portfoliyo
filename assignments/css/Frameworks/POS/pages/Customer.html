@@ -123,20 +123,20 @@
                         <div class="modal-body bg-dark">
                             <section>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFile">Customer ID</label>
-                                    <input class="form-control" id="formFile" type="text">
+                                    <label class="form-label" for="txtCustomerID">Customer ID</label>
+                                    <input class="form-control" id="txtCustomerID" type="text">
                                 </div>
                                 <div class="mb-3 shadow-none">
-                                    <label class="form-label" for="formFileMultiple">Customer Name</label>
-                                    <input class="form-control" id="formFileMultiple" multiple type="text">
+                                    <label class="form-label" for="txtCustomerName">Customer Name</label>
+                                    <input class="form-control" id="txtCustomerName" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileDisabled">Customer Address</label>
-                                    <input class="form-control" id="formFileDisabled" type="text">
+                                    <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                                    <input class="form-control" id="txtCustomerAddress" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileSm">Customer Salary</label>
-                                    <input class="form-control form-control-sm" id="formFileSm" type="number">
+                                    <label class="form-label" for="txtCustomerContact">Customer Contact</label>
+                                    <input class="form-control form-control-sm" id="txtCustomerContact" type="number">
                                 </div>
 
                             </section>
@@ -339,9 +339,20 @@
 
 <script>
     $("#btnSaveCustomer").click(function () {
-        var name = "Hello JS";
-        alert(name);
+
+        let customerID = $("#txtCustomerID").val();
+        let customerName = $("#txtCustomerName").val();
+        let customerAddress = $("#txtCustomerAddress").val();
+        let customerContact = $("#txtCustomerContact").val();
+
+        console.log(customerID);
+        console.log(customerName);
+        console.log(customerAddress);
+        console.log(customerContact);
+
     });
+
+
 </script>
 
 </body>

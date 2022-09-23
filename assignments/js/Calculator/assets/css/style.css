@@ -69,6 +69,14 @@ main>h1:first-of-type {
     height: 75px;
     background: #780303;
     cursor: pointer;
+    transition: 0.5s;
+    transition-property: background-color;
+}
+
+.cal>div:first-of-type>div:nth-child(2):hover {
+    transition: 0.5s;
+    transition-property: background-color;
+    background-color: #ff253a;
 }
 
 .cal>div:first-of-type>div:nth-child(2)>p {
@@ -138,11 +146,14 @@ main>h1:first-of-type {
     font-family: 'Dangrek', cursive;
 }
 
-.cal>div:nth-child(2)>div, .cal>div:nth-child(3)>div, .cal>div:nth-child(4)>div, .cal>div:nth-child(5)>div {
-    transition: 0.5s;
+.cal>div:nth-child(2)>div, .cal>div:nth-child(3)>div, .cal>div:nth-child(4)>div, .cal>div:nth-child(5)>div, .cal>div:nth-child(6)>div {
     background-color: #0029fa;
+    transition: 0.5s;
+    transition-property: background-color;
 }
 
-.cal>div:nth-child(2)>div, .cal>div:nth-child(3)>div, .cal>div:nth-child(4)>div, .cal>div:nth-child(5)>div, .cal>div:nth-child(6)>div:hover {
-
+.cal>div:nth-child(2)>div:hover, .cal>div:nth-child(3)>div:hover, .cal>div:nth-child(4)>div:hover, .cal>div:nth-child(5)>div:hover, .cal>div:nth-child(6)>div:hover {
+    background: #f44336;
+    transition: 0.5s;
+    transition-property: background-color;
 }

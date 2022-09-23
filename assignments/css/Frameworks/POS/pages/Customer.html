@@ -345,10 +345,14 @@
         let customerAddress = $("#txtCustomerAddress").val();
         let customerContact = $("#txtCustomerContact").val();
 
-        console.log(customerID);
-        console.log(customerName);
-        console.log(customerAddress);
-        console.log(customerContact);
+        var customer = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            contact: customerContact
+        };
+
+        console.log(customer.id+ " "+ customer.name+ " " + customer.address+ " " + customer.contact)
 
     });
 

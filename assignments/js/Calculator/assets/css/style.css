@@ -3,3 +3,58 @@
 * @Date: 23/09/2022
 * @Project: My-Portfolio
 * */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0), rgb(0, 0, 0), rgb(0, 7, 28), rgb(0, 11, 56));
+    /*border: 1px solid red;*/
+}
+
+main>h1:first-of-type {
+    color: white;
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Dangrek', cursive;*/
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 45%;
+    padding-top: 90px;
+}
+
+.cal {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+
+.cal>div:first-of-type {
+    display: flex;
+    gap: 5px;
+}
+
+.cal>div:first-of-type>div:nth-child(1) {
+    width: 400px;
+    height: 75px;
+    background: #3d3d3d;
+}
+
+.cal>div:first-of-type>div:nth-child(1)>label {
+    left: 100%;
+    color: white;
+    width: 390px;
+    height: 74px;
+    text-align-all: right;
+    font-size: 20px;
+}
+
+.cal>div:first-of-type>div:nth-child(2) {
+    width: 75px;
+    height: 75px;
+    background: #780303;
+}

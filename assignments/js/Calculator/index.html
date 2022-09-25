@@ -27,7 +27,7 @@
                         <input type="text" id="lblNumber1">
                         <input type="text" id="lblNumber2">
                     </div>
-                    <button>C</button>
+                    <button id="clear">C</button>
                 </div>
                 <!--            answer and c-->
 
@@ -127,72 +127,58 @@
         calculateNumber("=")
     });
 
-    var number1 = "0";
+    $("#clear").click(function () {
+        calculateNumber("C")
+    });
+
+    var number1 = "";
     var number2 = 0;
 
     function calculateNumber(numb) {
-        var select = numb;
-        if (sel==="+" || sel==="-" || sel ==="*" || sel ==="/"){
+        var selected = numb;
 
+        if (selected==="+" || selected==="-" || selected ==="x" || selected ==="/"){
+            var val = selected;
+            $("#lblNumber2").val(selected);
+            convertNumber(number1);
+            number1 = "";
+        } else if (selected === "=") {
+            calculation(number1);
+            number1 = "";
+        } else if(selected === "C"){
+            number1 = "";
+            number2 = 0;
+            $("#lblNumber1").val("");
+            $("#lblNumber2").val("");
+        }else {
+            number1 = number1 + "" + numb;
+            $("#lblNumber1").val(number1);
+            var dNumb = parseInt(number1);
         }
     }
 
+    function convertNumber(num2) {
+        number2 = parseInt(num2);
+    }
 
-    // var largeNumber = "0";
-    // var cNum = 0;
-    //
-    //
-    // function calculateNumber(num){
-    //     var sel = num;
-    //     if (sel==="+" || sel==="-" || sel ==="*" || sel ==="/"){
-    //         console.log("selected non integer");
-    //         var icon = sel;
-    //         $("#display-two").val(sel);
-    //         console.log("sent "+largeNumber);
-    //         calculation(largeNumber);
-    //         largeNumber = "0";
-    //     }else if (sel === "="){
-    //         lastCal(largeNumber);
-    //         largeNumber = "0";
-    //     }else{
-    //         largeNumber = largeNumber+""+num;
-    //         dNum = parseInt(largeNumber);
-    //         $("#display-one").val(dNum);
-    //
-    //         console.log(largeNumber);
-    //     }
-    // }
-    //
-    // function calculation(dig){
-    //     cNum = parseInt(dig);
-    //     console.log("after converting : "+cNum);
-    // }
-    //
-    // function lastCal(nLast){
-    //     var cNumTwo = parseInt(nLast);
-    //     var operator = $("#display-two").val();
-    //
-    //     if(operator === "+"){
-    //         cNum = cNum + cNumTwo;
-    //         $("#display-one").val("   "+cNum);
-    //     }
-    //
-    //     if(operator === "-"){
-    //         cNum = cNum - cNumTwo;
-    //         $("#display-one").val("   "+cNum);
-    //     }
-    //
-    //     if(operator === "*"){
-    //         cNum = cNum * cNumTwo;
-    //         $("#display-one").val("   "+cNum);
-    //     }
-    //
-    //     if(operator === "/"){
-    //         cNum = cNum / cNumTwo;
-    //         $("#display-one").val("   "+cNum);
-    //     }
-    //
-    // }
+    function calculation(calNum) {
+        var operator = $("#lblNumber2").val();
+
+        if (operator === "+") {
+            number2 = number2 + parseInt(calNum)
+            $("#lblNumber1").val(number2);
+        } else if (operator === "-") {
+            number2 = number2 - parseInt(calNum);
+            $("#lblNumber1").val(number2);
+        } else if (operator === "x") {
+            number2 = number2 * parseInt(calNum);
+            $("#lblNumber1").val(number2);
+        } else if (operator === "/") {
+            number2 = number2 / parseInt(calNum);
+            $("#lblNumber1").val(number2);
+        }
+    }
+
 </script>
 
 </body>

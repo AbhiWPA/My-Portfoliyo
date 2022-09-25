@@ -24,9 +24,8 @@
                 <!--            answer and c-->
                 <div>
                     <div>
-                        <label id="txtAnswer">
-                            Answer
-                        </label>
+                        <input type="text" id="lblNumber1">
+                        <input type="text" id="lblNumber2">
                     </div>
                     <button>C</button>
                 </div>
@@ -128,35 +127,52 @@
         calculateNumber("=")
     });
 
-    var number = "";
+    var number1 = "";
+    var number2 = "";
     function calculateNumber(clickNumber) {
         if (clickNumber === "+" || clickNumber==="-" || clickNumber==="x" || clickNumber==="/") {
 
-            convertNumb(number);
-            number= "";
+            number2=clickNumber;
+            number1 = "";
 
-            var operator = "";
-            if (clickNumber === "+") {
-                operator = "+";
-            } else if (clickNumber === "-"){
-                operator = "-";
-            } else if (clickNumber === "x") {
-                operator = "x";
-            } else if (clickNumber === "/") {
-                operator = "/";
-            }
+            // var operator = "";
+            // if (clickNumber === "+") {
+            //     operator = "+";
+            //     convertNumb(number,operator);
+            //     number = number2;
+            //     number= "";
+            // } else if (clickNumber === "-"){
+            //     operator = "-";
+            //     convertNumb(number,operator);
+            //     number= "";
+            // } else if (clickNumber === "x") {
+            //     operator = "x";
+            //     convertNumb(number,operator);
+            //     number= "";
+            // } else if (clickNumber === "/") {
+            //     operator = "/";
+            //     convertNumb(number,operator);
+            //     number= "";
+            // }
 
         } else if (clickNumber === "=") {
 
         }else {
-            number = number+""+clickNumber;
-            console.log(number)
+            number1 = number1+""+clickNumber;
+            console.log(number1);
         }
-    };
+    }
 
-    function convertNumb(intNumb) {
-        var num = parseInt(intNumb);
-        console.log(num);
+    function convertNumb(intNumb, operator) {
+        // var num = parseInt(intNumb);
+        // console.log(num);
+    }
+
+    function calculation(operator,num) {
+        // if (operator === "+") {
+        //     var tot = num + parseInt(number2);
+        //     console.log("total : "+tot);
+        // }
     }
 
 </script>

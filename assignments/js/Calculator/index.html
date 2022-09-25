@@ -131,6 +131,10 @@
         calculateNumber("C")
     });
 
+    $("#dot").click(function () {
+        calculateNumber(".")
+    });
+
     var number1 = "";
     var number2 = 0;
 
@@ -153,7 +157,6 @@
         }else {
             number1 = number1 + "" + numb;
             $("#lblNumber1").val(number1);
-            var dNumb = parseInt(number1);
         }
     }
 

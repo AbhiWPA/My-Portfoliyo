@@ -57,14 +57,25 @@ main>h1:first-of-type {
 .cal>div:first-of-type>div:nth-child(1)>input {
     left: 100%;
     margin-top: 25px;
-    color: #e80808;
-    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
     height: 35px;
     display: block;
     text-align: left;
     padding-left: 5px;
     font-size: 20px;
+    background-color: #3d3d3d;
 }
+
+.cal>div:first-of-type>div:nth-child(1)>input:nth-child(1) {
+    width: 160px;
+    margin-left: 5px;
+}
+
+.cal>div:first-of-type>div:nth-child(1)>input:nth-child(2) {
+    width: 30px;
+}
+
 
 .cal>div:first-of-type>button:nth-child(2) {
     width: 75px;

@@ -127,54 +127,72 @@
         calculateNumber("=")
     });
 
-    var number1 = "";
-    var number2 = "";
-    function calculateNumber(clickNumber) {
-        if (clickNumber === "+" || clickNumber==="-" || clickNumber==="x" || clickNumber==="/") {
+    var number1 = "0";
+    var number2 = 0;
 
-            number2=clickNumber;
-            number1 = "";
+    function calculateNumber(numb) {
+        var select = numb;
+        if (sel==="+" || sel==="-" || sel ==="*" || sel ==="/"){
 
-            // var operator = "";
-            // if (clickNumber === "+") {
-            //     operator = "+";
-            //     convertNumb(number,operator);
-            //     number = number2;
-            //     number= "";
-            // } else if (clickNumber === "-"){
-            //     operator = "-";
-            //     convertNumb(number,operator);
-            //     number= "";
-            // } else if (clickNumber === "x") {
-            //     operator = "x";
-            //     convertNumb(number,operator);
-            //     number= "";
-            // } else if (clickNumber === "/") {
-            //     operator = "/";
-            //     convertNumb(number,operator);
-            //     number= "";
-            // }
-
-        } else if (clickNumber === "=") {
-
-        }else {
-            number1 = number1+""+clickNumber;
-            console.log(number1);
         }
     }
 
-    function convertNumb(intNumb, operator) {
-        // var num = parseInt(intNumb);
-        // console.log(num);
-    }
 
-    function calculation(operator,num) {
-        // if (operator === "+") {
-        //     var tot = num + parseInt(number2);
-        //     console.log("total : "+tot);
-        // }
-    }
-
+    // var largeNumber = "0";
+    // var cNum = 0;
+    //
+    //
+    // function calculateNumber(num){
+    //     var sel = num;
+    //     if (sel==="+" || sel==="-" || sel ==="*" || sel ==="/"){
+    //         console.log("selected non integer");
+    //         var icon = sel;
+    //         $("#display-two").val(sel);
+    //         console.log("sent "+largeNumber);
+    //         calculation(largeNumber);
+    //         largeNumber = "0";
+    //     }else if (sel === "="){
+    //         lastCal(largeNumber);
+    //         largeNumber = "0";
+    //     }else{
+    //         largeNumber = largeNumber+""+num;
+    //         dNum = parseInt(largeNumber);
+    //         $("#display-one").val(dNum);
+    //
+    //         console.log(largeNumber);
+    //     }
+    // }
+    //
+    // function calculation(dig){
+    //     cNum = parseInt(dig);
+    //     console.log("after converting : "+cNum);
+    // }
+    //
+    // function lastCal(nLast){
+    //     var cNumTwo = parseInt(nLast);
+    //     var operator = $("#display-two").val();
+    //
+    //     if(operator === "+"){
+    //         cNum = cNum + cNumTwo;
+    //         $("#display-one").val("   "+cNum);
+    //     }
+    //
+    //     if(operator === "-"){
+    //         cNum = cNum - cNumTwo;
+    //         $("#display-one").val("   "+cNum);
+    //     }
+    //
+    //     if(operator === "*"){
+    //         cNum = cNum * cNumTwo;
+    //         $("#display-one").val("   "+cNum);
+    //     }
+    //
+    //     if(operator === "/"){
+    //         cNum = cNum / cNumTwo;
+    //         $("#display-one").val("   "+cNum);
+    //     }
+    //
+    // }
 </script>
 
 </body>

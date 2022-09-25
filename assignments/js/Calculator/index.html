@@ -68,20 +68,83 @@
 
 <script>
 
-    let one = $("#one").val();
-    let two = $("#two").val();
-    let three = $("#three").val();
-    let four = $("#four").val();
-    let five = $("#five").val();
-    let six = $("#six").val();
-    let seven = $("#seven").val();
-    let eight = $("#eight").val();
-    let nine = $("#nine").val();
-    let zero = $("#zero").val();
-
     $("#one").click(function () {
-        alert(one);
+        calculateNumber("1")
     });
+
+    $("#two").click(function () {
+        calculateNumber("2")
+    });
+
+    $("#three").click(function () {
+        calculateNumber("3")
+    });
+
+    $("#four").click(function () {
+        calculateNumber("4")
+    });
+
+    $("#five").click(function () {
+        calculateNumber("5")
+    });
+
+    $("#six").click(function () {
+        calculateNumber("6")
+    });
+
+    $("#seven").click(function () {
+        calculateNumber("7")
+    });
+
+    $("#eight").click(function () {
+        calculateNumber("8")
+    });
+
+    $("#nine").click(function () {
+        calculateNumber("9")
+    });
+
+    $("#zero").click(function () {
+        calculateNumber("0")
+    });
+
+    $("#plus").click(function () {
+        calculateNumber("+")
+    });
+
+    $("#sub").click(function () {
+        calculateNumber("-")
+    });
+
+    $("#divide").click(function () {
+        calculateNumber("/")
+    });
+
+    $("#multiply").click(function () {
+        calculateNumber("x")
+    });
+
+    $("#equals").click(function () {
+        calculateNumber("=")
+    });git
+
+    var number = "";
+    function calculateNumber(clickNumber) {
+        if (clickNumber === "+" || clickNumber==="-" || clickNumber==="x" || clickNumber==="/") {
+
+            calculation(number);
+
+        } else if (clickNumber === "=") {
+
+        }else {
+            number = number+""+clickNumber;
+            console.log(number)
+        }
+    };
+
+    function calculation(intNumb) {
+        var num = parseInt(intNumb);
+    }
 
 </script>
 

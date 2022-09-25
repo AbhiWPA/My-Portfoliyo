@@ -126,13 +126,25 @@
 
     $("#equals").click(function () {
         calculateNumber("=")
-    });git
+    });
 
     var number = "";
     function calculateNumber(clickNumber) {
         if (clickNumber === "+" || clickNumber==="-" || clickNumber==="x" || clickNumber==="/") {
 
-            calculation(number);
+            convertNumb(number);
+            number= "";
+
+            var operator = "";
+            if (clickNumber === "+") {
+                operator = "+";
+            } else if (clickNumber === "-"){
+                operator = "-";
+            } else if (clickNumber === "x") {
+                operator = "x";
+            } else if (clickNumber === "/") {
+                operator = "/";
+            }
 
         } else if (clickNumber === "=") {
 
@@ -142,8 +154,9 @@
         }
     };
 
-    function calculation(intNumb) {
+    function convertNumb(intNumb) {
         var num = parseInt(intNumb);
+        console.log(num);
     }
 
 </script>

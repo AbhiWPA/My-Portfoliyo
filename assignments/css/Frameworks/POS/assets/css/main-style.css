@@ -37,6 +37,6 @@ main>section>div:last-of-type {
     max-height: 250px;
 }
 
-.table-responsive {
-    max-height: 5rem;
-}
+/*.table-responsive {*/
+/*    max-height: 5rem;*/
+/*}*/

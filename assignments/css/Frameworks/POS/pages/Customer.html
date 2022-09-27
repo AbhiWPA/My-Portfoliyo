@@ -161,10 +161,10 @@
 
 <!--            search section-->
             <div class="col-4 bg-success shadow-none ">
-                <form class="d-flex bg-dark shadow-none" role="search">
-                    <input class="form-control me-2" id="txtSearch" type="search" placeholder="Search Customer by ID/Name" aria-label="Search">
+                <div class="d-flex bg-dark shadow-none" role="">
+                    <input class="form-control me-2" id="txtSearch" type="" placeholder="Search Customer by ID/Name" aria-label="Search">
                     <button class="btn btn-outline-light bg-dark" id="btnSearch" type="submit"><i class="bi bi-search"></i></button>
-                </form>
+                </div>
                 <div class="card text-bg-success mb-4 col-12 shadow-none" style="max-width: 25rem; top:0.5rem;">
                     <div class="card-body">
                         <form>
@@ -327,6 +327,7 @@
 
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.34/dist/sweetalert2.all.min.js"></script>
 
 <script>
     var customers = [];
@@ -362,6 +363,22 @@
     });
 
     $("#btnSearch").click(function () {
+        var id = $("#txtSearch").val();
+
+        for(var customer of customers){
+            if (id === customer.id || id === customer.name){
+                console.log(id +" "+ customer.name +" "+ customer.address +" "+ customer.contact);
+                $("#txtSearchName").val(customer.name);
+                $("#txtSearchAddress").val(customer.address);
+                $("#txtSearchContact").val(customer.contact);
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'ID or Name Not at the database, Try again!',
+                });
+            }
+        }
 
     });
 

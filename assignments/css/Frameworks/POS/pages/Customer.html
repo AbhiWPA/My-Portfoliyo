@@ -162,14 +162,14 @@
 <!--            search section-->
             <div class="col-4 bg-success shadow-none ">
                 <form class="d-flex bg-dark shadow-none" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search Customer by ID/Name" aria-label="Search">
-                    <button class="btn btn-outline-light bg-dark" type="submit"><i class="bi bi-search"></i></button>
+                    <input class="form-control me-2" id="txtSearch" type="search" placeholder="Search Customer by ID/Name" aria-label="Search">
+                    <button class="btn btn-outline-light bg-dark" id="btnSearch" type="submit"><i class="bi bi-search"></i></button>
                 </form>
                 <div class="card text-bg-success mb-4 col-12 shadow-none" style="max-width: 25rem; top:0.5rem;">
                     <div class="card-body">
                         <form>
                             <div class="row mb-1">
-                                <label for="ID" class="col-sm-3 col-form-label">Name</label>
+                                <label for="ID" id="txtSearchName" class="col-sm-3 col-form-label">Name</label>
                                 <div class="col-sm-8 shadow-none">
                                     <input type="email" class="form-control" id="ID">
                                 </div>
@@ -177,7 +177,7 @@
                         </form>
                         <form>
                             <div class="row mb-1">
-                                <label for="name" class="col-sm-3 col-form-label">Address</label>
+                                <label for="name" id="txtSearchAddress" class="col-sm-3 col-form-label">Address</label>
                                 <div class="col-sm-8 shadow-none">
                                     <input type="email" class="form-control" id="name">
                                 </div>
@@ -185,7 +185,7 @@
                         </form>
                         <form>
                             <div class="row mb-1">
-                                <label for="address" class="col-sm-3 col-form-label">Contact</label>
+                                <label for="address" id="txtSearchContact" class="col-sm-3 col-form-label">Contact</label>
                                 <div class="col-sm-8 shadow-none">
                                     <input type="email" class="form-control" id="address">
                                 </div>
@@ -361,7 +361,9 @@
 
     });
 
+    $("#btnSearch").click(function () {
 
+    });
 
 
 </script>

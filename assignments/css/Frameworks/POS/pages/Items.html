@@ -153,16 +153,12 @@
         <div class="d-flex col-12">
             <div class="card text-bg-primary mb-3 col-4">
                 <div class="card-body">
-                    <form class="row g-2">
+                    <div class="row g-2">
                         <h5 class="card-title text-warning">Item Details Update and Delete</h5>
                         <hr class="table-group-divider">
-                        <div class="col-md-12 shadow-none d-flex" style="padding: 0; margin-top: 0;">
-                            <div class="col-md-8 shadow-none">
-                                <input class="form-control col-md-12" type="search" placeholder="Search" aria-label="Search">
-                            </div>
-                            <div class="shadow-none col-md-3 ms-auto">
-                                <button class="btn btn-success col-md-12" type="submit">Search</button>
-                            </div>
+                        <div class="d-flex shadow-none" role="">
+                            <input class="form-control me-2" id="txtSearch" type="" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light bg-success" id="btnSearch" type="submit">Search</button>
                         </div>
                         <div class="col-md-12 shadow-none">
                             <label for="inputState" class="form-label">Item Code</label>
@@ -173,18 +169,18 @@
                         </div>
 
                         <div class="col-md-12 shadow-none">
-                            <label for="inputDescription" class="form-label">Description</label>
-                            <input type="text" class="form-control" id="inputDescription">
+                            <label for="txtSearchDesc" class="form-label">Description</label>
+                            <input type="text" class="form-control" id="txtSearchDesc">
                         </div>
 
                         <div class="col-md-12 shadow-none">
-                            <label for="inputPrice" class="form-label">Description</label>
-                            <input type="number" class="form-control" id="inputPrice" placeholder="Rs. 0.00">
+                            <label for="txtSearchPrice" class="form-label">Unit Price</label>
+                            <input type="number" class="form-control" id="txtSearchPrice" placeholder="Rs. 0.00">
                         </div>
 
                         <div class="col-md-12 shadow-none">
-                            <label for="inputPrice" class="form-label">Description</label>
-                            <input type="number" class="form-control" id="inputQty" placeholder="00">
+                            <label for="txtSearchQty" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="txtSearchQty" placeholder="00">
                         </div>
 
                         <div class="col-md-12" style="padding: 0">
@@ -195,7 +191,7 @@
                                 <i class="bi bi-trash3-fill"></i> Delete
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
 
@@ -250,6 +246,25 @@
         for (var item of items) {
             var itemRow = "<tr class='text-light bg-dark'> <td>"+item.code+"</td> <td>"+item.desc+"</td> <td>"+item.price+"</td> <td>"+item.qty+"</td> </tr>";
             $("#tblItem").append(itemRow);
+        }
+    });
+
+    $("#btnSearch").click(function () {
+        var id = $("#txtSearch").val();
+
+        for(var item of items){
+            if (id === items.code){
+                console.log(id +" "+ item.desc +" "+ item.price +" "+ item.qty);
+                $("#txtSearchDesc").val(item.desc);
+                $("#txtSearchPrice").val(item.price);
+                $("#txtSearchQty").val(item.qty);
+            } else {
+                // Swal.fire({
+                //     icon: 'error',
+                //     title: 'Oops...',
+                //     text: 'ID or Name Not at the database, Try again!',
+                // });
+            }
         }
     });
 

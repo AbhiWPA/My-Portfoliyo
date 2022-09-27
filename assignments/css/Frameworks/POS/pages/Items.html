@@ -142,7 +142,7 @@
                         </div>
                         <div class="modal-footer bg-dark">
                             <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
-                            <button class="btn btn-success" type="button">Save changes</button>
+                            <button class="btn btn-success" id="saveItem" type="button">Save changes</button>
                         </div>
                     </div>
                 </div>
@@ -202,25 +202,19 @@
 
             <div class="col-8 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
                 <div class="col-11 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
-                    <div style="height:470px; overflow-y: scroll">
+                    <div class="col-12" style="height:470px; overflow-y: scroll">
                         <table class="table table-bordered bg-dark table-responsive col-7">
                             <thead class="bg-warning text-black text-center">
                             <tr>
-                                <th>Item Codes</th>
+                                <th>Item Code</th>
                                 <th>Description</th>
                                 <th>Unit Price</th>
                                 <th>Quantity</th>
                             </tr>
                             </thead>
-                                <tr class="text-light bg-dark">
-                                    <td>I00-010</td>
-                                    <td>xxxxxxxxxxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxx</td>
-                                </tr>
+                            <tbody id="tblItem">
 
-
-                            </tbdoy>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -230,5 +224,35 @@
         </div>
     </section>
 </main>
+
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    var items = []
+    $("#saveItem").click(function () {
+        $("#tblItem").empty();
+
+        let itemCode = $("#itemCode").val();
+        let itemDesc = $("#Description").val();
+        let itemPrice = $("#price").val();
+        let itemQty = $("#qty").val();
+
+        var item = {
+            code : itemCode,
+            desc : itemDesc,
+            price : itemPrice,
+            qty : itemQty
+        };
+
+        items.push(item);
+
+        for (var item of items) {
+            var itemRow = "<tr class='text-light bg-dark'> <td>"+item.code+"</td> <td>"+item.desc+"</td> <td>"+item.price+"</td> <td>"+item.qty+"</td> </tr>";
+            $("#tblItem").append(itemRow);
+        }
+    });
+
+</script>
 </body>
 </html>

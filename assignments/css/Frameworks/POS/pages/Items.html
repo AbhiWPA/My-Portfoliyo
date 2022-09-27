@@ -253,7 +253,7 @@
         var id = $("#txtSearch").val();
 
         for(var item of items){
-            if (id === items.code){
+            if (id === item.code){
                 console.log(id +" "+ item.desc +" "+ item.price +" "+ item.qty);
                 $("#txtSearchDesc").val(item.desc);
                 $("#txtSearchPrice").val(item.price);

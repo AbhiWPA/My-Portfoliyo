@@ -305,14 +305,14 @@
 <!--            update and delete section-->
         </div><br><br>
 
-        <div class="col-12">
+        <div class="col-12" style="height:180px; overflow-y: scroll">
             <table class="table table-bordered">
                 <thead class="bg-danger text-white">
                 <tr>
                     <th>Customer ID</th>
                     <th>Customer Name</th>
                     <th>Customer Address</th>
-                    <th>Customer Salary</th>
+                    <th>Customer Contact</th>
                 </tr>
                 </thead>
                 <tbody id="tblCustomer">
@@ -331,6 +331,7 @@
 <script>
     var customers = [];
     $("#btnSaveCustomer").click(function () {
+        $("#tblCustomer").empty();
 
         let customerID = $("#txtCustomerID").val();
         let customerName = $("#txtCustomerName").val();
@@ -348,13 +349,11 @@
         customers.push(customer);
         console.log(customers);
 
-        $("tblCustomer").empty();
-
 
         for(var customer of customers){
             console.log(customer);
 
-            var row= "<tr class='bg-dark text-light'><td>"+customer.id+"</td><td>"+customer.name+"</td><td>"+customer.address+"</td><td>"+customer.salary+"</td></tr>";
+            var row= "<tr class='bg-dark text-light'><td>"+customer.id+"</td><td>"+customer.name+"</td><td>"+customer.address+"</td><td>"+customer.contact+"</td></tr>";
 
             $("#tblCustomer").append(row);
         }

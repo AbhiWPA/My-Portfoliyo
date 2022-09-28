@@ -3600,4 +3600,78 @@
     .education>div:nth-child(21), .education>div:nth-child(22), .education>div:nth-child(23), .education>div:nth-child(24), .education>div:nth-child(25), .education>div:nth-child(26) {
         display: none;
     }
+
+    /*-------------Projects------------------*/
+
+    main>section:nth-child(5) {
+        top: 488vh;
+    }
+
+    main>section:nth-child(5)>div:nth-child(3)>p {
+        margin-left: 18px;
+        font-size: 24px;
+    }
+
+    .works {
+        font-size: 38px;
+    }
+
+    .my-works {
+        height: 56vh;
+        width: 96%;
+        top: 20px;
+    }
+
+    .my-works>div:nth-child(3) {
+        width: 225px;
+        height: 118px;
+        top: 40px;
+    }
+
+    .my-works>h1 {
+        font-size: 20px;
+        top: 50px;
+    }
+
+    .my-works>div:nth-child(6)>i:first-of-type {
+        right: 220px;
+        top: -88px;
+        font-size: 20px;
+    }
+
+    .my-works>div:nth-child(6)>i:last-of-type {
+        left: 220px;
+        top: -80px;
+        font-size: 20px;
+    }
+
+    .my-works>a:nth-child(7)>div {
+        width: 127px;
+        height: 22px;
+    }
+
+    .my-works>a:nth-child(7)>div>h3 {
+        font-size: 13px;
+    }
+
+    .my-works>a:nth-child(7)>div>i {
+        font-size: 16px;
+    }
+
+    main>section:nth-child(6) {
+        top: 570vh;
+        height: 254px;
+    }
+
+    main>section:nth-child(6)>div:nth-child(3)>p {
+        font-size: 25px;
+        padding-left: 7px;
+    }
+
+    .interested {
+        height: 10vh;
+        width: 99%;
+        top: 70px;
+    }
+
 }

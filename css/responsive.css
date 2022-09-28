@@ -3246,13 +3246,13 @@
     header > div:first-of-type > img:first-of-type {
         width: 108px;
         height: 26px;
-        left: 152px;
+        left: 130px;
     }
 
     .developer {
-        left: 35px;
+        left: 17px;
         letter-spacing: 30px;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     header > div > div {
@@ -3260,7 +3260,7 @@
     }
 
     header > section:nth-child(2) > video {
-        bottom: 205px;
+        bottom: 236px;
     }
 
     header > section:nth-child(2) > section:nth-child(2) > p:nth-child(1) {

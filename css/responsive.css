@@ -3434,4 +3434,114 @@
     .skills {
         font-size: 38px;
     }
+
+    main>section:nth-child(3)>section:first-of-type {
+        height: 137vh;
+        top: 10px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:first-of-type {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(2) {
+        width: 33%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(3) {
+        width: 33%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(4) {
+        left: 32%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:nth-child(5) {
+        right: 32%;
+    }
+
+    .lang03 {
+        width: 95%;
+        height: 68px;
+    }
+
+    .lang03>div>p {
+        margin-left: 16px;
+        font-size: 13px;
+    }
+
+    .lang03>div:nth-child(2)>p {
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+    .lang04 {
+        width: 70%;
+        height: 68px;
+    }
+
+    .lang04>div>p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .lang04>div:nth-child(2)>p {
+        margin-left: 15px;
+    }
+
+    .lang04>div:nth-child(3)>p {
+        margin-left: 17px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3) {
+        top: 43vh;
+    }
+
+    .tools04 {
+        gap: 8px;
+        top: 363px;
+    }
+
+    .tools05 {
+        width: 84%;
+        top: 475px;
+        gap: 4px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5) {
+        top: 95vh;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(2) {
+        top: 90px;
+        width: 26%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(3) {
+        top: 90px;
+        width: 26%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(4) {
+        top: 87px;
+        left: 24%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(5) {
+        top: 87px;
+        right: 24%;
+    }
+
+    .techno02 {
+        width: 67%;
+        height: 67px;
+        top: 655px;
+        gap: 12px;
+    }
+
+    .techno02>div>p {
+        margin-top: 5px;
+        margin-left: 11px;
+    }
 }

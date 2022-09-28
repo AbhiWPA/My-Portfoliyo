@@ -3315,6 +3315,7 @@
 
     main>section:nth-child(1) {
         top: 232px;
+        height: 418px;
     }
 
     main>section:nth-child(1)>div:nth-child(3)>p {
@@ -3350,5 +3351,87 @@
         top: 279px;
         left: 10px;
         width: 298px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(5) {
+        font-size: 14px;
+        right: 80px;
+        bottom: 65px;
+    }
+
+    .download-cv {
+        bottom: 33px;
+        right: 65px;
+    }
+
+    /*-------------Services--------------*/
+
+    main>section:nth-child(2) {
+        height: 305px;
+        top: 123vh;
+    }
+
+    main>section:nth-child(2)>div:nth-child(3)>p {
+        font-size: 24px;
+        margin-left: -6px;
+    }
+
+    .services {
+        font-size: 38px;
+    }
+
+    .services02 {
+        width: 268px;
+        height: 158px;
+    }
+
+    .services02>section>div>div:nth-child(1) {
+        width: 68px;
+        height: 68px;
+        margin-left: 92px;
+    }
+
+    .services02>section>div:nth-child(1)>div:nth-child(2) {
+        margin-left: 32px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .services02>section>div:nth-child(2)>div:nth-child(2) {
+        margin-left: 34px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .services02>section>div:nth-child(3)>div:nth-child(2) {
+        margin-left: 21px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .services02>section>div:nth-child(4)>div:nth-child(2) {
+        margin-left: 53px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(6) {
+        bottom: 40px;
+        left: 63px;
+    }
+
+    /*------------Skills------------*/
+
+    main>section:nth-child(3) {
+        top: 177vh;
+    }
+
+    main>section:nth-child(3)>div:nth-child(3)>p {
+        font-size: 24px;
+        margin-left: 11px;
+    }
+
+    .skills {
+        font-size: 38px;
     }
 }

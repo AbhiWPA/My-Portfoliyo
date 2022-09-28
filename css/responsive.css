@@ -2764,7 +2764,7 @@
     .techno02 {
         width: 65%;
         height: 79px;
-        top: 610px;
+        top: 668px;
         left: 0;
         right: 0;
         margin: auto;
@@ -2807,31 +2807,31 @@
         font-size: 12px;
     }
 
-    .tools04 {
-        width: 97%;
-        height: 79px;
-        top: 359px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
-        display: flex;
-        gap: 20px;
-        cursor: pointer;
-    }
+    /*.tools04 {*/
+    /*    width: 97%;*/
+    /*    height: 79px;*/
+    /*    top: 359px;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    margin: auto;*/
+    /*    position: absolute;*/
+    /*    display: flex;*/
+    /*    gap: 20px;*/
+    /*    cursor: pointer;*/
+    /*}*/
 
-    .tools05 {
-        width: 78%;
-        height: 79px;
-        top: 465px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
-        display: flex;
-        gap: 20px;
-        cursor: pointer;
-    }
+    /*.tools05 {*/
+    /*    width: 78%;*/
+    /*    height: 79px;*/
+    /*    top: 465px;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    margin: auto;*/
+    /*    position: absolute;*/
+    /*    display: flex;*/
+    /*    gap: 20px;*/
+    /*    cursor: pointer;*/
+    /*}*/
 
     /*---------Education------------*/
 
@@ -2944,7 +2944,7 @@
         display: block;
         height: 10px;
         width: 10px;
-        top: 51px;
+        top: 50px;
         left: 19px;
     }
 
@@ -2952,7 +2952,7 @@
         display: block;
         height: 10px;
         width: 10px;
-        top: 138px;
+        top: 142px;
         left: 19px;
     }
 
@@ -2960,7 +2960,7 @@
         display: block;
         height: 10px;
         width: 10px;
-        top: 220px;
+        top: 236px;
         left: 19px;
     }
 
@@ -2968,7 +2968,7 @@
         display: block;
         height: 10px;
         width: 10px;
-        top: 302px;
+        top: 328px;
         left: 19px;
     }
 
@@ -2976,7 +2976,7 @@
         display: block;
         height: 10px;
         width: 10px;
-        top: 380px;
+        top: 416px;
         left: 19px;
     }
 
@@ -2984,7 +2984,7 @@
         display: block;
         height: 10px;
         width: 10px;
-        top: 460px;
+        top: 512px;
         left: 19px;
     }
 
@@ -3083,11 +3083,15 @@
 
     .interested>div:nth-child(5) {
         position: absolute;
-        top: 89px;
+        top: 104px;
         width: 78px;
         left: 0;
         right: 0;
         margin: auto;
+    }
+
+    .interested>div:nth-child(5)>i {
+        margin-top: 5px;
     }
 
     .interested>div:nth-child(1)>i {

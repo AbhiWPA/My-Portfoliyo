@@ -3269,7 +3269,7 @@
     }
 
     header>section:nth-child(2)>video {
-        bottom: 330px;
+        bottom: 273px;
     }
 
     header>section:first-of-type>section:first-of-type {
@@ -3368,7 +3368,7 @@
 
     main>section:nth-child(2) {
         height: 305px;
-        top: 123vh;
+        top: 133vh;
     }
 
     main>section:nth-child(2)>div:nth-child(3)>p {
@@ -3423,7 +3423,7 @@
     /*------------Skills------------*/
 
     main>section:nth-child(3) {
-        top: 177vh;
+        top: 192vh;
     }
 
     main>section:nth-child(3)>div:nth-child(3)>p {
@@ -3495,22 +3495,22 @@
     }
 
     main>section:nth-child(3)>section:first-of-type>div:nth-child(3) {
-        top: 43vh;
+        top: 47vh;
     }
 
     .tools04 {
         gap: 8px;
-        top: 363px;
+        top: 348px;
     }
 
     .tools05 {
         width: 84%;
-        top: 475px;
+        top: 450px;
         gap: 4px;
     }
 
     main>section:nth-child(3)>section:first-of-type>div:nth-child(5) {
-        top: 95vh;
+        top: 97vh;
     }
 
     main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(2) {
@@ -3536,12 +3536,68 @@
     .techno02 {
         width: 67%;
         height: 67px;
-        top: 655px;
+        top: 598px;
         gap: 12px;
     }
 
     .techno02>div>p {
         margin-top: 5px;
         margin-left: 11px;
+    }
+
+    /*-----------Education-------------*/
+
+    main>section:nth-child(4) {
+        top: 375vh;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3) {
+        top: -122px;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3)>p {
+        margin-left: 15px;
+        font-size: 24px;
+    }
+
+    .edu {
+        font-size: 38px;
+    }
+
+    .education {
+        top: -34px;
+        width: 100%;
+    }
+
+    .education>div:nth-child(1) {
+        left: 217px;
+    }
+
+    .education>div:nth-child(2) {
+        left: 217px;
+    }
+
+    .education>div:nth-child(3) {
+        left: 217px;
+    }
+
+    .education>div:nth-child(4) {
+        left: 267px;
+    }
+
+    .education>div:nth-child(5) {
+        left: 267px;
+    }
+
+    .education>div:nth-child(6) {
+        left: 267px;
+    }
+
+    .education>div:nth-child(7) {
+        right: 270px;
+    }
+
+    .education>div:nth-child(21), .education>div:nth-child(22), .education>div:nth-child(23), .education>div:nth-child(24), .education>div:nth-child(25), .education>div:nth-child(26) {
+        display: none;
     }
 }

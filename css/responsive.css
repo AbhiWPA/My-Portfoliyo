@@ -3669,9 +3669,39 @@
     }
 
     .interested {
-        height: 10vh;
-        width: 99%;
-        top: 70px;
+        height: 13vh;
+        width: 100%;
+        gap: 2px;
     }
+
+    .interested>div {
+        margin: 6px;
+    }
+
+    .interested>div:nth-child(1)>i {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .interested>div:nth-child(2)>i {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .interested>div:nth-child(3)>i {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .interested>div:nth-child(4)>i {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .interested>div:nth-child(5)>i {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
 
 }

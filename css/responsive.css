@@ -3286,7 +3286,105 @@
         margin-left: 162px;
     }
 
-}
+    /*-------------About me-------------*/
+
+    main>section:nth-child(1) {
+        top: 297px;
+    }
+
+    main>section:nth-child(1)>div:nth-child(3)>p {
+        font-size: 26px;
+        margin-left: 26px;
+    }
+
+    .about-me {
+        font-size: 40px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type {
+        top: 90px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>p:first-of-type {
+        font-size: 25px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:first-of-type {
+        font-size: 14px;
+        top: 19%;
+        width: 98%;
+        left: 2%;
+        line-height: 22px;
+    }
+
+    main>section:nth-child(1)>div:last-of-type {
+        top: 291px;
+        left: 16px;
+        width: 340px;
+    }
+
+    main>section:nth-child(1)>section:first-of-type>div:nth-child(5) {
+        bottom: 60px;
+    }
+
+    .download-cv {
+        bottom: 29px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(3)>p {
+        font-size: 26px;
+        margin-left: 13px;
+    }
+
+    .services {
+        font-size: 40px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(6) {
+        bottom: 40px;
+        left: 95px;
+    }
+
+    main>section:nth-child(3)>div:nth-child(3)>p {
+        font-size: 26px;
+        margin-left: 32px;
+    }
+
+    .skills {
+        font-size: 40px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(1)>div:first-of-type {
+        font-size: 20px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(3)>div:first-of-type {
+        font-size: 20px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:first-of-type {
+        font-size: 20px;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(2) {
+        top: 89px;
+        width: 31%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(3) {
+        top: 89px;
+        width: 31%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(4) {
+        top: 86px;
+        left: 30%;
+    }
+
+    main>section:nth-child(3)>section:first-of-type>div:nth-child(5)>div:nth-child(5) {
+        top: 86px;
+        right: 30%;
+    }
 
 
 /*----------------------------------------------------------------------------------------------------------------------------*/

@@ -3,3 +3,71 @@
 * @Date: 29/09/2022
 * @Project: My-Portfolio
 * */
+
+.nav_bar {
+    width: 100%;
+    height: 70px;
+    background-color: #1C2E4C;
+    display: flex;
+}
+
+.nav_bar>a:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-right: 2px solid white;
+    transition: 0.5s;
+}
+
+.nav_bar>a:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav_bar>a:nth-child(1):hover, .nav_bar>a:nth-child(2):hover {
+    border-bottom: 4px solid red;
+}
+
+.nav_bar>a:nth-child(1)>div>p {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 10px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 150px;
+    transition: 1s;
+    transition-property: color,font-weight;
+}
+
+.nav_bar>a:nth-child(2)>div>p {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 10px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 200px;
+    transition: 1s;
+    transition-property: color,font-weight;
+}
+
+.nav_bar>a:nth-child(1)>div>p:hover, .nav_bar>a:nth-child(2)>div>p:hover {
+    color: #f44336;
+    font-weight: 600;
+    transition-property: color,font-weight;
+}
+
+/*.nav_bar>a>div>p {*/
+/*    font-size: 40px;*/
+/*    letter-spacing: 10px;*/
+/*    color: white;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    top: 0;*/
+/*    margin: auto;*/
+/*}*/
+

@@ -211,7 +211,7 @@
                         <div class="col-md-4 shadow-none px-3">
                             <label for="inputState" class="form-label">ID</label>
                             <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
+                                <option selected id="comboID">Choose...</option>
                                 <option>...</option>
                             </select>
                         </div>
@@ -219,22 +219,22 @@
 
 <!--                        name-->
                         <div class="col-md-7 shadow-none">
-                            <label for="inputName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Mr.Fernando">
+                            <label for="updateName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="updateName" placeholder="Mr.Fernando">
                         </div>
 <!--                        name-->
 
 <!--                        address-->
                         <div class="col-7 px-3">
-                            <label for="inputAddress2" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <label for="updateAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="updateAddress" placeholder="Apartment, studio, or floor">
                         </div>
 <!--                        adders-->
 
 <!--                        contact-->
                         <div class="col-md-4">
-                            <label for="inputContact" class="form-label">Contact Number</label>
-                            <input type="text" class="form-control" id="inputContact" placeholder="+94-xxx xxx xx">
+                            <label for="updateContact" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="updateContact" placeholder="+94-xxx xxx xx">
                         </div>
 <!--                        contact-->
 
@@ -332,7 +332,6 @@
 <script>
     var customers = [];
     $("#btnSaveCustomer").click(function () {
-        $("#tblCustomer").empty();
 
         let customerID = $("#txtCustomerID").val();
         let customerName = $("#txtCustomerName").val();
@@ -349,8 +348,12 @@
         // console.log(customer.id+ " "+ customer.name+ " " + customer.address+ " " + customer.contact)
         customers.push(customer);
         console.log(customers);
+        loadAllCustomers();
+        bindRowDetails();
+    });
 
-
+    function loadAllCustomers(){
+        $("#tblCustomer").empty();
         for(var customer of customers){
             console.log(customer);
 
@@ -358,9 +361,7 @@
 
             $("#tblCustomer").append(row);
         }
-
-
-    });
+    }
 
     $("#btnSearch").click(function () {
         var id = $("#txtSearch").val();
@@ -382,9 +383,20 @@
 
     });
 
-    $("#tblCustomer").click(function () {
+    function bindRowDetails() {
+        $('#tblCustomer>tr').click(function () {
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let contact = $(this).children(":eq(3)").text();
+            console.log(id+" "+name+" "+address+" "+contact);
 
-    });
+            $("#inputState").val(id);
+            $("#updateName").val(name);
+            $("#updateAddress").val(address);
+            $("#updateContact").val(contact);
+        });
+    }
 
 
 </script>

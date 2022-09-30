@@ -101,7 +101,7 @@ html {
     margin-bottom: 20px;
 }
 
-.assignments>div>div:nth-child(1) {
+.assignments>div>div {
     margin-left: 20px;
     display: flex;
 }
@@ -124,6 +124,13 @@ html {
 }
 
 .assignments>div>div>div:nth-child(1)>img {
+    width: 100%;
+    height: 90%;
+    padding-left: 7px;
+    padding-top: 15px;
+}
+
+.assignments>div>div:nth-child(2)>div:nth-child(1)>img {
     width: 100%;
     height: 90%;
     padding-left: 7px;

@@ -77,8 +77,63 @@ main>section:nth-child(5)>div:nth-child(3)>p{
     width: 70%;
     height: 90%;
     margin-top: 30px;
-    background-color: #5c3532;
+    background-color: #010f26;
     border-top-right-radius: 30%;
     border-bottom-left-radius: 30%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+}
+
+.my-works>div:nth-child(1)>h1 {
+    margin-left: 60px;
+}
+
+.my-works>div:nth-child(2)>h1 {
+    margin-left: 130px;
+}
+
+.my-works>div:nth-child(3)>h1 {
+    margin-left: 80px;
+}
+
+.my-works>div>h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.my-works>div>div:first-of-type {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #ff0015;
+    border-bottom-color: white;
+    border-top-color: white;
+    border-radius: 100%;
+    margin-left: 50px;
+
+    animation-name: rotate-div;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-div {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.my-works>div>img {
+    width: 204px;
+    height: 204px;
+    border-radius: 100%;
+    margin-left: 58px;
+    margin-top: -273px;
+    padding-bottom: 24px;
+}
+
+.my-works>div>div:nth-child(4) {
+    width: 60px;
+    height: 20px;
+    border: 1px solid red;
 }

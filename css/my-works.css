@@ -54,7 +54,7 @@ main>section:nth-child(5)>div:nth-child(3)>p{
     position: relative;
     height: 70vh;
     width: 85%;
-    top: 50px;
+    top: 70px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -132,8 +132,21 @@ main>section:nth-child(5)>div:nth-child(3)>p{
     padding-bottom: 24px;
 }
 
-.my-works>div>div:nth-child(4) {
-    width: 60px;
-    height: 20px;
-    border: 1px solid red;
+.my-works>div>a{
+    text-decoration: none;
+}
+
+.my-works>div>a>div {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 80px;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+.my-works>div>a>div:hover {
+    color: #f44336;
+    text-decoration: #f44336;
 }

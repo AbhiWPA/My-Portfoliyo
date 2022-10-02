@@ -54,6 +54,11 @@
     height: 100%;
 }
 
+.card .sliderText video {
+    width: 99%;
+    height: 100%;
+}
+
 *{
     margin: 0;
     padding: 0;

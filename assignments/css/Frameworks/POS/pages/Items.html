@@ -227,7 +227,6 @@
 
     var items = []
     $("#saveItem").click(function () {
-        $("#tblItem").empty();
 
         let itemCode = $("#itemCode").val();
         let itemDesc = $("#Description").val();
@@ -242,12 +241,18 @@
         };
 
         items.push(item);
+        loadAllItems();
+        bindRowDetails();
+    });
+
+    function loadAllItems () {
+        $("#tblItem").empty();
 
         for (var item of items) {
             var itemRow = "<tr class='text-light bg-dark'> <td>"+item.code+"</td> <td>"+item.desc+"</td> <td>"+item.price+"</td> <td>"+item.qty+"</td> </tr>";
             $("#tblItem").append(itemRow);
         }
-    });
+    }
 
     $("#btnSearch").click(function () {
         var id = $("#txtSearch").val();
@@ -267,6 +272,21 @@
             }
         }
     });
+
+    function bindRowDetails() {
+        $('#tblCustomer>tr').click(function () {
+            let code = $(this).children(":eq(0)").text();
+            let desc = $(this).children(":eq(1)").text();
+            let price = $(this).children(":eq(2)").text();
+            let qty = $(this).children(":eq(3)").text();
+            console.log(code+" "+desc+" "+price+" "+qty);
+
+            $("#inputState").val(code);
+            $("#txtSearchDesc").val(desc);
+            $("#txtSearchPrice").val(price);
+            $("#txtSearchQty").val(qty);
+        });
+    }
 
 </script>
 </body>

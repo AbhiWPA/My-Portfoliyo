@@ -175,7 +175,7 @@
 
                         <div class="col-md-12 shadow-none">
                             <label for="txtSearchPrice" class="form-label">Unit Price</label>
-                            <input type="number" class="form-control" id="txtSearchPrice" placeholder="Rs. 0.00">
+                            <input type="text" class="form-control" id="txtSearchPrice" placeholder="Rs. 0.00">
                         </div>
 
                         <div class="col-md-12 shadow-none">
@@ -274,7 +274,7 @@
     });
 
     function bindRowDetails() {
-        $('#tblCustomer>tr').click(function () {
+        $('#tblItem>tr').click(function () {
             let code = $(this).children(":eq(0)").text();
             let desc = $(this).children(":eq(1)").text();
             let price = $(this).children(":eq(2)").text();

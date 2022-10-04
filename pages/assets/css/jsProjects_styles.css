@@ -23,7 +23,7 @@ body {
     width: 400px;
     height: 500px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     margin-left: -150px;
     margin-top: -150px;
 }
@@ -88,4 +88,12 @@ body {
     color: white;
     font-size: 14px;
     margin-top: -20px;
+}
+
+body>div:nth-child(1)>h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 520px;
+    color: white;
+    font-size: 32px;
 }

@@ -3189,7 +3189,7 @@
     }
 
     header > section:nth-child(2) > video {
-        bottom: 236px;
+        bottom: 288px;
     }
 
     header > section:nth-child(2) > section:nth-child(2) > p:nth-child(1) {
@@ -3317,16 +3317,19 @@
     .tools04 {
         height: 70px;
         gap: 9px;
+        top: 384px;
     }
 
     .tools05 {
         height: 70px;
         gap: 9px;
+        top: 495px;
     }
 
     techno02 {
         height: 73px;
         gap: 15px;
+        top: 670px;
     }
 
     .lang03 {
@@ -3340,6 +3343,10 @@
     main>section:nth-child(4)>div:nth-child(3)>p {
         margin-left: 36px;
         font-size: 26px;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3) {
+        top: -132px;
     }
 
     .edu {
@@ -3547,7 +3554,7 @@
     }
 
     header>section:nth-child(2)>video {
-        bottom: 273px;
+        bottom: 328px;
     }
 
     header>section:first-of-type>section:first-of-type {
@@ -3778,12 +3785,12 @@
 
     .tools04 {
         gap: 8px;
-        top: 348px;
+        top: 386px;
     }
 
     .tools05 {
         width: 84%;
-        top: 450px;
+        top: 490px;
         gap: 4px;
     }
 
@@ -3814,7 +3821,7 @@
     .techno02 {
         width: 67%;
         height: 67px;
-        top: 598px;
+        top: 660px;
         gap: 12px;
     }
 
@@ -3830,7 +3837,7 @@
     }
 
     main>section:nth-child(4)>div:nth-child(3) {
-        top: -122px;
+        top: -148px;
     }
 
     main>section:nth-child(4)>div:nth-child(3)>p {

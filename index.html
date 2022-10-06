@@ -51,6 +51,12 @@
 </head>
 <body style="background-color: rgb(0,7,17)">
 
+<div class="loader" id="loader">
+    <div>
+        <img src="assets/img/Neon-Loading.gif">
+    </div>
+</div>
+
 <a href="#" class="chatbot">
     <div>
         <img src="assets/icons/icons8-chat-bot-64.png" class="chatimg">
@@ -728,5 +734,14 @@
     </section>
 </footer>
 
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    $(window).on('load', function () {
+        $("#loader").fadeOut(1000)
+    });
+
+</script>
 </body>
 </html>

@@ -418,9 +418,32 @@
         });
     }
 
-    // $("#tblCustomer>tr").on('dblclick', function () {
-    //     $(this).remove();
-    // });
+    $("#txtCustomerID").on('keydown', function (event) {
+       if (event.key == 'Enter') {
+           $("#txtCustomerName").focus();
+       }
+       tabPress(event)
+    });
+
+    $("#txtCustomerName").on('keydown', function (event) {
+        if (event.key == 'Enter') {
+            $("#txtCustomerAddress").focus();
+        }
+        tabPress(event)
+    });
+
+    $("#txtCustomerAddress").on('keydown', function (event) {
+        if (event.key == 'Enter') {
+            $("#txtCustomerContact").focus();
+        }
+        tabPress(event)
+    });
+
+    function tabPress(event) {
+        if (event.key == 'Tab') {
+            event.preventDefault();
+        }
+    }
 
 
 </script>

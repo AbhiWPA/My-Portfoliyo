@@ -151,7 +151,7 @@ main>section:nth-child(5)>div:nth-child(3)>p{
     font-weight: bold;
     cursor: pointer;
     margin-left: 80%;
-    margin-top: -30px;
+    margin-top: -50px;
     transition: 0.5s;
     transition-property: color;
 }

@@ -448,6 +448,22 @@
         }
     });
 
+    function searchCustomer(cusID) {
+        for (let customer of customers) {
+            if (customer.id == cusID) {
+                return customer
+            }
+        }
+        return null;
+    }
+
+    $("#txtSearch").on('keyup', function (event) {
+        if (event.code == "Enter") {
+            let typedID = $("#txtSearch").val();
+            searchCustomer(typedID);
+        }
+    })
+
 
 
 </script>

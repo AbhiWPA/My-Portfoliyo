@@ -202,7 +202,7 @@ header>section:first-of-type>section:nth-child(3) {
     gap: 10px;
 }
 
-header>section:first-of-type>section:last-of-type>a>div {
+header>section:first-of-type>section:nth-child(3)>a>div {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -211,7 +211,7 @@ header>section:first-of-type>section:last-of-type>a>div {
     transition: 0.5s;
 }
 
-header>section:first-of-type>section:last-of-type>a>div:hover{
+header>section:first-of-type>section:nth-child(3)>a>div:hover{
     transform: rotate(1grad) skewY(1grad) translate(20px, -15px);
     box-shadow: -30px 5px 10px rgba(0, 0, 0, 0.89);
 }

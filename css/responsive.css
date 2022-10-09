@@ -763,12 +763,12 @@
     }
 
     .my-works>div:nth-child(2)>h1 {
-        margin-left: 90px;
+        margin-left: 38px;
         font-size: 28px;
     }
 
     .my-works>div:nth-child(3)>h1 {
-        margin-left: 59px;
+        margin-left: 92px;
         font-size: 28px;
     }
 
@@ -783,8 +783,9 @@
     }
 
     .my-works>div>a>div {
-        font-size: 20px;
-        margin-left: 70px;
+        font-size: 54px;
+        margin-left: 206px;
+        margin-top: -42px;
     }
 
 
@@ -1832,10 +1833,6 @@
         gap: 10px;
     }
 
-    .my-works>div:nth-child(1) {
-        margin-left: 26px;
-    }
-
     .my-works>div {
         width: 31%;
     }
@@ -1868,9 +1865,9 @@
     }
 
     .my-works>div>a>div {
-        font-size: 20px;
-        margin-left: 60px;
-        margin-top: 30px;
+        font-size: 48px;
+        margin-left: 90px;
+        margin-top: 15px;
     }
 
 

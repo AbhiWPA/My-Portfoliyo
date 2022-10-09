@@ -379,30 +379,19 @@
             <br>
             <br>
 
-            <table class="table table-bordered bg-dark table-responsive">
-                <thead class="bg-danger text-white">
-                <tr>
-                    <th>Customer ID</th>
-                    <th>Customer Name</th>
-                    <th>Customer Address</th>
-                    <th>Contact Number</th>
-                </tr>
-                </thead>
-                <tbdoy class="bg-dark">
-                    <tr class="text-light bg-dark">
-                        <td>C001</td>
-                        <td>Nuwan</td>
-                        <td>Galle</td>
-                        <td>070-3636455</td>
+            <div class="col-12" style="height:180px; overflow-y: scroll">
+                <table class="table table-bordered">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Contact</th>
                     </tr>
-                    <tr class="text-light bg-dark">
-                        <td>C002</td>
-                        <td>Dasun</td>
-                        <td>Cplombo</td>
-                        <td>070-3636455</td>
-                    </tr>
-                </tbdoy>
-            </table>
+                    </thead>
+                    <tbody id="tblCustomer"></tbody>
+                </table>
+            </div>
         </section>
 <!--        customer content-->
 
@@ -507,80 +496,21 @@
 
                     <div class="col-8 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
                         <div class="col-11 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
-                            <table class="table table-bordered bg-dark table-responsive col-7">
-                                <thead class="bg-warning text-black text-center">
-                                <tr>
-                                    <th>Item Codes</th>
-                                    <th>Description</th>
-                                    <th>Unit Price</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                </thead>
-                                <tbdoy class="bg-dark">
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-001</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
+                            <div class="col-12" style="height:470px; overflow-y: scroll">
+                                <table class="table table-bordered bg-dark table-responsive col-7">
+                                    <thead class="bg-warning text-black text-center">
+                                    <tr>
+                                        <th>Item Code</th>
+                                        <th>Description</th>
+                                        <th>Unit Price</th>
+                                        <th>Quantity</th>
                                     </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-002</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-003</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-004</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-005</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-006</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-007</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-008</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-009</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
-                                    <tr class="text-light bg-dark">
-                                        <td>I00-010</td>
-                                        <td>xxxxxxxxxxxxxxx</td>
-                                        <td>xxxxxxx</td>
-                                        <td>xxx</td>
-                                    </tr>
+                                    </thead>
+                                    <tbody id="tblItem">
 
-
-                                </tbdoy>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -797,36 +727,38 @@
             <br>
             <br>
 
-            <table class="table table-bordered bg-dark table-responsive">
-                <thead class="bg-success text-white text-center">
-                <tr>
-                    <th>Item Code</th>
-                    <th>Description</th>
-                    <th>Unit Price</th>
-                    <th>Qty</th>
-                    <th>Total</th>
-                    <th>----</th>
-                </tr>
-                </thead>
-                <tbdoy class="bg-dark">
-                    <tr class="text-light bg-dark">
-                        <td>I00-001</td>
-                        <td>Keerisamba 10kg</td>
-                        <td>2255.00</td>
-                        <td>1</td>
-                        <td>2255.00</td>
-                        <td class="text-center"><button class="btn btn-sm btn-danger">Delete</button></td>
+            <div style="height:180px; overflow-y: scroll">
+                <table class="table table-bordered bg-dark table-responsive">
+                    <thead class="bg-success text-white text-center">
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>----</th>
                     </tr>
-                    <!--                <tr class="text-light bg-dark">-->
-                    <!--                    <td>I00-010</td>-->
-                    <!--                    <td>Chocolate Cream Biscuit large</td>-->
-                    <!--                    <td>600.00</td>-->
-                    <!--                    <td>1</td>-->
-                    <!--                    <td>600.00</td>-->
-                    <!--                    <td><button class="btn btn-sm btn-danger">Delete</button></td>-->
-                    <!--                </tr>-->
-                </tbdoy>
-            </table>
+                    </thead>
+                    <tbdoy class="bg-dark">
+                        <tr class="text-light bg-dark">
+                            <td>I00-001</td>
+                            <td>Keerisamba 10kg</td>
+                            <td>2255.00</td>
+                            <td>1</td>
+                            <td>2255.00</td>
+                            <td class="text-center"><button class="btn btn-sm btn-danger">Delete</button></td>
+                        </tr>
+                        <!--                <tr class="text-light bg-dark">-->
+                        <!--                    <td>I00-010</td>-->
+                        <!--                    <td>Chocolate Cream Biscuit large</td>-->
+                        <!--                    <td>600.00</td>-->
+                        <!--                    <td>1</td>-->
+                        <!--                    <td>600.00</td>-->
+                        <!--                    <td><button class="btn btn-sm btn-danger">Delete</button></td>-->
+                        <!--                </tr>-->
+                    </tbdoy>
+                </table>
+            </div>
         </section>
 <!--        order content-->
 

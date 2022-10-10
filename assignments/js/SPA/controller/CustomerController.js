@@ -67,7 +67,9 @@ function bindRowDetails() {
         let contact = $(this).children(":eq(3)").text();
         console.log(id+" "+name+" "+address+" "+contact);
 
-        $("#inputState").val(id);
+        var option = "<option selected>"+ id +"</option>"
+
+        $("#cmbCustomerId").setAttribute("value", id);
         $("#updateName").val(name);
         $("#updateAddress").val(address);
         $("#updateContact").val(contact);
@@ -126,5 +128,21 @@ $("#btnSearch").click(function () {
 });
 
 function loadAllCustomerIds() {
+    $("#cmbCustomerId").empty();
+    for(var customer of customers){
+        console.log(customer);
 
-}
+        var opt = "<option id='cmbID'>"+customer.id+"</option>";
+
+        $("#cmbCustomerId").append(opt);
+    }
+};
+
+$("#cmbCustomerId").click(function () {
+    loadAllCustomerIds();
+});
+
+// $("#cmbID").click(function () {
+//     var selectedId = $("#cmbID").val();
+//     $("cmbCustomerId").setAttribute("value", selectedId)
+// })

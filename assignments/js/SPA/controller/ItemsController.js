@@ -53,7 +53,7 @@ $("#btnSaveItem").click(function () {
     items.push(item);
     console.log(items);
     loadAllItems();
-    bindRowDetails();
+    bindRowDetailsItem();
 });
 
 function loadAllItems(){
@@ -66,7 +66,7 @@ function loadAllItems(){
     }
 }
 
-function bindRowDetails() {
+function bindRowDetailsItem() {
     $('#tblItem>tr').click(function () {
         let code = $(this).children(":eq(0)").text();
         let desc = $(this).children(":eq(1)").text();
@@ -120,3 +120,71 @@ $("#btnItemSearch").click(function () {
     }
 
 });
+
+function searchItem(code) {
+    for (let item of items) {
+        if (item.code == code) {
+            return item
+        }
+    }
+    return null;
+}
+
+
+function updateItem (itemCode) {
+    let item = searchItem(itemCode);
+    alert(item)
+
+    if (item != null) {
+        item.code = $("#inputCode").val();
+        item.description = $("#inputDescription").val();
+        item.price = $("#inputPrice").val();
+        item.qty = $("#inputQty").val();
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+    }
+}
+
+$("#btnUpdateItem").click(function () {
+    let itemCode = $("#inputCode").val();
+    let bool = updateItem(itemCode);
+
+    if (bool) {
+        confirm("Do You Want to update this Item?")
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'ID or Name Not at the database, Try again!',
+        });
+    }
+});
+
+function deleteItem(itemCode) {
+    let item = searchCustomer(itemCode);
+    if (item != null) {
+        let indexNumber = items.indexOf(item);
+        items.splice(indexNumber, 1);
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+    }
+}
+
+$("#btnDeleteItem").click(function () {
+    let itemCode = $("#inputCode").val();
+    let bool = deleteItem(itemCode);
+
+    if (bool) {
+        confirm("Do You Want to delete this Item?")
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'ID or Name Not at the database, Try again!',
+        });
+    }
+})

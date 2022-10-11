@@ -65,3 +65,58 @@ function loadAllItems(){
         $("#tblItem").append(row);
     }
 }
+
+function bindRowDetails() {
+    $('#tblItem>tr').click(function () {
+        let code = $(this).children(":eq(0)").text();
+        let desc = $(this).children(":eq(1)").text();
+        let price = $(this).children(":eq(2)").text();
+        let qty = $(this).children(":eq(3)").text();
+
+        $("#inputCode").val(code);
+        $("#inputDescription").val(desc);
+        $("#inputPrice").val(price);
+        $("#inputQty").val(qty);
+    });
+}
+
+$("#txtItemSearch").on('keyup', function (event) {
+    if (event.code == "Enter") {
+        var id = $("#txtItemSearch").val();
+
+        for(var item of items){
+            if (id === item.code){
+                $("#inputCode").val(item.code);
+                $("#inputDescription").val(item.description);
+                $("#inputPrice").val(item.price);
+                $("#inputQty").val(item.qty);
+            } else {
+                // Swal.fire({
+                //     icon: 'error',
+                //     title: 'Oops...',
+                //     text: 'ID or Name Not at the database, Try again!',
+                // });
+            }
+        }
+    }
+});
+
+$("#btnItemSearch").click(function () {
+    var id = $("#txtItemSearch").val();
+
+    for(var item of items){
+        if (id === item.code){
+            $("#inputCode").val(item.code);
+            $("#inputDescription").val(item.description);
+            $("#inputPrice").val(item.price);
+            $("#inputQty").val(item.qty);
+        } else {
+            // Swal.fire({
+            //     icon: 'error',
+            //     title: 'Oops...',
+            //     text: 'ID or Name Not at the database, Try again!',
+            // });
+        }
+    }
+
+});

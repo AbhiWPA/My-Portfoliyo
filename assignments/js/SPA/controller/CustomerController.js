@@ -67,8 +67,6 @@ function bindRowDetails() {
         let contact = $(this).children(":eq(3)").text();
         console.log(id+" "+name+" "+address+" "+contact);
 
-        var option = "<option selected>"+ id +"</option>"
-
         $("#updateID").val(id);
         $("#updateName").val(name);
         $("#updateAddress").val(address);

@@ -392,7 +392,7 @@
                             </div>
                             <div class="modal-footer bg-dark">
                                 <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
-                                <button class="btn btn-success" type="button">Save changes</button>
+                                <button class="btn btn-success" id="btnSaveItem" type="button">Save changes</button>
                             </div>
                         </div>
                     </div>
@@ -415,11 +415,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 shadow-none">
-                                    <label for="inputState" class="form-label">Item Code</label>
-                                    <select id="inputState" class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
+                                    <label for="inputCode" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="inputCode">
                                 </div>
 
                                 <div class="col-md-12 shadow-none">
@@ -726,6 +723,7 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="controller/IndexController.js"></script>
 <script src="controller/CustomerController.js"></script>
+<script src="controller/ItemsController.js"></script>
 
 </body>
 </html>

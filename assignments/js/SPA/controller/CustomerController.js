@@ -81,7 +81,7 @@ function loadAllCustomers(){
     for(var customer of customers){
         console.log(customer);
 
-        var row = `<tr class='bg-dark text-light'><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+        var row = `<tr class='bg-dark text-light'><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`;
         $("#tblCustomer").append(row);
     }
 }
@@ -181,5 +181,30 @@ $("#btnUpdateCustomer").click(function () {
     }
 });
 
+function deleteCustomer(cusId) {
+    let customer = searchCustomer(cusId);
+    if (customer != null) {
+        let indexNumber = customers.indexOf(customer);
+        customers.splice(indexNumber, 1);
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+    }
+}
 
+$("#btnDeleteCustomer").click(function () {
+    let customerID = $("#updateID").val();
+    let bool = deleteCustomer(customerID);
+
+    if (bool) {
+        confirm("Do You Want to delete this customer?")
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'ID or Name Not at the database, Try again!',
+        });
+    }
+})
 

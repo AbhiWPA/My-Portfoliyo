@@ -69,7 +69,7 @@ function bindRowDetails() {
 
         var option = "<option selected>"+ id +"</option>"
 
-        $("#cmbCustomerId").setAttribute("value", id);
+        $("#updateID").val(id);
         $("#updateName").val(name);
         $("#updateAddress").val(address);
         $("#updateContact").val(contact);
@@ -81,8 +81,7 @@ function loadAllCustomers(){
     for(var customer of customers){
         console.log(customer);
 
-        var row= "<tr class='bg-dark text-light'><td>"+customer.id+"</td><td>"+customer.name+"</td><td>"+customer.address+"</td><td>"+customer.contact+"</td></tr>";
-
+        var row = `<tr class='bg-dark text-light'><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
         $("#tblCustomer").append(row);
     }
 }
@@ -142,7 +141,45 @@ $("#cmbCustomerId").click(function () {
     loadAllCustomerIds();
 });
 
-// $("#cmbID").click(function () {
-//     var selectedId = $("#cmbID").val();
-//     $("cmbCustomerId").setAttribute("value", selectedId)
-// })
+function searchCustomer(cusID) {
+    for (let customer of customers) {
+        if (customer.id == cusID) {
+            return customer
+        }
+    }
+    return null;
+}
+
+
+function updateCustomer (cId) {
+    let customer = searchCustomer(cId);
+
+    if (customer != null) {
+        customer.id = $("#updateID").val();
+        customer.name = $("#updateName").val();
+        customer.address = $("#updateAddress").val();
+        customer.contact = $("#updateContact").val();
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+    }
+}
+
+$("#btnUpdateCustomer").click(function () {
+    let customerID = $("#updateID").val();
+    let bool = updateCustomer(customerID);
+
+    if (bool) {
+        confirm("Do You Want to update this customer?")
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'ID or Name Not at the database, Try again!',
+        });
+    }
+});
+
+
+

@@ -45,9 +45,9 @@ function fillCustomerTextField(cId) {
     $("#orderInputContact").val(customer.contact);
     $("#orderInputAddress2").val(customer.address);
 }
-
+let iCode;
 $("#itemCodeOrder").on('change', function () {
-    let iCode = $(this).val();
+    iCode = $(this).val();
     fillItemsDetails(iCode)
 })
 
@@ -76,3 +76,41 @@ $("#btnAddNewCustomer").click(function () {
     $("#ItemsContent").css('display','none');
     $("#OrderContent").css('display','none');
 })
+
+let subTotArr = [];
+function genarateTotal() {
+    var orQty = $("#orderQty").val();
+    var pr = $("#unitPrice").val();
+
+    var subTot = orQty * pr;
+
+    subTotArr.push(subTot);
+    return subTot;
+
+}
+
+let cartArr = [];
+
+$("#btnAddToCart").click(function () {
+    var cartObj = {
+        code : iCode,
+        descr : $("#descriptionOrder").val(),
+        unitPrice : $("#unitPrice").val(),
+        qty : $("#orderQty").val(),
+        tot : genarateTotal()
+    }
+
+    cartArr.push(cartObj);
+
+    loadCartTable();
+})
+
+function loadCartTable() {
+    $("#tblOrder").empty();
+    for(var cartObj of cartArr){
+        console.log(cartObj);
+
+        var tblRow = `<tr class="bg-dark text-light"><td>${cartObj.code}</td><td>${cartObj.descr}</td><td>${cartObj.unitPrice}</td><td>${cartObj.qty}</td><td>${cartObj.tot}</td></tr>`;
+        $("#tblOrder").append(tblRow);
+    }
+}

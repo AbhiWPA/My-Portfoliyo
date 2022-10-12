@@ -57,6 +57,13 @@ $("#btnSaveCustomer").click(function () {
     console.log(customers);
     loadAllCustomers();
     bindRowDetails();
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Customer has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
 });
 
 function bindRowDetails() {
@@ -154,18 +161,30 @@ function updateCustomer (cId) {
 }
 
 $("#btnUpdateCustomer").click(function () {
-    let customerID = $("#updateID").val();
-    let bool = updateCustomer(customerID);
 
-    if (bool) {
-        confirm("Do You Want to update this customer?")
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'ID or Name Not at the database, Try again!',
-        });
-    }
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "Do You Want to update this customer?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, update it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+
+            let customerID = $("#updateID").val();
+            updateCustomer(customerID);
+
+
+            Swal.fire(
+                'Updated!',
+                'Your file has been updated.',
+                'success'
+            )
+        }
+    })
+
 });
 
 function deleteCustomer(cusId) {
@@ -181,17 +200,27 @@ function deleteCustomer(cusId) {
 }
 
 $("#btnDeleteCustomer").click(function () {
-    let customerID = $("#updateID").val();
-    let bool = deleteCustomer(customerID);
 
-    if (bool) {
-        confirm("Do You Want to delete this customer?")
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'ID or Name Not at the database, Try again!',
-        });
-    }
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "Do You Want to delete this customer?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            let customerID = $("#updateID").val();
+            deleteCustomer(customerID);
+            Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+            )
+        }
+    })
+
 })
 

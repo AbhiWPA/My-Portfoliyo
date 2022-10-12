@@ -116,6 +116,28 @@ $("#btnAddToCart").click(function () {
     cartArr.push(cartObj);
 
     loadCartTable();
+    calculateTotal();
 })
 
+var orderTotal;
+function calculateTotal() {
+    let total =0;
+    for (var i=0; i<subTotArr.length; i++ ){
+        total += subTotArr[i];
+    }
+    $("#lblTotal").text(total)
+    orderTotal = total;
+}
 
+function makeDiscount() {
+    var discount = $("#discount").val();
+
+    var newTotal = orderTotal - discount;
+    $("#lblSubTotal").text(newTotal);
+}
+
+$("#discount").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        makeDiscount()
+    }
+})

@@ -606,15 +606,15 @@
                             <h5 class="card-title fw-bolder text-center text-black">Bill</h5>
                             <hr class="table-group-divider bg-black">
                             <h4 class="card-title text-danger">Total :</h4>
-                            <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>
+                            <label class="card-title fw-bolder text-danger ms-3"><h5 id="lblTotal">Rs. 0.00</h5></label>
 
                             <div class="col-md-10 px-3"  style="padding-right: 0;">
                                 <label for="discount" class="form-label fw-bolder">Discount :</label>
-                                <input type="number" class="form-control form-control-sm" id="discount" placeholder="%">
+                                <input type="number" class="form-control form-control-sm" id="discount" placeholder="0.00">
                             </div>
 
                             <h4 class="card-title text-danger">SubTotal :</h4>
-                            <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>
+                            <label class="card-title fw-bolder text-danger ms-3" id="lblSubTotal"><h5>Rs. 0.00</h5></label>
 
                             <!--                        <div class="shadow-none col-11 px-2">-->
                             <!--                            <label for="paymentMethod" class="form-label">Payment Method :</label>-->
@@ -669,6 +669,7 @@
 <script src="controller/CustomerController.js"></script>
 <script src="controller/ItemsController.js"></script>
 <script src="controller/OrderController.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>

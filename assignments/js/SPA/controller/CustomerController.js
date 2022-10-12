@@ -123,17 +123,17 @@ $("#btnSearch").click(function () {
     }
 
 });
-
-function loadAllCustomerIds() {
-    $("#cmbCustomerId").empty();
-    for(var customer of customers){
-        console.log(customer);
-
-        var opt = "<option id='cmbID'>"+customer.id+"</option>";
-
-        $("#cmbCustomerId").append(opt);
-    }
-};
+//
+// function loadAllCustomerIds() {
+//     $("#cmbCustomerId").empty();
+//     for(var customer of customers){
+//         console.log(customer);
+//
+//         var opt = "<option id='cmbID'>"+customer.id+"</option>";
+//
+//         $("#cmbCustomerId").append(opt);
+//     }
+// };
 
 $("#cmbCustomerId").click(function () {
     loadAllCustomerIds();
@@ -141,7 +141,7 @@ $("#cmbCustomerId").click(function () {
 
 function searchCustomer(cusID) {
     for (let customer of customers) {
-        if (customer.id == cusID) {
+        if (customer.id === cusID) {
             return customer
         }
     }

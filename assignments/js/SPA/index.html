@@ -75,7 +75,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link px-2" id="ordersBtn">
+                    <a href="#" class="nav-link px-2" id="ordersBtn" type="button">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-cart4"></i></span>
                         <span style="font-size: 1.5rem;">Orders</span>
                     </a>
@@ -487,27 +487,24 @@
                             <h5 class="card-title fw-bold text-center">Invoice Details</h5>
                             <hr class="table-group-divider bg-black">
                             <div class="row g-2">
-                                <!--                        id-->
-                                <div class="col-md-5 px-3 shadow-none">
-                                    <label for="orderID" class="form-label">Order ID : </label>
-                                    <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">
-                                </div>
+<!--                                &lt;!&ndash;                        id&ndash;&gt;-->
+<!--                                <div class="col-md-5 px-3 shadow-none">-->
+<!--                                    <label for="orderID" class="form-label">Order ID : </label>-->
+<!--                                    <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">-->
+<!--                                </div>-->
 
 
-                                <div class="col-md-6 shadow-none" style="padding-right: 0;">
-                                    <label for="orDate" class="form-label">Date :</label>
-                                    <input type="date" class="form-control" id="orDate">
-                                </div>
+<!--                                <div class="col-md-6 shadow-none" style="padding-right: 0;">-->
+<!--                                    <label for="orDate" class="form-label">Date :</label>-->
+<!--                                    <input type="date" class="form-control" id="orDate">-->
+<!--                                </div>-->
 
                                 <div class="col-md-5 shadow-none px-3">
-                                    <label for="customerIDInput" class="form-label">Customer ID :</label>
-                                    <select id="customerIDInput" class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
+                                    <label for="cmbCustomerID" class="form-label">Customer ID :</label>
+                                    <select id="cmbCustomerID" name="id" class="form-select"></select>
                                 </div>
 
-                                <div class="col-md-6"  style="padding-right: 0;">
+                                <div class="col-md-6 shadow-none"  style="padding-right: 0;">
                                     <label for="orderInputName" class="form-label">Name :</label>
                                     <input type="text" class="form-control" id="orderInputName" placeholder="Mr. Fernando">
                                 </div>
@@ -584,9 +581,9 @@
                     </div>
                 </div>
 
-                <div class="" style="max-height: fit-content; padding: 0; margin: 0; width: 450px">
+                <div class="shadow-none" style="max-height: fit-content; padding: 0; margin: 0; width: 450px">
 
-                    <div class="card text-bg-warning shadow-lg" style="padding: 0; margin: 0;">
+                    <div class="card text-bg-warning shadow-none" style="padding: 0; margin: 0;">
                         <div class="card-body shadow-none" style="padding: 0; margin: 0;">
                             <h5 class="card-title fw-bold text-center">Select Item</h5>
                             <hr class="table-group-divider bg-black">
@@ -594,10 +591,7 @@
 
                                 <div class="col-md-5 shadow-none px-3">
                                     <label for="itemCodeOrder" class="form-label">Item Code :</label>
-                                    <select id="itemCodeOrder" class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
+                                    <select id="itemCodeOrder" class="form-select"></select>
                                 </div>
 
                                 <div class="col-md-6 shadow-none"  style="padding-right: 0;">
@@ -724,6 +718,7 @@
 <script src="controller/IndexController.js"></script>
 <script src="controller/CustomerController.js"></script>
 <script src="controller/ItemsController.js"></script>
+<script src="controller/OrderController.js"></script>
 
 </body>
 </html>

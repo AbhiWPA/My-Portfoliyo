@@ -163,7 +163,8 @@ $("#btnUpdateItem").click(function () {
 });
 
 function deleteItem(itemCode) {
-    let item = searchCustomer(itemCode);
+    let item = searchItem(itemCode);
+    alert(item)
     if (item != null) {
         let indexNumber = items.indexOf(item);
         items.splice(indexNumber, 1);

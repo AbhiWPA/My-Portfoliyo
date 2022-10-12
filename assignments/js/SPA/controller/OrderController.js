@@ -78,26 +78,39 @@ $("#btnAddNewCustomer").click(function () {
 })
 
 let subTotArr = [];
+let subTot;
 function genarateTotal() {
-    var orQty = $("#orderQty").val();
+    var orQty = $("#qtyOrder").val();
     var pr = $("#unitPrice").val();
 
-    var subTot = orQty * pr;
+    subTot = orQty * pr;
+
+    alert("total ::" + subTot)
 
     subTotArr.push(subTot);
-    return subTot;
 
+}
+
+function loadCartTable() {
+    $("#tblOrder").empty();
+    for(var cartObj of cartArr){
+        console.log(cartObj);
+
+        var row = `<tr class='bg-dark text-light'><td>${cartObj.code}</td><td>${cartObj.descr}</td><td>${cartObj.unitPrice}</td><td>${cartObj.qty}</td><td>${cartObj.tot}</td></tr>`;
+        $("#tblOrder").append(row);
+    }
 }
 
 let cartArr = [];
 
 $("#btnAddToCart").click(function () {
+    genarateTotal();
     var cartObj = {
         code : iCode,
         descr : $("#descriptionOrder").val(),
         unitPrice : $("#unitPrice").val(),
-        qty : $("#orderQty").val(),
-        tot : genarateTotal()
+        qty : $("#qtyOrder").val(),
+        tot : subTot
     }
 
     cartArr.push(cartObj);
@@ -105,12 +118,4 @@ $("#btnAddToCart").click(function () {
     loadCartTable();
 })
 
-function loadCartTable() {
-    $("#tblOrder").empty();
-    for(var cartObj of cartArr){
-        console.log(cartObj);
 
-        var tblRow = `<tr class="bg-dark text-light"><td>${cartObj.code}</td><td>${cartObj.descr}</td><td>${cartObj.unitPrice}</td><td>${cartObj.qty}</td><td>${cartObj.tot}</td></tr>`;
-        $("#tblOrder").append(tblRow);
-    }
-}

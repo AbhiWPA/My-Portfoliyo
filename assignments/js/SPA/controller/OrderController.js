@@ -117,6 +117,7 @@ $("#btnAddToCart").click(function () {
 
     loadCartTable();
     calculateTotal();
+    updateQty();
 })
 
 var orderTotal;
@@ -141,3 +142,41 @@ $("#discount").on('keydown', function (event) {
         makeDiscount()
     }
 })
+
+let orderDetailsArr = [];
+$("#btnPlaceOrder").click(function () {
+    // var orderId = genarateOrderId();
+    // var date = catchCurrentDate();
+    //
+    // let orderDetails = {
+    //     orID: orderId,
+    //     custName : $("#orderInputName").val(),
+    //     amount : orderTotal,
+    //     date : date
+    // }
+
+    // orderDetailsArr.push(orderDetails);
+    // console.log(orderDetailsArr);
+
+    $("#tblOrder").empty();
+    $("#descriptionOrder").val("")
+    $("#unitPrice").val("")
+    $("#qtyOrder").val("")
+    $("#qtyOnH").val("")
+    $("#orderInputName").val("");
+    $("#orderInputContact").val("");
+    $("#orderInputAddress2").val("");
+    orderTotal=0;
+    cartArr.length = 0;
+    subTotArr.length = 0;
+
+})
+
+function updateQty() {
+    var oldQty = $("#qtyOnH").val();
+    var qty = $("#orderQty").val();
+
+    var newQty = oldQty - qty;
+
+    $("#qtyOnH").val(newQty);
+}

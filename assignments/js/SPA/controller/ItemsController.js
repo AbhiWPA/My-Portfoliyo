@@ -54,6 +54,13 @@ $("#btnSaveItem").click(function () {
     console.log(items);
     loadAllItems();
     bindRowDetailsItem();
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Item has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
 });
 
 function loadAllItems(){
@@ -148,18 +155,26 @@ function updateItem (itemCode) {
 }
 
 $("#btnUpdateItem").click(function () {
-    let itemCode = $("#inputCode").val();
-    let bool = updateItem(itemCode);
 
-    if (bool) {
-        confirm("Do You Want to update this Item?")
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'ID or Name Not at the database, Try again!',
-        });
-    }
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "Do You Want to update this item?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, update it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            let itemCode = $("#inputCode").val();
+            updateItem(itemCode);
+            Swal.fire(
+                'Updated!',
+                'Your file has been updated.',
+                'success'
+            )
+        }
+    })
 });
 
 function deleteItem(itemCode) {
@@ -176,16 +191,24 @@ function deleteItem(itemCode) {
 }
 
 $("#btnDeleteItem").click(function () {
-    let itemCode = $("#inputCode").val();
-    let bool = deleteItem(itemCode);
 
-    if (bool) {
-        confirm("Do You Want to delete this Item?")
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'ID or Name Not at the database, Try again!',
-        });
-    }
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "Do You Want to delete this item?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            let itemCode = $("#inputCode").val();
+            deleteItem(itemCode);
+            Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+            )
+        }
+    })
 })

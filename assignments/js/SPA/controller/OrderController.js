@@ -12,6 +12,7 @@ $(window).on('keydown', function (event) {
 
 function loadAllCustomerIds() {
     $("#cmbCustomerID").empty();
+    $("#cmbCustomerID").append(`<option></option>`);
     for (let cus of customers){
         $("#cmbCustomerID").append(`<option>${cus.id}</option>`);
     }
@@ -19,6 +20,7 @@ function loadAllCustomerIds() {
 
 function loadAllItemIds() {
     $("#itemCodeOrder").empty();
+    $("#itemCodeOrder").append(`<option></option>`);
     for (let item of items){
         $("#itemCodeOrder").append(`<option>${item.code}</option>`);
     }
@@ -44,22 +46,33 @@ function fillCustomerTextField(cId) {
     $("#orderInputAddress2").val(customer.address);
 }
 
-$("#itemCodeOrder").click(function () {
+$("#itemCodeOrder").on('change', function () {
     let iCode = $(this).val();
-    fillItemsDetails(iCode);
+    fillItemsDetails(iCode)
 })
 
 function fillItemsDetails(itemCode) {
     let item = searchItem(itemCode);
-    console.log(item.code);
-    console.log(item.description);
-    console.log(item.price);
-    console.log(item.qty);
     $("#descriptionOrder").val(item.description);
     $("#unitPrice").val(item.price);
     $("#qtyOnH").val(item.qty);
 }
 
-// function searchItemCode(iCode) {
-//     for (item of items)
-// }
+$("#btnCancelCustomer").click(function () {
+    $("#orderInputName").val("");
+    $("#orderInputContact").val("");
+    $("#orderInputAddress2").val("");
+})
+
+$("#btnCancelitem").click(function () {
+    $("#descriptionOrder").val("");
+    $("#unitPrice").val("");
+    $("#qtyOnH").val("");
+})
+
+$("#btnAddNewCustomer").click(function () {
+    $("#DashboardContent").css('display','none');
+    $("#customerContent").css('display', 'block');
+    $("#ItemsContent").css('display','none');
+    $("#OrderContent").css('display','none');
+})

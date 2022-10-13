@@ -4,6 +4,78 @@
 * @Project: My-Portfolio
 * */
 
+const cIdRegx = /^(C00-)[0-9]{1,3}$/;
+const cNameRegx = /^[A-z ]{5,20}$/;
+const cAddressRegx = /^[0-9/A-z .,]{7,}$/;
+const cContactRegx = /^(070|071|072|075|076|077|078|027)[0-9]{7}$/;
+
+let custValidaations = []
+
+custValidaations.push(
+    {reg: cIdRegx, field: $("#txtCustomerID"), error: 'Customer ID Pattern is Wrong. (Ex : C00-001)'}
+);
+
+custValidaations.push(
+    {reg: cNameRegx, field: $("#txtCustomerName"), error: 'Customer Name Pattern is Wrong. (Ex : A-z, 5-20)'}
+);
+
+custValidaations.push(
+    {reg: cAddressRegx, field: $("#txtCustomerAddress"), error: 'Customer Address Pattern is Wrong. (Ex : A-z 0-9)'}
+);
+
+
+custValidaations.push(
+    {reg: cAddressRegx, field: $("#txtCustomerContact"), error: 'Customer Contact Pattern is Wrong. (Ex : 07X XXX XX XX)'}
+);
+
+function checkValidations (){
+    for (let val of custValidaations) {
+        if (check(val.reg, val.field)) {
+            textSuccess(val.field, "");
+        } else {
+            setErrorMessage(val.field,val.error);
+        }
+    }
+}
+
+function check(reg, field) {
+    let val = field.val();
+    return reg.test(val) ? true : false
+}
+
+function setErrorMessage (field, error) {
+    if (field.val().length <= 0) {
+        field.css("border", "1px solid #ced4da")
+        field.parent().children('span').text(error);
+    } else {
+        field.css("border", "2px solid red")
+        field.parent().children('span').text(error);
+    }
+}
+
+function textSuccess(txtField, error) {
+    if (txtField.val().length <= 0) {
+        txtField.css("border", "1px solid #ced4da")
+        txtField.parent().children('span').text(error);
+    } else {
+        txtField.css("border", "2px solid green")
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function txtFieldFocus (textField) {
+    textField.focus();
+}
+
+
+$("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerContact").on('keyup', function (event) {
+    checkValidations();
+})
+
+$("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerContact").on('blur', function (event) {
+    checkValidations();
+})
+
 $(window).on('keydown', function (event) {
     if (event.key == 'Tab') {
         event.preventDefault();
@@ -12,26 +84,31 @@ $(window).on('keydown', function (event) {
 
 
 $("#txtCustomerID").on('keydown', function (event) {
-    if (event.key == 'Enter') {
+    if (event.key == 'Enter' && check(cIdRegx, $("#txtCustomerID"))) {
         $("#txtCustomerName").focus();
+    } else {
+        txtFieldFocus($("#txtCustomerID"));
     }
 });
 
 $("#txtCustomerName").on('keydown', function (event) {
-    if (event.key == 'Enter') {
+    if (event.key == 'Enter' && check(cNameRegx, $("#txtCustomerName"))) {
         $("#txtCustomerAddress").focus();
     }
 });
 
 $("#txtCustomerAddress").on('keydown', function (event) {
-    if (event.key == 'Enter') {
+    if (event.key == 'Enter' && check(cAddressRegx, $("#txtCustomerAddress"))) {
         $("#txtCustomerContact").focus();
     }
 });
 
 $("#txtCustomerContact").on('keydown', function (event) {
-    if (event.key == 'Enter') {
+    if (event.key == 'Enter' && check(cContactRegx, $("#txtCustomerContact"))) {
         $("#btnSaveCustomer").click();
+        $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerContact").val("");
+        $("#txtCustomerID").focus();
+        checkValidations();
     }
 });
 
@@ -175,8 +252,7 @@ $("#btnUpdateCustomer").click(function () {
 
             let customerID = $("#updateID").val();
             updateCustomer(customerID);
-
-
+            $("#updateID,#updateName,#updateAddress,#updateContact").val("");
             Swal.fire(
                 'Updated!',
                 'Your file has been updated.',
@@ -214,6 +290,7 @@ $("#btnDeleteCustomer").click(function () {
         if (result.isConfirmed) {
             let customerID = $("#updateID").val();
             deleteCustomer(customerID);
+            $("#updateID,#updateName,#updateAddress,#updateContact").val("");
             Swal.fire(
                 'Deleted!',
                 'Your file has been deleted.',

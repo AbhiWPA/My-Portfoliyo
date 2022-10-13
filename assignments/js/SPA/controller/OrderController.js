@@ -75,6 +75,7 @@ $("#btnAddNewCustomer").click(function () {
     $("#customerContent").css('display', 'block');
     $("#ItemsContent").css('display','none');
     $("#OrderContent").css('display','none');
+    $("#detailsContent").css('display','none');
 })
 
 let subTotArr = [];
@@ -84,8 +85,6 @@ function genarateTotal() {
     var pr = $("#unitPrice").val();
 
     subTot = orQty * pr;
-
-    alert("total ::" + subTot)
 
     subTotArr.push(subTot);
 
@@ -102,8 +101,6 @@ function loadCartTable() {
 }
 
 let cartArr = [];
-var orQty2;
-var qtyH2;
 $("#btnAddToCart").click(function () {
     genarateTotal();
     var cartObj = {
@@ -115,21 +112,10 @@ $("#btnAddToCart").click(function () {
     }
 
     cartArr.push(cartObj);
-
-    var orQty = $("#orderQty").val();
-    var qtyH = $("#qtyOnH").val();
-
-    orQty2 = parseInt(orQty);
-    qtyH2 = parseInt(qtyH);
-
+    
         loadCartTable();
         calculateTotal();
         updateQty();
-
-        // Swal.fire({
-        //     icon: 'error',
-        //     title: 'Oops...',
-        //     text: 'Something went wrong! Please Check Quantity',
 
 })
 
@@ -170,6 +156,7 @@ $("#btnPlaceOrder").click(function () {
 
     orderDetailsArr.push(orderDetails);
     console.log(orderDetailsArr);
+    Swal.fire('Your order has been saved succsessfully...!');
 
     $("#tblOrder").empty();
     $("#descriptionOrder").val("")

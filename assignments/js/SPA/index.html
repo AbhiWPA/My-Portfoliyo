@@ -65,7 +65,7 @@
                 </li>
 
                 <li>
-                    <a href="#l" class="nav-link px-2" id="itemBtn">
+                    <a href="#" class="nav-link px-2" id="itemBtn">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-stack"></i></span>
                         <span style="font-size: 1.5rem;">Items</span>
                     </a>
@@ -85,9 +85,9 @@
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link px-2" id="othersBtn">
+                    <a href="#" class="nav-link px-2" id="detailsBtn">
                         <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-book-fill"></i></span>
-                        <span style="font-size: 1.5rem;">Others</span>
+                        <span style="font-size: 1.5rem;">Details</span>
                     </a>
                 </li>
 
@@ -487,17 +487,6 @@
                             <h5 class="card-title fw-bold text-center">Invoice Details</h5>
                             <hr class="table-group-divider bg-black">
                             <div class="row g-2">
-<!--                                &lt;!&ndash;                        id&ndash;&gt;-->
-<!--                                <div class="col-md-5 px-3 shadow-none">-->
-<!--                                    <label for="orderID" class="form-label">Order ID : </label>-->
-<!--                                    <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">-->
-<!--                                </div>-->
-
-
-<!--                                <div class="col-md-6 shadow-none" style="padding-right: 0;">-->
-<!--                                    <label for="orDate" class="form-label">Date :</label>-->
-<!--                                    <input type="date" class="form-control" id="orDate">-->
-<!--                                </div>-->
 
                                 <div class="col-md-5 shadow-none px-3">
                                     <label for="cmbCustomerID" class="form-label">Customer ID :</label>
@@ -616,14 +605,6 @@
                             <h4 class="card-title text-danger">SubTotal :</h4>
                             <label class="card-title fw-bolder text-danger ms-3" id="lblSubTotal"><h5>Rs. 0.00</h5></label>
 
-                            <!--                        <div class="shadow-none col-11 px-2">-->
-                            <!--                            <label for="paymentMethod" class="form-label">Payment Method :</label>-->
-                            <!--                            <select id="paymentMethod" class="form-select bg-success text-light">-->
-                            <!--                                <option selected class="bg-light text-black">Cash</option>-->
-                            <!--                                <option selected class="bg-light text-black">Credit Card</option>-->
-                            <!--                                <option selected class="bg-light text-black">Debit Card</option>-->
-                            <!--                            </select>-->
-                            <!--                        </div>-->
                             <div class="col-md-12 px-3 shadow-none">
                                 <label for="cash" class="form-label fw-bolder">Balance : </label>
                                 <input type="text" class="form-control form-control-sm" id="cash" placeholder="Rs. 0.00">
@@ -658,6 +639,33 @@
             </button>
         </section>
 <!--        order content-->
+
+<!--        details content-->
+        <section id="detailsContent">
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="bi bi-cash-coin" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Order Details</h2>
+            </div><br>
+
+
+            <div class="col-12 ms-auto shadow-none" style="margin-right: 10px; margin-top: 50px;">
+                <div style=" overflow-y: scroll">
+                    <table class="table table-bordered bg-dark table-responsive">
+                        <thead class="bg-success text-white text-center">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-dark" id="tblOrderDetails"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+<!--        details content-->
 
     </section>
 </main>

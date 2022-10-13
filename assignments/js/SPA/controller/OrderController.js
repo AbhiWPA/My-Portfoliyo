@@ -205,3 +205,16 @@ function catchCurrentDate() {
     console.log(date);
     return date;
 }
+
+function loadOrderDetails() {
+    $("#tblOrderDetails").empty();
+    for(var details of orderDetailsArr){
+
+        var row = `<tr class='bg-dark text-light'><td>${details.orID}</td><td>${details.custName}</td><td>${details.amount}</td><td>${details.date}</td></tr>`;
+        $("#tblOrderDetails").append(row);
+    }
+}
+
+$("#detailsBtn").click(function () {
+    loadOrderDetails();
+})

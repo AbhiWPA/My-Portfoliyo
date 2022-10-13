@@ -96,7 +96,7 @@ $(window).on('keydown', function (event) {
 
 $("#itemCode").on('keydown', function (event) {
     if (event.key == 'Enter' && checkItem(itemCodeRegx, $("#itemCode"))) {
-        $("#txtCustomerName").focus();
+        $("#Description").focus();
     } else {
         ItemTxtFieldFocus($("#itemCode"));
     }

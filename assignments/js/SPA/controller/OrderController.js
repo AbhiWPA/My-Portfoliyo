@@ -145,18 +145,18 @@ $("#discount").on('keydown', function (event) {
 
 let orderDetailsArr = [];
 $("#btnPlaceOrder").click(function () {
-    // var orderId = genarateOrderId();
-    // var date = catchCurrentDate();
-    //
-    // let orderDetails = {
-    //     orID: orderId,
-    //     custName : $("#orderInputName").val(),
-    //     amount : orderTotal,
-    //     date : date
-    // }
+    var orderId = genarateOrderId();
+    var date = catchCurrentDate();
 
-    // orderDetailsArr.push(orderDetails);
-    // console.log(orderDetailsArr);
+    let orderDetails = {
+        orID: orderId,
+        custName : $("#orderInputName").val(),
+        amount : orderTotal,
+        date : date
+    }
+
+    orderDetailsArr.push(orderDetails);
+    console.log(orderDetailsArr);
 
     $("#tblOrder").empty();
     $("#descriptionOrder").val("")
@@ -179,4 +179,29 @@ function updateQty() {
     var newQty = oldQty - qty;
 
     $("#qtyOnH").val(newQty);
+}
+
+function genarateOrderId() {
+    var y = 0;
+    var orId = 'Or-00';
+
+    if (orderDetailsArr.length == 0) {
+        y=y+1;
+        return orId+y;
+    } else {
+       var detail = orderDetailsArr[orderDetailsArr.length-1];
+
+       var id = detail.orID;
+       var z = id.substr(4,);
+       var intZ = parseInt(z);
+       intZ = intZ +1;
+       var newID = 'Or-00'+intZ;
+       return newID;
+    }
+}
+
+function catchCurrentDate() {
+    const date = new Date().toLocaleDateString("de-DE");
+    console.log(date);
+    return date;
 }

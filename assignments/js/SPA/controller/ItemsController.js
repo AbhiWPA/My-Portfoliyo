@@ -4,6 +4,89 @@
 * @Project: My-Portfolio
 * */
 
+const itemCodeRegx = /^(I00-)[0-9]{1,3}$/;
+const itemDescRegx = /^[A-z ]{4,}$/;
+const itemPriceRegx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+const itemQtyRegx = /^[0-9]{1,3}$/;
+
+let itemValidations = [];
+
+itemValidations.push(
+    {reg: itemCodeRegx, field: $("#itemCode"), error: 'Item Code Pattern is Wrong. (Ex : I00-001)'}
+);
+
+itemValidations.push(
+    {reg: itemDescRegx, field: $("#Description"), error: 'Item Description Pattern is Wrong. (Ex : A-z, 4-20)'}
+);
+
+itemValidations.push(
+    {reg: itemPriceRegx, field: $("#price"), error: 'Item Price Pattern is Wrong. (Ex : 100.00)'}
+);
+
+
+itemValidations.push(
+    {reg: itemQtyRegx, field: $("#qty"), error: 'Item Quantity Pattern is Wrong. (Ex : 001)'}
+);
+
+function checkItemValidations (){
+    let x = 0;
+    for (let itemVal of itemValidations) {
+        if (checkItem(itemVal.reg, itemVal.field)) {
+            itemTextSuccess(itemVal.field, "");
+        } else {
+            x = x + 1;
+            setItemErrorMessage(itemVal.field,itemVal.error);
+        }
+    }
+    setItemSaveButtonValue(x);
+}
+
+function setItemSaveButtonValue(val) {
+    if (val>0) {
+        $("#btnSaveItem").attr('disabled',true)
+    } else {
+        $("#btnSaveItem").attr('disabled',false)
+    }
+}
+
+function checkItem(reg, field) {
+    let val = field.val();
+    return reg.test(val) ? true : false
+}
+
+function setItemErrorMessage (field, error) {
+    if (field.val().length <= 0) {
+        field.css("border", "1px solid #ced4da")
+        field.parent().children('span').text(error);
+    } else {
+        field.css("border", "2px solid red")
+        field.parent().children('span').text(error);
+    }
+}
+
+function itemTextSuccess(txtField, error) {
+    if (txtField.val().length <= 0) {
+        txtField.css("border", "1px solid #ced4da")
+        txtField.parent().children('span').text(error);
+    } else {
+        txtField.css("border", "2px solid green")
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function ItemTxtFieldFocus (textField) {
+    textField.focus();
+}
+
+$("#itemCode,#Description,#price,#qty").on('keyup', function (event) {
+    checkItemValidations();
+})
+
+$("#itemCode,#Description,#price,#qty").on('blur', function (event) {
+    checkItemValidations();
+})
+
+
 $(window).on('keydown', function (event) {
     if (event.key == 'Tab') {
         event.preventDefault();
@@ -12,26 +95,31 @@ $(window).on('keydown', function (event) {
 
 
 $("#itemCode").on('keydown', function (event) {
-    if (event.key == 'Enter') {
-        $("#Description").focus();
+    if (event.key == 'Enter' && checkItem(itemCodeRegx, $("#itemCode"))) {
+        $("#txtCustomerName").focus();
+    } else {
+        ItemTxtFieldFocus($("#itemCode"));
     }
 });
 
 $("#Description").on('keydown', function (event) {
-    if (event.key == 'Enter') {
-        $("#price").focus();
+    if (event.key == 'Enter' && checkItem(itemDescRegx, $("#Description"))) {
+        ItemTxtFieldFocus($("#price"));
     }
 });
 
 $("#price").on('keydown', function (event) {
-    if (event.key == 'Enter') {
-        $("#qty").focus();
+    if (event.key == 'Enter' && checkItem(itemPriceRegx, $("#price"))) {
+        ItemTxtFieldFocus($("#qty"));
     }
 });
 
 $("#qty").on('keydown', function (event) {
-    if (event.key == 'Enter') {
+    if (event.key == 'Enter' && checkItem(itemQtyRegx, $("#qty"))) {
         $("#btnSaveItem").click();
+        $("#itemCode,#Description,#price,#qty").val("");
+        $("#txtCustomerID").focus();
+        checkItemValidations();
     }
 });
 
@@ -168,6 +256,7 @@ $("#btnUpdateItem").click(function () {
         if (result.isConfirmed) {
             let itemCode = $("#inputCode").val();
             updateItem(itemCode);
+            $("#inputCode,#inputDescription,#inputPrice,#inputQty").val("");
             Swal.fire(
                 'Updated!',
                 'Your file has been updated.',
@@ -204,6 +293,7 @@ $("#btnDeleteItem").click(function () {
         if (result.isConfirmed) {
             let itemCode = $("#inputCode").val();
             deleteItem(itemCode);
+            $("#inputCode,#inputDescription,#inputPrice,#inputQty").val("");
             Swal.fire(
                 'Deleted!',
                 'Your file has been deleted.',

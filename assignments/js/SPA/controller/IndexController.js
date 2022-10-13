@@ -27,7 +27,6 @@ document.getElementById("itemBtn").addEventListener("click" ,function () {
     document.getElementById("customerContent").style.display='none';
     document.getElementById("ItemsContent").style.display='block';
     document.getElementById("OrderContent").style.display='none';
-    alert("dfdsfdsf");
 });
 
 document.getElementById("ordersBtn").addEventListener("click" ,function () {

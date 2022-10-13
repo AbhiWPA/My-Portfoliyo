@@ -29,12 +29,23 @@ custValidaations.push(
 );
 
 function checkValidations (){
+    let x = 0;
     for (let val of custValidaations) {
         if (check(val.reg, val.field)) {
             textSuccess(val.field, "");
         } else {
+            x = x + 1;
             setErrorMessage(val.field,val.error);
         }
+    }
+    setButtonValue(x);
+}
+
+function setButtonValue(val) {
+    if (val>0) {
+        $("#btnSaveCustomer").attr('disabled',true)
+    } else {
+        $("#btnSaveCustomer").attr('disabled',false)
     }
 }
 
@@ -93,13 +104,13 @@ $("#txtCustomerID").on('keydown', function (event) {
 
 $("#txtCustomerName").on('keydown', function (event) {
     if (event.key == 'Enter' && check(cNameRegx, $("#txtCustomerName"))) {
-        $("#txtCustomerAddress").focus();
+        txtFieldFocus($("#txtCustomerAddress"));
     }
 });
 
 $("#txtCustomerAddress").on('keydown', function (event) {
     if (event.key == 'Enter' && check(cAddressRegx, $("#txtCustomerAddress"))) {
-        $("#txtCustomerContact").focus();
+        txtFieldFocus($("#txtCustomerContact"));
     }
 });
 

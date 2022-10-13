@@ -557,7 +557,7 @@
 
                                 <div class="col-md-6"  style="padding-right: 0;">
                                     <label for="qtyOnH" class="form-label">Qty On Hand :</label>
-                                    <input type="text" class="form-control" id="qtyOnH" placeholder="XXX">
+                                    <input type="number" class="form-control" id="qtyOnH" placeholder="XXX">
                                 </div>
 
                                 <div class="col-md-10 px-3"  style="padding-right: 0;">
@@ -649,7 +649,7 @@
 
 
             <div class="col-12 ms-auto shadow-none" style="margin-right: 10px; margin-top: 50px;">
-                <div style=" overflow-y: scroll">
+                <div style="height:300px; overflow-y: scroll">
                     <table class="table table-bordered bg-dark table-responsive">
                         <thead class="bg-success text-white text-center">
                         <tr>
@@ -663,6 +663,11 @@
                     </table>
                 </div>
             </div>
+            <br><br><br><br>
+
+            <button class="btn btn-lg btn-danger" data-bs-target="#exampleModal" id="btnClearOrderDetailTbl" data-bs-toggle="modal" type="button">
+                Clear All
+            </button>
 
         </section>
 <!--        details content-->

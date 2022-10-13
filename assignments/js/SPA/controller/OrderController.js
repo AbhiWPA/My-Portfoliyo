@@ -102,7 +102,8 @@ function loadCartTable() {
 }
 
 let cartArr = [];
-
+var orQty2;
+var qtyH2;
 $("#btnAddToCart").click(function () {
     genarateTotal();
     var cartObj = {
@@ -115,9 +116,21 @@ $("#btnAddToCart").click(function () {
 
     cartArr.push(cartObj);
 
-    loadCartTable();
-    calculateTotal();
-    updateQty();
+    var orQty = $("#orderQty").val();
+    var qtyH = $("#qtyOnH").val();
+
+    orQty2 = parseInt(orQty);
+    qtyH2 = parseInt(qtyH);
+
+        loadCartTable();
+        calculateTotal();
+        updateQty();
+
+        // Swal.fire({
+        //     icon: 'error',
+        //     title: 'Oops...',
+        //     text: 'Something went wrong! Please Check Quantity',
+
 })
 
 var orderTotal;
@@ -174,11 +187,21 @@ $("#btnPlaceOrder").click(function () {
 
 function updateQty() {
     var oldQty = $("#qtyOnH").val();
-    var qty = $("#orderQty").val();
+    var qty = $("#qtyOrder").val();
+
+    alert(oldQty)
+    alert(qty)
 
     var newQty = oldQty - qty;
+    alert(newQty)
 
     $("#qtyOnH").val(newQty);
+
+
+    let item = searchItem(iCode);
+    item.qty = newQty;
+    loadAllItems();
+    loadAllItemIds();
 }
 
 function genarateOrderId() {
@@ -217,4 +240,9 @@ function loadOrderDetails() {
 
 $("#detailsBtn").click(function () {
     loadOrderDetails();
+})
+
+$("#btnClearOrderDetailTbl").click(function () {
+    $("#tblOrderDetails").empty();
+    orderDetailsArr.length = 0;
 })

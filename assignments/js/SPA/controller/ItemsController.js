@@ -159,6 +159,7 @@ function loadAllItems(){
         var row = `<tr class='bg-dark text-light'><td>${item.code}</td><td>${item.description}</td><td>${item.price}</td><td>${item.qty}</td></tr>`;
         $("#tblItem").append(row);
     }
+    bindRowDetailsItem();
 }
 
 function bindRowDetailsItem() {
@@ -228,7 +229,6 @@ function searchItem(code) {
 
 function updateItem (itemCode) {
     let item = searchItem(itemCode);
-    alert(item)
 
     if (item != null) {
         item.code = $("#inputCode").val();
@@ -268,7 +268,6 @@ $("#btnUpdateItem").click(function () {
 
 function deleteItem(itemCode) {
     let item = searchItem(itemCode);
-    alert(item)
     if (item != null) {
         let indexNumber = items.indexOf(item);
         items.splice(indexNumber, 1);

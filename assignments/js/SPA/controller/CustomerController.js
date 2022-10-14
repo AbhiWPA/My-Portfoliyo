@@ -177,6 +177,7 @@ function loadAllCustomers(){
         var row = `<tr class='bg-dark text-light'><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`;
         $("#tblCustomer").append(row);
     }
+    bindRowDetails();
 }
 
 

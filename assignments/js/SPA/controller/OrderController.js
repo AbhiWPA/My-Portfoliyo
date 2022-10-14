@@ -125,7 +125,7 @@ function calculateTotal() {
     for (var i=0; i<subTotArr.length; i++ ){
         total += subTotArr[i];
     }
-    $("#lblTotal").text(total)
+    $("#lblTotal").text(total+".00")
     orderTotal = total;
 }
 
@@ -133,7 +133,7 @@ function makeDiscount() {
     var discount = $("#discount").val();
 
     var newTotal = orderTotal - discount;
-    $("#lblSubTotal").text(newTotal);
+    $("#lblSubTotal").text(newTotal+".00");
 }
 
 $("#discount").on('keydown', function (event) {
@@ -151,6 +151,7 @@ $("#btnPlaceOrder").click(function () {
         orID: orderId,
         custName : $("#orderInputName").val(),
         amount : orderTotal,
+        discount : $("#discount").val(),
         date : date
     }
 
@@ -166,6 +167,12 @@ $("#btnPlaceOrder").click(function () {
     $("#orderInputName").val("");
     $("#orderInputContact").val("");
     $("#orderInputAddress2").val("");
+    $("#lblTotal").text("");
+    $("#lblSubTotal").text("");
+    $("#txtCash").val("");
+    $("#cash").val("");
+    $("#discount").val("");
+
     orderTotal=0;
     cartArr.length = 0;
     subTotArr.length = 0;
@@ -176,11 +183,8 @@ function updateQty() {
     var oldQty = $("#qtyOnH").val();
     var qty = $("#qtyOrder").val();
 
-    alert(oldQty)
-    alert(qty)
 
     var newQty = oldQty - qty;
-    alert(newQty)
 
     $("#qtyOnH").val(newQty);
 
@@ -220,7 +224,7 @@ function loadOrderDetails() {
     $("#tblOrderDetails").empty();
     for(var details of orderDetailsArr){
 
-        var row = `<tr class='bg-dark text-light'><td>${details.orID}</td><td>${details.custName}</td><td>${details.amount}</td><td>${details.date}</td></tr>`;
+        var row = `<tr class='bg-dark text-light'><td>${details.orID}</td><td>${details.custName}</td><td>${details.amount}</td><td>${details.discount}</td><td>${details.date}</td></tr>`;
         $("#tblOrderDetails").append(row);
     }
 }
@@ -232,4 +236,15 @@ $("#detailsBtn").click(function () {
 $("#btnClearOrderDetailTbl").click(function () {
     $("#tblOrderDetails").empty();
     orderDetailsArr.length = 0;
+})
+
+$("#txtCash").on('keydown', function (event) {
+
+    if(event.key == 'Enter') {
+        var cash = $("#txtCash").val();
+        var tot = $("#lblSubTotal").text();
+
+        var balance = cash - tot;
+        $("#cash").val(balance+".00")
+    }
 })

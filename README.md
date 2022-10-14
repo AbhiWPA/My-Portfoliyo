@@ -5,28 +5,22 @@
 <li>Java Script</li>
 </ul>
 
-# My-Portfoliyo -- my Links
+# References
 
 <ul>
-  <li><a href="https://www.gloomaps.com/Mtjyq9kWRR">Site Map URL</a></li>
-  <li><a href=" https://wireframe.cc/DTsytL">Wireframe URL</a></li>
-  <li><a href="https://www.figma.com/file/ck1jZJf7euGCorNDKbVa8x/Profile?node-id=0%3A1">Mockup URL</a></li>
-  <li><a>Facebook URL</a></li>
-  <li><a>LinkedIn URL</a></li>
-  <li><a>LinkedIn URL</a></li>
+  <li><a href="https://www.gloomaps.com/Mtjyq9kWRR">Site Map URL</a></li><br>
+  <li><a href="https://wireframe.cc/DTsytL">Wireframe URL</a></li><br>
+  <li><a href="https://www.figma.com/file/ck1jZJf7euGCorNDKbVa8x/Profile?node-id=0%3A1">Mockup URL</a></li><br>
+  <li><a href="https://www.facebook.com/abhishek.ashinsa.3">Facebook URL</a></li><br>
+  <li><a href="www.linkedin.com/in/abhishek-ashinsa-4951201b9">LinkedIn URL</a></li><br>
+  <li><a href="https://www.instagram.com/invites/contact/?i=n12dfgv4082b&utm_content=2gyxrnn">Instagram URL</a></li><br>
 </ul>
-Mokup - https://www.figma.com/file/ck1jZJf7euGCorNDKbVa8x/Profile?node-id=0%3A1
 
-Site Map - https://www.gloomaps.com/Mtjyq9kWRR
-
-Wire frame - https://wireframe.cc/DTsytL
-
-facebook link == https://www.facebook.com/abhishek.ashinsa.3
-
-linkedIn link == www.linkedin.com/in/abhishek-ashinsa-4951201b9
-
-Instagram link == https://www.instagram.com/invites/contact/?i=n12dfgv4082b&utm_content=2gyxrnn
-
+# This site was built using GitHub Pages and InfinityFree
+<ul>
+  <li><a href="https://abhiwpa.github.io/My-Portfoliyo/">GitHub Pages URL</a></li><br>
+  <li><a href="https://webdemoabhishekashinsa.epizy.com">InfinityFree URL</a></li><br>
+ </ul>
 
 # SPA -- POS System
 

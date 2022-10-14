@@ -1,3 +1,10 @@
+# Tech/FrameWork used...
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Java Script</li>
+</ul>
+
 # My-Portfoliyo -- my Links
 
 Mokup - https://www.figma.com/file/ck1jZJf7euGCorNDKbVa8x/Profile?node-id=0%3A1

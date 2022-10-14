@@ -19,7 +19,7 @@
 # This site was built using GitHub Pages and InfinityFree
 <ul>
   <li><a href="https://abhiwpa.github.io/My-Portfoliyo/">GitHub Pages URL</a></li><br>
-  <li><a href="https://abhishekashinsa.epizy.com">InfinityFree URL</a></li><br>
+  <li><a href="http://webdemoabhishekashinsa.epizy.com/">InfinityFree URL</a></li><br>
  </ul>
 
 # SPA -- POS System

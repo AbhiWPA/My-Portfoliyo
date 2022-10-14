@@ -7,6 +7,14 @@
 
 # My-Portfoliyo -- my Links
 
+<ul>
+  <li><a href="https://www.gloomaps.com/Mtjyq9kWRR">Site Map URL</a></li>
+  <li><a href=" https://wireframe.cc/DTsytL">Wireframe URL</a></li>
+  <li><a href="https://www.figma.com/file/ck1jZJf7euGCorNDKbVa8x/Profile?node-id=0%3A1">Mockup URL</a></li>
+  <li><a>Facebook URL</a></li>
+  <li><a>LinkedIn URL</a></li>
+  <li><a>LinkedIn URL</a></li>
+</ul>
 Mokup - https://www.figma.com/file/ck1jZJf7euGCorNDKbVa8x/Profile?node-id=0%3A1
 
 Site Map - https://www.gloomaps.com/Mtjyq9kWRR

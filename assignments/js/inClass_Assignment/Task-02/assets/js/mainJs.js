@@ -58,6 +58,7 @@ var queDetails = {
 
 function setDivData() {
     $("#content").empty();
+
     for (let i = 0; i <queDetails.names.length ; i++) {
         $("#content").append(`<div style="background-color: ${queDetails.names[i].color}"><h3>${queDetails.names[i].name}</h3></div>`)
     }

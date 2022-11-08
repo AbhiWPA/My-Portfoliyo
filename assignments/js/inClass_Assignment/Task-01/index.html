@@ -35,16 +35,17 @@
         }
     }
 
+    var id;
     $("#start").click(function () {
-        setInterval(changeColor,500)
+       id = setInterval(changeColor,500)
     })
 
     function stopColours(){
-        $("#display").css('background-color', colours[color]);
+        clearInterval(id)
     }
 
     $("#end").click(function () {
-
+        stopColours()
     });
 
 </script>

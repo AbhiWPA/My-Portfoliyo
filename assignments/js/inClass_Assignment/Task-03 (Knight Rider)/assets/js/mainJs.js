@@ -21,63 +21,63 @@ $("#btnStart").click(function () {
     // setInterval(runFourthBoxS,200)
     // setInterval(runFifthBoxS,200)
 })
+var i = 0;
+var j = 0;
+function runColors() {
+    $("#mainDiv").each(function (i, obj) {
+        $(this).obj.css('background-color', colorsSet[j])
+        j++;
+        i++;
+        obj++;
+    })
+}
+
+
+
 // var i = 0;
-// var j = 0;
-// function runColors() {
-//     $("#mainDiv>div").each(function (i, obj) {
-//         $(this).obj.css('background-color', colorsSet[j])
-//         j++;
-//         i++;
-//         obj++;
-//     })
+// function runFirstBox() {
+//     $("#mainDiv>div:nth-child(1)").css('background-color', colorsSet[i]);
+//     i++;
+//     if (i==colorsSet.length){
+//         i=0;
+//     }
+// }
+//
+// var j = 1;
+// function runSecondBox() {
+//     $("#mainDiv>div:nth-child(2)").css('background-color', colorsSet[j]);
+//     j++;
+//     if (j==colorsSet.length){
+//         j=0;
+//     }
+// }
+//
+// var k = 2;
+// function runThirdBox() {
+//     $("#mainDiv>div:nth-child(3)").css('background-color', colorsSet[k]);
+//     k++;
+//     if (k==colorsSet.length){
+//         k=0;
+//     }
 // }
 
-
-
-var i = 0;
-function runFirstBox() {
-    $("#mainDiv>div:nth-child(1)").css('background-color', colorsSet[i]);
-    i++;
-    if (i==colorsSet.length){
-        i=0;
-    }
-}
-
-var j = 1;
-function runSecondBox() {
-    $("#mainDiv>div:nth-child(2)").css('background-color', colorsSet[j]);
-    j++;
-    if (j==colorsSet.length){
-        j=0;
-    }
-}
-
-var k = 2;
-function runThirdBox() {
-    $("#mainDiv>div:nth-child(3)").css('background-color', colorsSet[k]);
-    k++;
-    if (k==colorsSet.length){
-        k=0;
-    }
-}
-
-var l = 0;
-function runFourthBox() {
-    $("#mainDiv>div:nth-child(4)").css('background-color', colorsSet[l]);
-    l++;
-    if (l==colorsSet.length){
-        l=0;
-    }
-}
-
-var m = 1;
-function runFifthBox() {
-    $("#mainDiv>div:nth-child(5)").css('background-color', colorsSet[m]);
-    m++;
-    if (m==colorsSet.length){
-        m=0;
-    }
-}
+// var l = 0;
+// function runFourthBox() {
+//     $("#mainDiv>div:nth-child(4)").css('background-color', colorsSet[l]);
+//     l++;
+//     if (l==colorsSet.length){
+//         l=0;
+//     }
+// }
+//
+// var m = 1;
+// function runFifthBox() {
+//     $("#mainDiv>div:nth-child(5)").css('background-color', colorsSet[m]);
+//     m++;
+//     if (m==colorsSet.length){
+//         m=0;
+//     }
+// }
 
 ///////////////////////////////////////////////////////////////////////
 

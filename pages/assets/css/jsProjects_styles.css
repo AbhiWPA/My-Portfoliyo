@@ -97,3 +97,8 @@ body>div:nth-child(1)>h2 {
     color: white;
     font-size: 32px;
 }
+
+.card .sliderText video {
+    width: 99%;
+    height: 100%;
+}

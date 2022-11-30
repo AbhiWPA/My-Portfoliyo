@@ -6,7 +6,7 @@
 
 body {
     overflow: hidden;
-    background-color: #7700ff;
+    background-color: black;
 }
 
 main>section {
@@ -32,7 +32,7 @@ main>div {
     font-weight: bolder;
     font-size: 60px;
     margin-left: 500px;
-    margin-top: 300px;
+    margin-top: 30px;
     background-color: #7700ff;
     padding: 10px;
     border-radius: 8px;
@@ -51,7 +51,7 @@ main>div:nth-child(3){
     margin-left: 600px;
     margin-top: 500px;
     padding: 12px 34px;
-    font-size: 23px;
+    font-size: 30px;
     background: transparent;
     cursor: pointer;
     text-align: center;

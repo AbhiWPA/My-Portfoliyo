@@ -4,12 +4,16 @@
 * @Project: My-Portfolio
 * */
 
+body {
+    overflow: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 #game{
-    height: 500px;
+    height: 100vh;
     width: 390px;
     border: 1px solid black;
     margin: 1rem auto;
@@ -20,7 +24,6 @@
 #bluecar{
     height: 100px;
     width: 130px;
-    background-color: black;
     position: relative;
     top: 0px;
     left: 0px;
@@ -43,9 +46,8 @@
 #racecar{
     height: 100px;
     width: 130px;
-    background-color: red;
     position: relative;
-    top: 250px;
+    top: 350px;
     left: 130px;
     text-align: center;
 }

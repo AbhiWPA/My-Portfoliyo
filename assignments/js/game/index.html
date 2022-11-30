@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Harry_Potter</title>
+    <title>Racing</title>
     <link rel="stylesheet" href="assets/css/mainStyles.css">
 </head>
 <body>
@@ -14,12 +14,19 @@
     </section>
 
     <div>
-        PUZZLE WAR
+        MOTOR RACING
     </div>
 
-    <a href="/pages/gamePage.html"><div>PLAY</div></a>
+    <div id="btnPlay">Play</div>
 
 </main>
 
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    $("#btnPlay").click(function () {
+        window.location.href="pages/gamePage.html";
+    })
+</script>
 </body>
 </html>
